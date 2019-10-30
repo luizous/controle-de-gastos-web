@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 using ControleDeGastos.Models;
 using ControleDeGastos.DAL.Interfaces;
 
-namespace ControleDeGastos.Controllers
+namespace ControleDeGastos.Web.Controllers
 {
     public class HomeController : Controller
     {

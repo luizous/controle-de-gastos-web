@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29411.108
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleDeGastos", "ControleDeGastos\ControleDeGastos.csproj", "{0351BE94-B805-4DAD-928A-C3B42B2F515E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleDeGastos.Web", "ControleDeGastos\ControleDeGastos.Web.csproj", "{0351BE94-B805-4DAD-928A-C3B42B2F515E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleDeGastos.Domain", "ControleDeGastos.Domain\ControleDeGastos.Domain.csproj", "{E2DE7EEA-ADCA-4DE1-B712-85AEE5E28924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleDeGastos.Repository", "ControleDeGastos.Repository\ControleDeGastos.Repository.csproj", "{11B7C6B9-430F-432E-96F6-35D0674AAC34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleDeGastos.Service", "ControleDeGastos.Service\ControleDeGastos.Service.csproj", "{10E54B42-41A8-4E52-8773-59F2F98C1591}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{0351BE94-B805-4DAD-928A-C3B42B2F515E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0351BE94-B805-4DAD-928A-C3B42B2F515E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0351BE94-B805-4DAD-928A-C3B42B2F515E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2DE7EEA-ADCA-4DE1-B712-85AEE5E28924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2DE7EEA-ADCA-4DE1-B712-85AEE5E28924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2DE7EEA-ADCA-4DE1-B712-85AEE5E28924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2DE7EEA-ADCA-4DE1-B712-85AEE5E28924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11B7C6B9-430F-432E-96F6-35D0674AAC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11B7C6B9-430F-432E-96F6-35D0674AAC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11B7C6B9-430F-432E-96F6-35D0674AAC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11B7C6B9-430F-432E-96F6-35D0674AAC34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10E54B42-41A8-4E52-8773-59F2F98C1591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E54B42-41A8-4E52-8773-59F2F98C1591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E54B42-41A8-4E52-8773-59F2F98C1591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E54B42-41A8-4E52-8773-59F2F98C1591}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

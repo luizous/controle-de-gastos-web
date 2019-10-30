@@ -1,0 +1,4 @@
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csprojAssemblyReference.cache
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.AssemblyInfoInputs.cache
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.AssemblyInfo.cs
