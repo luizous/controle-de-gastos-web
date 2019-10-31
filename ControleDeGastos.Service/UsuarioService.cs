@@ -1,16 +1,17 @@
-﻿using ControleDeGastos.Repository.Interfaces;
+﻿using ControleDeGastos.Domain;
+using ControleDeGastos.Repository.Interfaces;
 using ControleDeGastos.Services.Interfaces;
 
 namespace ControleDeGastos.Services
 {
-    public class UsuarioService : IUsuarioService
+    public class UsuarioService : IUsuarioService<Usuario>
     {
         #region Atributos
-        private readonly IUsuarioRepository _usuarioRepository;
+        private readonly IUsuarioRepository<Usuario> _usuarioRepository;
         #endregion
 
         #region Construtor
-        UsuarioService(IUsuarioRepository usuarioRepository)
+        UsuarioService(IUsuarioRepository<Usuario> usuarioRepository)
         {
             _usuarioRepository = usuarioRepository;
         }
