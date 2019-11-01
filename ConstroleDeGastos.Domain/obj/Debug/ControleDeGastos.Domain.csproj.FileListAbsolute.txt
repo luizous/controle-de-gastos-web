@@ -149,3 +149,4 @@ C:\Users\Aluno\Desktop\controle-de-gastos-web\ConstroleDeGastos.Domain\obj\Debug
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ConstroleDeGastos.Domain\obj\Debug\ControleDeGastos.Domain.csproj.CopyComplete
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ConstroleDeGastos.Domain\obj\Debug\ConstroleDeGastos.Domain.dll
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ConstroleDeGastos.Domain\obj\Debug\ConstroleDeGastos.Domain.pdb
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ConstroleDeGastos.Domain\obj\Debug\ControleDeGastos.Domain.csprojAssemblyReference.cache
