@@ -1,0 +1,3 @@
+obj\Debug\_ControleDeGastos.Service.g.cs
+obj\Debug\Activity1.g.cs
+obj\Debug\ControleDeGastos.Service_Activity1_BeforeInitializeComponentHelper.cs
