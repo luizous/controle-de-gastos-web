@@ -45,6 +45,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CartaoService.cs" />
+    <Compile Include="CategoriaService.cs" />
     <Compile Include="Interfaces\ICartaoService.cs" />
     <Compile Include="Interfaces\ICategoriaService.cs" />
     <Compile Include="Interfaces\ILancamentoService.cs" />
@@ -54,12 +56,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecebimentoService.cs" />
     <Compile Include="UsuarioService.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <XamlAppDef Include="Activity1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </XamlAppDef>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ConstroleDeGastos.Domain\ControleDeGastos.Domain.csproj">

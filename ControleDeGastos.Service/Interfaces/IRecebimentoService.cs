@@ -1,11 +1,15 @@
-﻿using System;
+﻿using ControleDeGastos.Domain;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ControleDeGastos.Services.Interfaces
 {
     public interface IRecebimentoService<T>
     {
+        bool Cadastrar(Recebimento r, Usuario usuario);
+        bool Editar(Recebimento r);
+        double CalculoDiaAtual(int idUsuario);
+        double CalculoMesAtual(int idUsuario);
+        double CalculoMesPassado(int idUsuario);
+        double CalculoQuinzenal(int idUsuario);
     }
 }

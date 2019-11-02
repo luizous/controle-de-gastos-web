@@ -17,6 +17,20 @@ namespace ControleDeGastos.Services
         }
         #endregion
 
+        #region Cadastrar
+        public bool Cadastrar(Recebimento r, Usuario usuario)
+        {
+            return _recebimentoRepository.Cadastrar(r, usuario);
+        }
+        #endregion
+
+        #region Editar
+        public bool Editar(Recebimento r)
+        {
+            return _recebimentoRepository.Editar(r);
+        }
+        #endregion
+
         #region CalculoDiaAtual
         public double CalculoDiaAtual(int idUsuario)
         {
