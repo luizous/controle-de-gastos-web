@@ -113,10 +113,6 @@
               "target": "Package",
               "version": "[2.1.2, )"
             },
-            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
-              "target": "Package",
-              "version": "[2.9.7, )"
-            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[2.1.11, )"
@@ -129,7 +125,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[2.1.9, )"
+              "version": "[2.1.10, )"
             }
           },
           "imports": [
