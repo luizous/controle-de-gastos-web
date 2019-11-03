@@ -187,11 +187,11 @@ iframe {
     color: #666666;
 }
 
-.txt3 {
-    font-family: Bahnschrift Light;
-    font-size: 15px;
-    line-height: 1;
-    color: #666666;
+.container-title {
+    margin-top: 250px;
+    margin-bottom:-270px;
+    margin-right:25px;
+    text-align:center;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -359,7 +359,7 @@ iframe {
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 61px;
+    margin-top: 63px;
     justify-content: center;
     /*padding-top: 10px;*/
 }
