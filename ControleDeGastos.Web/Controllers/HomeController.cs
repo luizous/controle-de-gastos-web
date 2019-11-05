@@ -10,5 +10,10 @@ namespace ControleDeGastos.Web.Controllers
         {
             return View("Login");
         }
+
+        public IActionResult Cadastro()
+        {
+            return View("Usuario/Cadastro");
+        }
     }
 }
