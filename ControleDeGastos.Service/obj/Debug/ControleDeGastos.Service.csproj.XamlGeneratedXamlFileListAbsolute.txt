@@ -1,2 +1,0 @@
-obj\Debug\Activity1.g.xaml
-obj\Debug\ControleDeGastos.Service_Activity1_BeforeInitializeComponentHelper.txt

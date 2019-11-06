@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.11" />
@@ -18,6 +22,10 @@
     <ProjectReference Include="..\ConstroleDeGastos.Domain\ControleDeGastos.Domain.csproj" />
     <ProjectReference Include="..\ControleDeGastos.Repository\ControleDeGastos.Repository.csproj" />
     <ProjectReference Include="..\ControleDeGastos.Service\ControleDeGastos.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
   </ItemGroup>
 
 </Project>

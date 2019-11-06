@@ -3,6 +3,7 @@ using ControleDeGastos.Web.Helper;
 
 namespace ControleDeGastos.Web.Controllers
 {
+    
     public class HomeController : Controller
     {
         [LayoutInjecter("_LayoutLogin")]
@@ -11,9 +12,10 @@ namespace ControleDeGastos.Web.Controllers
             return View("Login");
         }
 
+        [LayoutInjecter("_Layout")]
         public IActionResult Cadastro()
         {
-            return View("Usuario/Cadastro");
+            return View("Views/Usuario/Cadastro.cshtml");
         }
     }
 }

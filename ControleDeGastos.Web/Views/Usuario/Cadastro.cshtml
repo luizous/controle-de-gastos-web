@@ -1,28 +1,30 @@
 ﻿
 @{
     ViewData["Title"] = "Cadastro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="row">
     <div class="col-md-4">
+       @* CARD PERFIL *@
         <div class="card card-user">
             <div class="image">
-                <img src="../assets/img/damir-bosnjak.jpg" alt="...">
-            </div>
+                <img src="~/images/luca.png" alt="...">
+            </div>\
             <div class="card-body">
                 <div class="author">
                     <a href="#">
-                        <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
-                        <h5 class="title">Chet Faker</h5>
+                        <img class="avatar border-gray" src="~/images/lulu.jpg" alt="...">
+                        <h5 class="title" style="color:indigo">Lulu Zami</h5>
                     </a>
                     <p class="description">
-                        sd
+                        
                     </p>
                 </div>
-                <p class="description text-center">
-                    "I like the way you work it
-                    <br> No diggity
-                    <br> I wanna bag it up"
+                <p class="description text-center" style="color:blueviolet; font-weight:normal">
+                    "Happiness can be found,
+                    <br />even in the darkest of times,
+                    <br />if one only remembers to turn on the light"
                 </p>
             </div>
             <div class="card-footer">
@@ -31,21 +33,21 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-6 ml-auto">
                             <h5>
-                                12
+                                69
                                 <br>
                                 <small>Files</small>
                             </h5>
                         </div>
                         <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
                             <h5>
-                                2GB
+                                5GB
                                 <br>
                                 <small>Used</small>
                             </h5>
                         </div>
-                        <div class="col-lg-3 mr-auto">
+                        <div class="col-lg-3 mr-auto" style="padding:0 0px !important; margin: 0px 13px !important">
                             <h5>
-                                24,6$
+                                245,6$
                                 <br>
                                 <small>Spent</small>
                             </h5>
@@ -54,6 +56,8 @@
                 </div>
             </div>
         </div>
+
+        @* CARD MEMBERS  *@
         <div class="card">
             <div class="card-header">
                 <h4 class="card-title">Team Members</h4>
@@ -121,6 +125,8 @@
             </div>
         </div>
     </div>
+
+    @* CARD EDITAR *@
     <div class="col-md-8">
         <div class="card card-user">
             <div class="card-header">

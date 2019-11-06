@@ -199,11 +199,12 @@ iframe {
 .limiter {
     width: 100%;
     margin: 0 auto;
+    
 }
 
 .container-login100 {
     width: 100%;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -299,7 +300,7 @@ iframe {
     width: 100%;
     height: 100%;
     box-shadow: 0px 0px 0px 0px;
-    color: #7900af;
+    color: #5A0101;
 }
 
 .input100:focus + .focus-input100 {
@@ -337,7 +338,7 @@ iframe {
     height: 100%;
     padding-left: 35px;
     pointer-events: none;
-    color: #666666;
+    color: #5A0101;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
@@ -345,7 +346,7 @@ iframe {
 }
 
 .input100:focus + .focus-input100 + .symbol-input100 {
-    color: #7900af;
+    color: #5A0101;
     padding-left: 28px;
 }
 
@@ -373,7 +374,7 @@ iframe {
     width: 100%;
     height: 50px;
     border-radius: 8px;
-    background: #7900af;
+    background: #5A0101;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -388,12 +389,13 @@ iframe {
     transition: all 0.4s;
 }
 
-.login100-form-btn:hover {
-    background: -webkit-linear-gradient(-135deg, #F6A400, #7900af);
-    background: -o-linear-gradient(-135deg, #F6A400, #7900af);
-    background: -moz-linear-gradient(-135deg, #F6A400, #7900af);
-    background: linear-gradient(-135deg, #F6A400, #7900af);
-}
+    .login100-form-btn:hover {
+        color: #fff;
+        background: -webkit-linear-gradient(-135deg, #BC7D7D, #666666);
+        background: -o-linear-gradient(-135deg, #BC7D7D, #666666);
+        background: -moz-linear-gradient(-135deg, #BC7D7D, #666666);
+        background: linear-gradient(-135deg, #BC7D7D, #666666);
+    }
 
 /*[ Button Cadastro ]*/
 .container-cadastro-form-btn {
@@ -417,7 +419,7 @@ iframe {
     width: 100%;
     height: 50px;
     border-radius: 8px;
-    background: #7900af;
+    background: #5A0101;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -432,12 +434,13 @@ iframe {
     transition: all 0.4s;
 }
 
-.cadastro-form-btn:hover {
-    background: -webkit-linear-gradient(-135deg, #F6A400, #7900af);
-    background: -o-linear-gradient(-135deg, #F6A400, #7900af);
-    background: -moz-linear-gradient(-135deg, #F6A400, #7900af);
-    background: linear-gradient(-135deg, #F6A400, #7900af);
- }
+    .cadastro-form-btn:hover {
+        color: #fff;
+        background: -webkit-linear-gradient(-135deg, #BC7D7D, #666666);
+        background: -o-linear-gradient(-135deg, #BC7D7D, #666666);
+        background: -moz-linear-gradient(-135deg, #BC7D7D, #666666);
+        background: linear-gradient(-135deg, #BC7D7D, #666666);
+    }
 
 .container-line {
     flex-wrap: wrap;
@@ -449,7 +452,7 @@ iframe {
     width: 2px;
     height: 120px;
     overflow: hidden;
-    background-color: #F6A400;
+    background-color: #666666;
 }
 
 /*------------------------------------------------------------------

@@ -23,10 +23,6 @@ C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\net
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.TagHelpers.input.cache
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.TagHelpers.output.cache
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.RazorCoreGenerate.cache
-C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
-C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
@@ -81,3 +77,7 @@ C:\Users\gabri\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2
 C:\Users\gabri\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Cadastro.cshtml.g.cs
 C:\Users\gabri\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
 C:\Users\gabri\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutLogin.g.cshtml.cs
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\CadastroUsuario.g.cshtml.cs
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Cadastro.g.cshtml.cs
