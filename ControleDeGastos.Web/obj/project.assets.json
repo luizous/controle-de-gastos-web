@@ -12597,11 +12597,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Web\\ControleDeGastos.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\controle-de-gastos-web\\ControleDeGastos.Web\\ControleDeGastos.Web.csproj",
       "projectName": "ControleDeGastos.Web",
-      "projectPath": "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Web\\ControleDeGastos.Web.csproj",
+      "projectPath": "C:\\Users\\Aluno\\controle-de-gastos-web\\ControleDeGastos.Web\\ControleDeGastos.Web.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Web\\obj\\",
+      "outputPath": "C:\\Users\\Aluno\\controle-de-gastos-web\\ControleDeGastos.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -12622,14 +12622,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
-              "projectPath": "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj"
+            "C:\\Users\\Aluno\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
+              "projectPath": "C:\\Users\\Aluno\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj"
             },
-            "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
-              "projectPath": "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj"
+            "C:\\Users\\Aluno\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
+              "projectPath": "C:\\Users\\Aluno\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj"
             },
-            "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj": {
-              "projectPath": "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj"
+            "C:\\Users\\Aluno\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj": {
+              "projectPath": "C:\\Users\\Aluno\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj"
             }
           }
         }

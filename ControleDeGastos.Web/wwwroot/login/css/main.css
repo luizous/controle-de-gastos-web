@@ -215,10 +215,6 @@ iframe {
     align-items: center;
     padding: 15px;
     background: #fff;
-    /*background: -webkit-linear-gradient(-135deg, #F6A400, #7900af);
-    background: -o-linear-gradient(-135deg, #F6A400, #7900af);
-    background: -moz-linear-gradient(-135deg, #F6A400, #7900af);
-    background: linear-gradient(-135deg, #F6A400, #7900af);*/
 }
 
 .wrap-login100 {
@@ -556,3 +552,13 @@ iframe {
         opacity: 1;
     }
 }
+/*------------------------------------------------------------------
+[ Criadas ]*/
+.texto-index-ola{
+    margin-left: 180px;
+    margin-bottom: 50px;
+    margin-right: 200px;
+    margin-top: 80px;
+    text-align: center;
+}
+

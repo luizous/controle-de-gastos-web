@@ -1,5 +1,5 @@
 ﻿using ControleDeGastos.Domain;
-using ControleDeGastos.Repository.Interfaces;
+using ControleDeGastos.Repository;
 using ControleDeGastos.Services.Interfaces;
 using System.Collections.Generic;
 
@@ -8,11 +8,11 @@ namespace ControleDeGastos.Service
     public class CartaoService : ICartaoService<Cartao>
     {
         #region Atributos
-        private readonly ICartaoRepository<Cartao> _cartaoRepository;
+        private readonly CartaoRepository _cartaoRepository;
         #endregion
 
         #region Construtor
-        public CartaoService(ICartaoRepository<Cartao> cartaoRepository)
+        public CartaoService(CartaoRepository cartaoRepository)
         {
             _cartaoRepository  = cartaoRepository;
         }

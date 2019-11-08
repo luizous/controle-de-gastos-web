@@ -1,5 +1,5 @@
 ﻿using ControleDeGastos.Domain;
-using ControleDeGastos.Repository.Interfaces;
+using ControleDeGastos.Repository;
 using ControleDeGastos.Services.Interfaces;
 
 namespace ControleDeGastos.Services
@@ -7,11 +7,11 @@ namespace ControleDeGastos.Services
     public class RecebimentoService : IRecebimentoService<Recebimento>
     {
         #region Atributos
-        private readonly IRecebimentoRepository<Recebimento> _recebimentoRepository;
+        private readonly RecebimentoRepository _recebimentoRepository;
         #endregion
 
         #region Construtor
-        private RecebimentoService(IRecebimentoRepository<Recebimento> recebimentoRepository)
+        private RecebimentoService(RecebimentoRepository recebimentoRepository)
         {
             _recebimentoRepository = recebimentoRepository;
         }

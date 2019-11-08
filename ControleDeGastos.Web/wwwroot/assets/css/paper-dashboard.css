@@ -5472,6 +5472,7 @@ License - nucleoapp.com/license/
   transform: translate3d(0, 470px, 0) !important;
 }
 
+
 .card {
   border-radius: 12px;
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
@@ -5671,12 +5672,8 @@ License - nucleoapp.com/license/
   margin: 0;
 }
 
-.card-user .image {
-  height: 130px;
-}
-
 .card-user .image img {
-  border-radius: 12px;
+    border-radius: 12px;
 }
 
 .card-user .author {

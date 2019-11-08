@@ -1,4 +1,9 @@
-﻿using ControleDeGastos.Repository;
+﻿using ControleDeGastos.Domain;
+using ControleDeGastos.Repository;
+using ControleDeGastos.Repository.Interfaces;
+using ControleDeGastos.Service;
+using ControleDeGastos.Services;
+using ControleDeGastos.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -29,6 +34,16 @@ namespace ControleDeGastos.Web
             });
 
             //Configurando a injeção de dependência
+            services.AddScoped<CartaoService>();
+            services.AddScoped<CategoriaService>();
+            services.AddScoped<LancamentoService>();
+            services.AddScoped<UsuarioService>();
+            services.AddScoped<RecebimentoService>();
+
+            services.AddScoped<CartaoRepository>();
+            services.AddScoped<CategoriaRepository>();
+            services.AddScoped<LancamentoRepository>();
+            services.AddScoped<RecebimentoRepository>();
             services.AddScoped<UsuarioRepository>();
 
             services.AddDbContext<Context>
@@ -48,7 +63,7 @@ namespace ControleDeGastos.Web
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Shared/Error");
             }
 
             app.UseStaticFiles();
@@ -58,7 +73,7 @@ namespace ControleDeGastos.Web
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Usuario}/{action=Index}/{id?}");
             });
         }
     }

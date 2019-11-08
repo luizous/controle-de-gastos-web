@@ -1,5 +1,5 @@
 ﻿using ControleDeGastos.Domain;
-using ControleDeGastos.Repository.Interfaces;
+using ControleDeGastos.Repository;
 using ControleDeGastos.Services.Interfaces;
 
 namespace ControleDeGastos.Services
@@ -7,11 +7,11 @@ namespace ControleDeGastos.Services
     public class LancamentoService : ILancamentoService<Lancamento>
     {
         #region Atributos
-        private readonly ILancamentoRepository<Lancamento> _lancamentoRepository;
+        private readonly LancamentoRepository _lancamentoRepository;
         #endregion
 
         #region Construtor
-        private LancamentoService(ILancamentoRepository<Lancamento> lancamentoRepository)
+        private LancamentoService(LancamentoRepository lancamentoRepository)
         {
             _lancamentoRepository = lancamentoRepository;
         }
