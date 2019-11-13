@@ -46,5 +46,28 @@ namespace ControleDeGastos.Web.Controllers
             return View(u);
         }
         #endregion
+
+        #region Logar
+        [HttpPost]
+        public IActionResult Logar(string login, string senha)
+        {
+            if (ModelState.IsValid)
+            {
+                if (_usuarioService.Logar(login, senha))
+                {
+                    return RedirectToAction("Dashboard");
+                }
+                ModelState.AddModelError("", "E-mail ou senha incorretos.");
+            }
+            return View();
+        }
+        #endregion
+
+        #region Dashboard
+        public IActionResult Dashboard()
+        {
+            return View();
+        }
+        #endregion
     }
 }

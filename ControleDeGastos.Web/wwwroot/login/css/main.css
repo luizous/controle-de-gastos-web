@@ -296,7 +296,7 @@ iframe {
     width: 100%;
     height: 100%;
     box-shadow: 0px 0px 0px 0px;
-    color: #5A0101;
+    color: #ff8c00;
 }
 
 .input100:focus + .focus-input100 {
@@ -334,7 +334,7 @@ iframe {
     height: 100%;
     padding-left: 35px;
     pointer-events: none;
-    color: #5A0101;
+    color: #ff8c00;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
@@ -342,7 +342,7 @@ iframe {
 }
 
 .input100:focus + .focus-input100 + .symbol-input100 {
-    color: #5A0101;
+    color: #ff8c00;
     padding-left: 28px;
 }
 
@@ -358,7 +358,6 @@ iframe {
     flex-wrap: wrap;
     margin-top: 63px;
     justify-content: center;
-    /*padding-top: 10px;*/
 }
 
 .login100-form-btn {
@@ -370,7 +369,7 @@ iframe {
     width: 100%;
     height: 50px;
     border-radius: 8px;
-    background: #5A0101;
+    background: #ff8c00;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -387,10 +386,10 @@ iframe {
 
     .login100-form-btn:hover {
         color: #fff;
-        background: -webkit-linear-gradient(-135deg, #BC7D7D, #666666);
-        background: -o-linear-gradient(-135deg, #BC7D7D, #666666);
-        background: -moz-linear-gradient(-135deg, #BC7D7D, #666666);
-        background: linear-gradient(-135deg, #BC7D7D, #666666);
+        background: -webkit-linear-gradient(-135deg, #ff8c00, #666666);
+        background: -o-linear-gradient(-135deg, #ff8c00, #666666);
+        background: -moz-linear-gradient(-135deg, #ff8c00, #666666);
+        background: linear-gradient(-135deg, #ff8c00, #666666);
     }
 
 /*[ Button Cadastro ]*/
@@ -403,7 +402,6 @@ iframe {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /*padding-top: 10px;*/
 }
 
 .cadastro-form-btn {
@@ -415,7 +413,7 @@ iframe {
     width: 100%;
     height: 50px;
     border-radius: 8px;
-    background: #5A0101;
+    background: #ff8c00;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -432,10 +430,10 @@ iframe {
 
     .cadastro-form-btn:hover {
         color: #fff;
-        background: -webkit-linear-gradient(-135deg, #BC7D7D, #666666);
-        background: -o-linear-gradient(-135deg, #BC7D7D, #666666);
-        background: -moz-linear-gradient(-135deg, #BC7D7D, #666666);
-        background: linear-gradient(-135deg, #BC7D7D, #666666);
+        background: -webkit-linear-gradient(-135deg, #ff8c00, #666666);
+        background: -o-linear-gradient(-135deg, #ff8c00, #666666);
+        background: -moz-linear-gradient(-135deg, #ff8c00, #666666);
+        background: linear-gradient(-135deg, #ff8c00, #666666);
     }
 
 .container-line {

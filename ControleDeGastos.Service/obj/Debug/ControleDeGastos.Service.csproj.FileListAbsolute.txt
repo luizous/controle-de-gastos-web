@@ -47,7 +47,6 @@ C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\ControleDeGastos.Service.csprojAssemblyReference.cache
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\ControleDeGastos.Service.dll
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\ControleDeGastos.Service.pdb
-C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\ControleDeGastos.Service.csproj.CoreCompileInputs.cache
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\ControleDeGastos.Service.csproj.CopyComplete
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll

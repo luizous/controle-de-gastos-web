@@ -77,9 +77,7 @@ C:\Users\gabri\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2
 C:\Users\gabri\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Cadastro.cshtml.g.cs
 C:\Users\gabri\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
 C:\Users\gabri\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.cshtml.g.cs
-C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutLogin.g.cshtml.cs
-C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\CadastroUsuario.g.cshtml.cs
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Cadastro.g.cshtml.cs
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.csprojAssemblyReference.cache
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.csproj.CoreCompileInputs.cache
@@ -122,3 +120,6 @@ C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.csproj.CopyComplete
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Index.g.cshtml.cs
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Cadastro.g.cshtml.cs
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutCadastro.g.cshtml.cs
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Index.g.cshtml.cs
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Dashboard.g.cshtml.cs
