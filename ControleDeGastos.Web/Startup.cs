@@ -16,6 +16,8 @@ namespace ControleDeGastos.Web
 {
     public class Startup
     {
+        // Add-Migration NomeMigracao -Project: Repository; 
+        // Update-Database -verbose -Project:Repository
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;

@@ -28,9 +28,4 @@
     <None Include="compilerconfig.json" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Lancamento\" />
-    <Folder Include="Views\Recebimento\" />
-  </ItemGroup>
-
 </Project>

@@ -131,9 +131,9 @@
     <Compile Include="Interfaces\IRecebimentoRepository.cs" />
     <Compile Include="Interfaces\IUsuarioRepository.cs" />
     <Compile Include="LancamentoRepository.cs" />
-    <Compile Include="Migrations\20191101003329_CriarBanco.cs" />
-    <Compile Include="Migrations\20191101003329_CriarBanco.designer.cs">
-      <DependentUpon>20191101003329_CriarBanco.cs</DependentUpon>
+    <Compile Include="Migrations\20191118155134_CriarBanco.cs" />
+    <Compile Include="Migrations\20191118155134_CriarBanco.designer.cs">
+      <DependentUpon>20191118155134_CriarBanco.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
