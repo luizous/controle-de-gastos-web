@@ -1,6 +1,10 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Services;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.IO;
 
 namespace ControleDeGastos.Web.Controllers
 {
@@ -8,12 +12,14 @@ namespace ControleDeGastos.Web.Controllers
     {
         #region Atributos
         private readonly UsuarioService _usuarioService;
+        private readonly IHostingEnvironment _hosting;
         #endregion
 
         #region Construtor
-        public UsuarioController(UsuarioService usuarioService)
+        public UsuarioController(UsuarioService usuarioService, IHostingEnvironment hosting)
         {
             _usuarioService = usuarioService;
+            _hosting = hosting;
         }
         #endregion
 
@@ -33,10 +39,25 @@ namespace ControleDeGastos.Web.Controllers
 
         #region Cadastrar
         [HttpPost]
-        public IActionResult Cadastrar(Usuario u)
+        public IActionResult Cadastrar(Usuario u, IFormFile fupImagem, IFormFile fupImagemPapel)
         {
             if (ModelState.IsValid)
             {
+                if (fupImagem != null)
+                {
+                    string arquivo = Guid.NewGuid().ToString() +
+                        Path.GetExtension(fupImagem.FileName);
+                    string caminho = Path.Combine(_hosting.WebRootPath,
+                        "ecommerceimagens", arquivo);
+                    fupImagem.CopyTo(
+                        new FileStream(caminho, FileMode.Create));
+                    u.Foto = arquivo;
+                }
+                else
+                {
+                    u.Foto = "sem-imagem.png";
+                }
+
                 if (_usuarioService.Cadastrar(u))
                 {
                     return RedirectToAction("Index");
@@ -58,6 +79,7 @@ namespace ControleDeGastos.Web.Controllers
                     return RedirectToAction("Dashboard");
                 }
                 ModelState.AddModelError("", "E-mail ou senha incorretos.");
+
             }
             return View();
         }
@@ -65,6 +87,13 @@ namespace ControleDeGastos.Web.Controllers
 
         #region Dashboard
         public IActionResult Dashboard()
+        {
+            return View();
+        }
+        #endregion
+
+        #region Perfil
+        public IActionResult Perfil()
         {
             return View();
         }

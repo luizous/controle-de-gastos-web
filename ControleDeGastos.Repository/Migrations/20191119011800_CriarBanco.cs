@@ -21,7 +21,9 @@ namespace ControleDeGastos.Repository.Migrations
                     Login = table.Column<string>(nullable: true),
                     Senha = table.Column<string>(nullable: true),
                     Salario = table.Column<double>(nullable: false),
-                    DataCadastro = table.Column<DateTime>(nullable: false)
+                    DataCadastro = table.Column<DateTime>(nullable: false),
+                    Foto = table.Column<string>(nullable: true),
+                    PapelParede = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

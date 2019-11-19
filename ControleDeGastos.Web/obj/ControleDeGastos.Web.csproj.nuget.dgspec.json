@@ -1,31 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Web\\ControleDeGastos.Web.csproj": {}
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Web\\ControleDeGastos.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj",
         "projectName": "ControleDeGastos.Domain",
-        "projectPath": "C:\\Users\\gabri\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj"
+        "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj"
       },
       "frameworks": {
         "net461": {}
       }
     },
-    "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj",
         "projectName": "ControleDeGastos.Repository",
-        "projectPath": "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj",
+        "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj",
         "frameworks": {
           "net461": {
             "projectReferences": {
-              "C:\\Users\\gabri\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
-                "projectPath": "C:\\Users\\gabri\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj"
+              "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
+                "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj"
               }
             }
           }
@@ -35,20 +35,20 @@
         "net461": {}
       }
     },
-    "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj",
         "projectName": "ControleDeGastos.Service",
-        "projectPath": "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj",
+        "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj",
         "frameworks": {
           "net461": {
             "projectReferences": {
-              "C:\\Users\\gabri\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
-                "projectPath": "C:\\Users\\gabri\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj"
+              "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
+                "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj"
               },
-              "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
-                "projectPath": "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj"
+              "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
+                "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj"
               }
             }
           }
@@ -58,14 +58,14 @@
         "net461": {}
       }
     },
-    "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Web\\ControleDeGastos.Web.csproj": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Web\\ControleDeGastos.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Web\\ControleDeGastos.Web.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Web\\ControleDeGastos.Web.csproj",
         "projectName": "ControleDeGastos.Web",
-        "projectPath": "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Web\\ControleDeGastos.Web.csproj",
+        "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Web\\ControleDeGastos.Web.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Web\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -81,14 +81,14 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\gabri\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
-                "projectPath": "C:\\Users\\gabri\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj"
+              "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
+                "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ConstroleDeGastos.Domain\\ControleDeGastos.Domain.csproj"
               },
-              "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
-                "projectPath": "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj"
+              "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
+                "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj"
               },
-              "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj": {
-                "projectPath": "C:\\Users\\gabri\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj"
+              "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj": {
+                "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj"
               }
             }
           }

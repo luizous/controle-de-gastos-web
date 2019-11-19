@@ -23,22 +23,16 @@ The above copyright notice and this permission notice shall be included in all c
         @ViewBag.Title
     </title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-    <!--     Fonts and icons     -->
+    <!--Fonts and icons-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <!-- CSS Files -->
     <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/assets/css/paper-dashboard.css" rel="stylesheet" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="~/assets/demo/demo.css" rel="stylesheet" />
-
 </head>
 <body class="">
     <div class="wrapper ">
         <div class="sidebar" data-color="white" data-active-color="success">
-            <!--
-                Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
-            -->
             <div class="logo">
                 <a class="simple-text logo-mini">
                     <div class="logo-image-small">
@@ -51,8 +45,8 @@ The above copyright notice and this permission notice shall be included in all c
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li class="active ">
-                        <a href="Usuario/Dashboard">
+                    <li class="active">
+                        <a href="/Usuario/Dashboard">
                             <i class="nc-icon nc-planet"></i>
                             <p>Dashboard</p>
                         </a>
@@ -70,18 +64,18 @@ The above copyright notice and this permission notice shall be included in all c
                         </a>
                     </li>
                     <li>
-                        <a href="Cartao/Index">
+                        <a href="/Cartao/Index">
                             <i class="nc-icon nc-credit-card"></i>
                             <p>Cartões</p>
                         </a>
                     </li>
                     <li>
-                        <a href="Usuario/Perfil">
+                        <a href="/Usuario/Perfil">
                             <i class="nc-icon nc-single-02"></i>
                             <p>Meu Perfil</p>
                         </a>
                     </li>
-                   
+
                 </ul>
             </div>
         </div>
@@ -97,7 +91,7 @@ The above copyright notice and this permission notice shall be included in all c
                                 <span class="navbar-toggler-bar bar3"></span>
                             </button>
                         </div>
-                        <a class="navbar-brand" href="#pablo">@ViewBag.Title</a>
+                        <a class="navbar-brand">@ViewBag.Title</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -156,7 +150,7 @@ The above copyright notice and this permission notice shall be included in all c
             </footer>
         </div>
     </div>
-    <!--   Core JS Files   -->
+    <!-- Core JS Files -->
     <script src="../assets/js/core/jquery.min.js"></script>
     <script src="../assets/js/core/popper.min.js"></script>
     <script src="../assets/js/core/bootstrap.min.js"></script>
@@ -168,8 +162,6 @@ The above copyright notice and this permission notice shall be included in all c
     <script src="../assets/js/plugins/bootstrap-notify.js"></script>
     <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
     <script src="../assets/js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
-    <!-- Paper Dashboard DEMO methods, don't include it in your project! -->
-    <script src="../assets/demo/demo.js"></script>
     <script>
         $(document).ready(function () {
             // Javascript method's body can be found in assets/assets-for-demo/js/demo.js
