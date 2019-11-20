@@ -14,7 +14,7 @@ namespace ControleDeGastos.Repository
         #endregion
 
         #region Construtor
-        private LancamentoRepository(Context context) 
+        public LancamentoRepository(Context context) 
         {
             _context = context;
         }

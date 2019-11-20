@@ -10,14 +10,15 @@ namespace ControleDeGastos.Web.Controllers
     {
         #region Atributos
         private readonly CategoriaService _categoriaService;
+        private readonly LancamentoService _lancamentoService;
         private readonly UsuarioService _usuarioService;
-        //private readonly Usuario usuario = _usuarioService.GetUsuarioLogado();
         #endregion
 
         #region Construtor
-        public LancamentoController(CategoriaService categoriaService)
+        public LancamentoController(CategoriaService categoriaService, LancamentoService lancamentoService)
         {
             _categoriaService = categoriaService;
+            _lancamentoService = lancamentoService;
         }
         #endregion
 
@@ -32,6 +33,22 @@ namespace ControleDeGastos.Web.Controllers
         public IActionResult Cadastro()
         {
             ViewBag.Categorias = new SelectList(_categoriaService.ListarPorUsuario(1), "IdCategoria", "Titulo");
+            return View();
+        }
+        #endregion
+
+        #region Cadastrar
+        public IActionResult Cadastrar(Lancamento l)
+        {
+            Usuario usuario = _usuarioService.GetUsuarioLogado();
+            if (ModelState.IsValid)
+            {
+                if (_lancamentoService.Cadastrar(l, usuario))
+                {
+                    return RedirectToAction("Index");
+                }
+                ModelState.AddModelError("", "Este e-mail já está sendo utilizado!");
+            }
             return View();
         }
         #endregion

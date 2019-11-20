@@ -604,6 +604,7 @@ C:\Users\LuizaM\controle-de-gastos-web\ConstroleDeGastos.Domain\obj\Debug\Contro
 C:\Users\LuizaM\controle-de-gastos-web\ConstroleDeGastos.Domain\obj\Debug\ControleDeGastos.Domain.csproj.CopyComplete
 C:\Users\LuizaM\controle-de-gastos-web\ConstroleDeGastos.Domain\obj\Debug\ConstroleDeGastos.Domain.dll
 C:\Users\LuizaM\controle-de-gastos-web\ConstroleDeGastos.Domain\obj\Debug\ConstroleDeGastos.Domain.pdb
+C:\Users\Aluno\controle-de-gastos-web\ConstroleDeGastos.Domain\obj\Debug\ControleDeGastos.Domain.csprojAssemblyReference.cache
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ConstroleDeGastos.Domain\bin\Debug\ConstroleDeGastos.Domain.dll.config
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ConstroleDeGastos.Domain\bin\Debug\ConstroleDeGastos.Domain.dll
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ConstroleDeGastos.Domain\bin\Debug\ConstroleDeGastos.Domain.pdb
@@ -755,4 +756,3 @@ C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ConstroleDeGast
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ConstroleDeGastos.Domain\obj\Debug\ControleDeGastos.Domain.csproj.CopyComplete
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ConstroleDeGastos.Domain\obj\Debug\ConstroleDeGastos.Domain.dll
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ConstroleDeGastos.Domain\obj\Debug\ConstroleDeGastos.Domain.pdb
-C:\Users\Aluno\controle-de-gastos-web\ConstroleDeGastos.Domain\obj\Debug\ControleDeGastos.Domain.csprojAssemblyReference.cache

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ControleDeGastos.Repository.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20191119222357_CriarBanco")]
+    [Migration("20191120023719_CriarBanco")]
     partial class CriarBanco
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

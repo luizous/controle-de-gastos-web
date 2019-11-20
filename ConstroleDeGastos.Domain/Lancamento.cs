@@ -11,7 +11,7 @@ namespace ControleDeGastos.Domain
         public int IdLancamento { get; set; }
         public double Valor { get; set; }
         public DateTime DataLancamento { get; set; }
-        public string Descricao { get; set; } // Lugar alterado para Descricao
+        public string Descricao { get; set; }
         public Categoria Categoria { get; set; }
         public int Parcelas { get; set; }
         public Cartao Cartao { get; set; }

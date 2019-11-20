@@ -11,7 +11,7 @@ namespace ControleDeGastos.Services
         #endregion
 
         #region Construtor
-        private LancamentoService(LancamentoRepository lancamentoRepository)
+        public LancamentoService(LancamentoRepository lancamentoRepository)
         {
             _lancamentoRepository = lancamentoRepository;
         }
