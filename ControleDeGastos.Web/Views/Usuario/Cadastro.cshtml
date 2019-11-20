@@ -13,14 +13,7 @@
             <div class="card-body">
                 <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
                     <div class="row">
-                        <div class="form-group" id="Foto">
-                            <label>Imagem:</label><br />
-                            <input type="file" name="fupImagem" />
-                        </div>
-                        <div class="form-group" id="PapelParede">
-                            <label>Papel de parede:</label><br />
-                            <input type="file" name="fupImagemPapel" />
-                        </div>
+                        
                         <div class="col-md-5 pr-1">
                             <div class="form-group">
                                 <label>Nome</label>
@@ -66,7 +59,7 @@
                         <div class="col-md-5 pl-1">
                             <div class="form-group">
                                 <label>Senha</label>
-                                <input type="text" class="form-control" asp-for="Senha" placeholder="Senha" />
+                                <p type="text" class="form-control" asp-for="Senha" placeholder="Senha" />
                             </div>
                         </div>
                     </div>

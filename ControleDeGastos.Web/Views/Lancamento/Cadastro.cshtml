@@ -1,7 +1,81 @@
-﻿
+﻿@model Lancamento
 @{
-    ViewData["Title"] = "Cadastro";
+    ViewData["Title"] = "Novo Lançamento";
 }
 
-<h2>Cadastro</h2>
+<div class="row">
+    <div class="col-md-8">
+        <div class="card card-user">
+            <div class="card-header">
+                <h5 class="card-title">Novo Lançamento</h5>
+            </div>
+            <div class="card-body">
+                <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
+                    <div class="row">
+
+                        <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                                <label>Nome</label>
+                                <input type="text" class="form-control" asp-for="Valor" placeholder="Valor" />
+                            </div>
+                        </div>
+                        <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                                <label>Sobrenome</label>
+                                <input type="text" class="form-control" asp-for="DataLancamento" placeholder="Sobrenome" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 pr-1">
+                            <div class="form-group">
+                                <label>Salário</label>
+                                <input type="text" class="form-control" asp-for="Descricao" placeholder="Descricao" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 pr-1">
+                            <div class="form-group">
+                                <label>Categoria</label>
+                                <select asp-items="@ViewBag.Categorias"
+                                        class="form-control" name="drpCategorias">
+                                    <option> -- SELECIONE -- </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pl-1">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">E-mail</label>
+                                @*<input type="email" class="form-control" asp-for="Email" placeholder="E-mail" />*@
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 pl-1">
+                            <div class="form-group">
+                                <label>Login</label>
+                                @*<input type="text" class="form-control" asp-for="Login" placeholder="Login" />*@
+                            </div>
+                        </div>
+                        <div class="col-md-5 pl-1">
+                            <div class="form-group">
+                                <label>Senha</label>
+                                <p type="text" class="form-control" asp-for="Senha" placeholder="Senha" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="update ml-auto mr-auto">
+                            <button type="submit" class="btn btn-primary btn-round" asp-action="Index">Voltar</button>
+                        </div>
+                        <div class="update ml-auto mr-auto">
+                            <button type="submit" class="btn btn-primary btn-round" value="Cadastrar">Cadastrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 

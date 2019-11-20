@@ -17,8 +17,6 @@ namespace ControleDeGastos.Domain
         public string Senha { get; set; }
         public double Salario { get; set;  }
         public DateTime DataCadastro { get; set; }
-        public string Foto { get; set; }
-        public string PapelParede { get; set; }
 
         public Usuario()
         {

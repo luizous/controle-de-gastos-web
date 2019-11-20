@@ -215,3 +215,8 @@ C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGasto
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.pdb
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Perfil.cshtml.g.cs
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Lancamento\Cadastro.cshtml.g.cs
+C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Lancamento\Cadastro.g.cshtml.cs
+C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Lancamento\Index.g.cshtml.cs
+C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Recebimento\Index.g.cshtml.cs
+C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Dashboard.g.cshtml.cs
+C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Perfil.g.cshtml.cs

@@ -1,9 +1,6 @@
-﻿using ControleDeGastos.Domain;
-using ControleDeGastos.Repository;
-using ControleDeGastos.Repository.Interfaces;
+﻿using ControleDeGastos.Repository;
 using ControleDeGastos.Service;
 using ControleDeGastos.Services;
-using ControleDeGastos.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;

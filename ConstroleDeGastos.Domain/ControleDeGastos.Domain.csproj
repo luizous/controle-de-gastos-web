@@ -126,6 +126,8 @@
     <Compile Include="Categoria.cs" />
     <Compile Include="ErrorViewModel.cs" />
     <Compile Include="Lancamento.cs" />
+    <Compile Include="Meta.cs" />
+    <Compile Include="Poupanca.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recebimento.cs" />
     <Compile Include="Usuario.cs" />

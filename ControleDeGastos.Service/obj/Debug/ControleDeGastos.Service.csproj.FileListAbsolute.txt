@@ -120,8 +120,6 @@ C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Control
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\ConstroleDeGastos.Domain.dll
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\ControleDeGastos.Repository.dll
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.EntityFrameworkCore.dll
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netstandard.dll
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
@@ -134,8 +132,6 @@ C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\System.
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Logging.dll
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\System.Data.SqlClient.dll
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Primitives.dll
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Options.dll
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\System.Memory.dll
@@ -147,8 +143,6 @@ C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Constro
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\ControleDeGastos.Repository.pdb
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\ControleDeGastos.Repository.dll.config
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.EntityFrameworkCore.xml
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.xml
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
@@ -160,7 +154,6 @@ C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\System.
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Logging.xml
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Primitives.xml
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Options.xml
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\System.Memory.xml
@@ -287,3 +280,10 @@ C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGasto
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.xml
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.xml
+C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml

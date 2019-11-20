@@ -386,10 +386,10 @@ iframe {
 
     .login100-form-btn:hover {
         color: #fff;
-        background: -webkit-linear-gradient(-135deg, #ff8c00, #666666);
-        background: -o-linear-gradient(-135deg, #ff8c00, #666666);
-        background: -moz-linear-gradient(-135deg, #ff8c00, #666666);
-        background: linear-gradient(-135deg, #ff8c00, #666666);
+        background: -webkit-linear-gradient(-100deg, #ff8c00, #6BBAA7);
+        background: -o-linear-gradient(-100deg, #ff8c00, #6BBAA7);
+        background: -moz-linear-gradient(-100deg, #ff8c00, #6BBAA7);
+        background: linear-gradient(-100deg, #ff8c00, #6BBAA7);
     }
 
 /*[ Button Cadastro ]*/
@@ -430,10 +430,10 @@ iframe {
 
     .cadastro-form-btn:hover {
         color: #fff;
-        background: -webkit-linear-gradient(-135deg, #ff8c00, #666666);
-        background: -o-linear-gradient(-135deg, #ff8c00, #666666);
-        background: -moz-linear-gradient(-135deg, #ff8c00, #666666);
-        background: linear-gradient(-135deg, #ff8c00, #666666);
+        background: -webkit-linear-gradient(-100deg, #ff8c00, #6BBAA7);
+        background: -o-linear-gradient(-100deg, #ff8c00, #6BBAA7);
+        background: -moz-linear-gradient(-100deg, #ff8c00, #6BBAA7);
+        background: linear-gradient(-100deg, #ff8c00, #6BBAA7);
     }
 
 .container-line {

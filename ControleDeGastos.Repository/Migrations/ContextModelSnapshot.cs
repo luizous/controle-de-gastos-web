@@ -143,13 +143,9 @@ namespace ControleDeGastos.Repository.Migrations
 
                     b.Property<string>("Email");
 
-                    b.Property<string>("Foto");
-
                     b.Property<string>("Login");
 
                     b.Property<string>("Nome");
-
-                    b.Property<string>("PapelParede");
 
                     b.Property<double>("Salario");
 

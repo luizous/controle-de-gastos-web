@@ -39,25 +39,10 @@ namespace ControleDeGastos.Web.Controllers
 
         #region Cadastrar
         [HttpPost]
-        public IActionResult Cadastrar(Usuario u, IFormFile fupImagem, IFormFile fupImagemPapel)
+        public IActionResult Cadastrar(Usuario u)
         {
             if (ModelState.IsValid)
             {
-                if (fupImagem != null)
-                {
-                    string arquivo = Guid.NewGuid().ToString() +
-                        Path.GetExtension(fupImagem.FileName);
-                    string caminho = Path.Combine(_hosting.WebRootPath,
-                        "ecommerceimagens", arquivo);
-                    fupImagem.CopyTo(
-                        new FileStream(caminho, FileMode.Create));
-                    u.Foto = arquivo;
-                }
-                else
-                {
-                    u.Foto = "sem-imagem.png";
-                }
-
                 if (_usuarioService.Cadastrar(u))
                 {
                     return RedirectToAction("Index");

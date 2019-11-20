@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ControleDeGastos.Repository.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20191119011800_CriarBanco")]
+    [Migration("20191119222357_CriarBanco")]
     partial class CriarBanco
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -145,13 +145,9 @@ namespace ControleDeGastos.Repository.Migrations
 
                     b.Property<string>("Email");
 
-                    b.Property<string>("Foto");
-
                     b.Property<string>("Login");
 
                     b.Property<string>("Nome");
-
-                    b.Property<string>("PapelParede");
 
                     b.Property<double>("Salario");
 
