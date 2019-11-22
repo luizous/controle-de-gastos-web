@@ -1,10 +1,8 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Services;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.IO;
+using System.Threading.Tasks;
 
 namespace ControleDeGastos.Web.Controllers
 {
@@ -12,14 +10,17 @@ namespace ControleDeGastos.Web.Controllers
     {
         #region Atributos
         private readonly UsuarioService _usuarioService;
-        private readonly IHostingEnvironment _hosting;
+        private readonly UserManager<UsuarioLogado> _userManager;
+        private readonly SignInManager<UsuarioLogado> _signInManager;
         #endregion
 
         #region Construtor
-        public UsuarioController(UsuarioService usuarioService, IHostingEnvironment hosting)
+        public UsuarioController(UsuarioService usuarioService, UserManager<UsuarioLogado> userManager,
+            SignInManager<UsuarioLogado> signInManager)
         {
             _usuarioService = usuarioService;
-            _hosting = hosting;
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
         #endregion
 
@@ -39,15 +40,26 @@ namespace ControleDeGastos.Web.Controllers
 
         #region Cadastrar
         [HttpPost]
-        public IActionResult Cadastrar(Usuario u)
+        public async Task<IActionResult> Cadastrar(Usuario u)
         {
             if (ModelState.IsValid)
             {
-                if (_usuarioService.Cadastrar(u))
+                UsuarioLogado usuarioLogado = new UsuarioLogado
                 {
-                    return RedirectToAction("Index");
+                    Email = u.Email,
+                    UserName = u.Email
+                };
+                IdentityResult result = await _userManager.CreateAsync(usuarioLogado, u.Senha);
+                if (result.Succeeded)
+                {
+                    await _signInManager.SignInAsync(usuarioLogado, isPersistent: false);
+                    if (_usuarioService.Cadastrar(u))
+                    {
+                        return RedirectToAction("Index");
+                    }
+                    ModelState.AddModelError("", "Este e-mail já está sendo utilizado!");
                 }
-                ModelState.AddModelError("", "Este e-mail já está sendo utilizado!");
+                AdicionarErros(result);
             }
             return View(u);
         }
@@ -55,19 +67,26 @@ namespace ControleDeGastos.Web.Controllers
 
         #region Logar
         [HttpPost]
-        public IActionResult Logar(string login, string senha)
+        public IActionResult Logar()
         {
-            if (ModelState.IsValid)
-            {
-                if (_usuarioService.Logar(login, senha))
-                {
-                    return RedirectToAction("Dashboard");
-                }
-                ModelState.AddModelError("", "E-mail ou senha incorretos.");
-
-            }
             return View();
         }
+
+        [HttpPost]
+        public async Task <IActionResult> Logar (Usuario u)
+        {
+            var result = await _signInManager.PasswordSignInAsync(u.Email, u.Senha, true, lockoutOnFailure: false);
+
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Dashboard", "Usuario");
+            }
+            ModelState.AddModelError("", "Falha no Login");
+            return View();
+            
+        }
+
+
         #endregion
 
         #region Dashboard
@@ -83,5 +102,22 @@ namespace ControleDeGastos.Web.Controllers
             return View();
         }
         #endregion
+
+        private void AdicionarErros(IdentityResult result)
+        {
+            foreach (var erro in result.Errors)
+            {
+                ModelState.AddModelError("", erro.Description);
+            }
+        }
+
+
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Usuario");
+        }
+
+
     }
 }

@@ -1,9 +1,10 @@
 ﻿using ControleDeGastos.Domain;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace ControleDeGastos.Repository
 {
-    public class Context : DbContext
+    public class Context : IdentityDbContext<UsuarioLogado>
     {
         public Context(DbContextOptions<Context> options) : base(options) { }
 
