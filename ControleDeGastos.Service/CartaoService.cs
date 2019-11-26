@@ -1,6 +1,6 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Repository;
-using ControleDeGastos.Services.Interfaces;
+using ControleDeGastos.Service.Interfaces;
 using System.Collections.Generic;
 
 namespace ControleDeGastos.Service
@@ -25,10 +25,11 @@ namespace ControleDeGastos.Service
         }
         #endregion
 
-        #region Excluir
-        public bool Excluir(Cartao c)
+        #region Remover
+        public bool Remover(int? idCartao)
         {
-            return _cartaoRepository.Excluir(c);
+            var cartao = Obter(idCartao);
+            return _cartaoRepository.Remover(cartao);
         }
         #endregion
 
@@ -39,10 +40,10 @@ namespace ControleDeGastos.Service
         }
         #endregion
 
-        #region ObterCartaoPorId
-        public Cartao ObterCartaoPorId(int idCartao)
+        #region Obter
+        public Cartao Obter(int? idCartao)
         {
-            return _cartaoRepository.ObterCartaoPorId(idCartao);
+            return _cartaoRepository.Obter(idCartao);
         }
         #endregion
     }

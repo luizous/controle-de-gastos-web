@@ -2678,7 +2678,8 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 }
 
 .card-user form .form-group {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
 }
 
 .from-check,
@@ -4453,6 +4454,7 @@ License - nucleoapp.com/license/
 
 .card-tasks .card-body .table {
   margin-bottom: 0;
+
 }
 
 .card-tasks .card-body .table>thead>tr>th,
@@ -5501,7 +5503,7 @@ License - nucleoapp.com/license/
 }
 
 .card .card-body {
-  padding: 15px 15px 10px 15px;
+  padding: 10px 10px 10px 15px;
 }
 
 .card .card-body.table-full-width {
@@ -5527,7 +5529,7 @@ License - nucleoapp.com/license/
 }
 
 .card .map.map-big {
-  height: 400px;
+  height: 300px;
 }
 
 .card[data-background-color="orange"] {
@@ -5707,6 +5709,7 @@ License - nucleoapp.com/license/
 
 .card-user .card-body {
   min-height: 240px;
+  margin:auto;
 }
 
 .card-user hr {
@@ -6353,6 +6356,7 @@ License - nucleoapp.com/license/
   }
   .card .form-horizontal .col-md-3.col-form-label {
     text-align: left;
+    width:100%;
   }
 }
 

@@ -1,6 +1,6 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Repository;
-using ControleDeGastos.Services.Interfaces;
+using ControleDeGastos.Service.Interfaces;
 using System.Collections.Generic;
 
 namespace ControleDeGastos.Service
@@ -25,10 +25,11 @@ namespace ControleDeGastos.Service
         }
         #endregion
 
-        #region Excluir
-        public bool Excluir(Categoria ca)
+        #region Remover
+        public bool Remover(int? idCategoria)
         {
-            return _categoriaRepository.Excluir(ca);
+            var categoria = Obter(idCategoria);
+            return _categoriaRepository.Remover(categoria);
         }
         #endregion
 
@@ -39,10 +40,10 @@ namespace ControleDeGastos.Service
         }
         #endregion
 
-        #region ObterCategoriaPorId
-        public Categoria ObterCategoriaPorId(int idCategoria)
+        #region Obter
+        public Categoria Obter(int? idCategoria)
         {
-            return _categoriaRepository.ObterCategoriaPorId(idCategoria);
+            return _categoriaRepository.Obter(idCategoria);
         }
         #endregion
     }

@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ControleDeGastos.Services.Interfaces
+namespace ControleDeGastos.Service.Interfaces
 {
     public interface ICategoriaService<T>
     {
         bool Cadastrar(Categoria ca, Usuario usuario);
-        bool Excluir(Categoria ca);
+        bool Remover(int? idCategoria);
         List<Categoria> ListarPorUsuario(int idUsuario);
-        Categoria ObterCategoriaPorId(int idCategoria);
+        Categoria Obter(int? idCategoria);
     }
 }

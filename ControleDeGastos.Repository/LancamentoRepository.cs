@@ -42,7 +42,7 @@ namespace ControleDeGastos.Repository
         {
             try
             {
-                _context.Entry(l).State = EntityState.Modified;
+                _context.Lancamentos.Update(l);
                 _context.SaveChanges();
                 return true;
             }
@@ -53,15 +53,15 @@ namespace ControleDeGastos.Repository
         }
         #endregion
 
-        #region ObterLancamentoPorId
-        public Lancamento ObterLancamentoPorId(int idLancamento)
+        #region Obter
+        public Lancamento Obter(int? idLancamento)
         {
-            return _context.Lancamentos.FirstOrDefault(x => x.IdLancamento == idLancamento);
+            return _context.Lancamentos.Find(idLancamento);
         }
         #endregion
 
         #region Listar
-        public List<Lancamento> ListarLancamento(int idUsuario) => _context.Lancamentos
+        public List<Lancamento> Listar(int idUsuario) => _context.Lancamentos
             .Include("Categoria")
             .Include("Cartao")
             .Where(x => x.Usuario.IdUsuario == idUsuario)

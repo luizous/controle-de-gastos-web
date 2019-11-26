@@ -1,7 +1,56 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "CdG - Meus recebimentos";
 }
 
-<h2>Index</h2>
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card" style="width: 100%;">
+                <div class="card-header">
+                    <h5 style="text-align: center;"><small>Estes são os recebimentos que você cadastrou. </br> Você pode adicionar um novo clicando no botão ao lado.</small></h5>
+                    <div class="row" style="margin-left: 5px; margin-top: -80px; text-transform: uppercase;">
+                        <a class="blockquote blockquote-primary" asp-action="Cadastro" style="cursor: pointer"><small><b>+ Novo recebimento</b></small></a>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    @if (ViewBag.Recebimentos.Count == 0)
+                    {
+                        <p class="text-danger" style="text-align:center;"><b>NÃO HÁ RECEBIMENTOS CADASTRADOS</b></p>
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="text-primary">
+                                <th>Fornecedor</th>
+                                <th>Descricao</th>
+                                <th>Valor</th>
+                                <th>Data de Recebimento</th>
+                                <th>Data de cadastro</th>
+                                <th>Editar</th>
+                                </thead>
+                                <tbody>
+                                    @foreach (Recebimento item in ViewBag.Recebimentos)
+                                    {
+                                        <tr>
+                                            <td>@item.Fornecedor</td>
+                                            <td> @item.Descricao</td>
+                                            <td>@item.Valor</td>
+                                            <td>@item.DataRecebimento.ToString("dd/MM/yyyy")</td>
+                                            <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
+                                            <td><a class="btn btn-warning" asp-action="Edicao" asp-route-idRecebimento="@item.IdRecebimento"><big><big><big>✎</big></big></big></a></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 

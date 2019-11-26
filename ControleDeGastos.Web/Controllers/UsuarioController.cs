@@ -1,7 +1,8 @@
 ﻿using ControleDeGastos.Domain;
-using ControleDeGastos.Services;
+using ControleDeGastos.Service;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 namespace ControleDeGastos.Web.Controllers
@@ -15,7 +16,7 @@ namespace ControleDeGastos.Web.Controllers
         #endregion
 
         #region Construtor
-        public UsuarioController(UsuarioService usuarioService, UserManager<UsuarioLogado> userManager,
+        public UsuarioController(UsuarioService usuarioService,UserManager<UsuarioLogado> userManager,
             SignInManager<UsuarioLogado> signInManager)
         {
             _usuarioService = usuarioService;
@@ -47,7 +48,7 @@ namespace ControleDeGastos.Web.Controllers
                 UsuarioLogado usuarioLogado = new UsuarioLogado
                 {
                     Email = u.Email,
-                    UserName = u.Email
+                    UserName = u.Login
                 };
                 IdentityResult result = await _userManager.CreateAsync(usuarioLogado, u.Senha);
                 if (result.Succeeded)
@@ -65,15 +66,9 @@ namespace ControleDeGastos.Web.Controllers
         }
         #endregion
 
-        #region Logar
+        #region Login
         [HttpPost]
-        public IActionResult Logar()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public async Task <IActionResult> Logar (Usuario u)
+        public async Task<IActionResult> Login(Usuario u)
         {
             var result = await _signInManager.PasswordSignInAsync(u.Email, u.Senha, true, lockoutOnFailure: false);
 
@@ -83,10 +78,15 @@ namespace ControleDeGastos.Web.Controllers
             }
             ModelState.AddModelError("", "Falha no Login");
             return View();
-            
         }
+        #endregion
 
-
+        #region Logout
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Usuario");
+        }
         #endregion
 
         #region Dashboard
@@ -103,6 +103,7 @@ namespace ControleDeGastos.Web.Controllers
         }
         #endregion
 
+        #region AdicionarErros
         private void AdicionarErros(IdentityResult result)
         {
             foreach (var erro in result.Errors)
@@ -110,14 +111,6 @@ namespace ControleDeGastos.Web.Controllers
                 ModelState.AddModelError("", erro.Description);
             }
         }
-
-
-        public async Task<IActionResult> Logout()
-        {
-            await _signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Usuario");
-        }
-
-
+        #endregion
     }
 }

@@ -1,16 +1,59 @@
 ﻿
 @{
-    ViewData["Title"] = "Lançamentos";
+    ViewData["Title"] = "CdG - Meus lançamentos";
 }
 
-Novo lançamento
-<div class="img-botao-add-lancamento">
-    <a asp-action="Cadastro">
-        <img src="~/images/plus.png" />
-    </a>
-</div>
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card" style="width: 100%;">
+                <div class="card-header">
+                    <h5 style="text-align: center;"><small>Estes são os lançamentos que você cadastrou. </br> Você pode adicionar um novo clicando no botão ao lado.</small></h5>
+                    <div class="row" style="margin-left: 5px; margin-top: -80px; text-transform: uppercase;">
+                        <a class="blockquote blockquote-primary" asp-action="Cadastro" style="cursor: pointer"><small><b>+ Novo lancamento</b></small></a>
+                    </div>
+                </div>
 
-<div>
-    Acompanhe seus últimos lançamentos ou adicione mais clicando no botão acima.
+                <div class="card-body">
+                    @if (ViewBag.Lancamentos.Count == 0)
+                    {
+                        <p class="text-danger" style="text-align:center;"><b>NÃO HÁ LANÇAMENTOS CADASTRADOS</b></p>
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="text-primary">
+                                <th>Valor</th>
+                                <th>Lançado em</th>
+                                <th>Descrição</th>
+                                <th>Categoria</th>
+                                <th>Qtd. parcela</th>
+                                <th>Cartão</th>
+                                <th>Cadastro</th>
+                                </thead>
+                                <tbody>
+                                    @foreach (Lancamento item in ViewBag.Lancamentos)
+                                    {
+                                        <tr>
+                                            <td>@item.Valor</td>
+                                            <td>@item.DataLancamento.ToString("dd/MM/yyyy")</td>
+                                            <td>@item.Descricao</td>
+                                            <td>@item.Categoria</td>
+                                            <td>@item.Parcelas</td>
+                                            <td>@item.Cartao</td>
+                                            <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
+                                            <td><a class="btn btn-warning" asp-action="Edicao" asp-route-idLancamento="@item.IdLancamento"><big><big><big>✎</big></big></big></a></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
 

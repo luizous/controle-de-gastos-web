@@ -1,11 +1,9 @@
 ﻿@model Cartao
 @{
-    ViewData["Title"] = "Cadastro";
+    ViewData["Title"] = "Cadastro de cartão";
 }
 
-<h2>Cadastro</h2>
-
-@*<div class="row">
+<div class="row">
     <div class="col-md-8">
         <div class="card card-user">
             <div class="card-header">
@@ -16,61 +14,80 @@
                     <div class="row">
                         <div class="col-md-4 pr-1">
                             <div class="form-group">
-                                <label>Descricao</label>
-                                <input type="text" class="form-control" asp-for="" placeholder="Descricao" />
+                                <label>Nome do Banco</label>
+                                <input type="text" class="form-control" asp-for="Banco" placeholder="Ex: Banco Nacional do Brasil" />
                             </div>
                         </div>
-                        <div class="col-md-5 pr-1">
+                        <div class="col-md-3 pr-1">
                             <div class="form-group">
-                                <label>Valor</label>
-                                <input type="text" class="form-control" asp-for="Valor" placeholder="Valor" />
+                                <label>Agência</label>
+                                <input class="form-control" asp-for="Agencia" placeholder="Ex: 0000-0" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 pr-1">
+                            <div class="form-group">
+                                <label>Conta</label>
+                                <input class="form-control" asp-for="Conta" placeholder="Ex: 0000-0" />
                             </div>
                         </div>
                     </div>
                     <div class="row">
+                        
                         <div class="col-md-5 pr-1">
                             <div class="form-group">
-                                <label>Data do Lançamento</label>
-                                <input class="bootstrap-datetimepicker-widget" type="datetime" asp-for="DataLancamento" placeholder="Data do Lançamento" />
+                                <label>Nome impresso no cartão</label>
+                                <input type="text" class="form-control" asp-for="NomeSobrenome" placeholder="Ex: FULANO DA SILVA SAURO" />
                             </div>
                         </div>
                         <div class="col-md-4 pr-1">
                             <div class="form-group">
-                                <label>Categoria</label>
-                                <select asp-items="@ViewBag.Categorias"
-                                        class="form-control" name="drpCategorias">
-                                    <option> -- SELECIONE -- </option>
-                                </select>
+                                <div class="form-group">
+                                    <label>Número do cartão</label>
+                                    <input class="form-control" asp-for="Numero" placeholder="Número do cartão" />
+                                </div>
+                            </div>
+                            @*<button type="submit" class="btn btn-info" value="Validar" asp-action="ValidarCartao" asp-controller="Cartao">Validar cartão</button>*@
+                        </div>
+                        <div class="col-md-3 pr-1">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label>CVV</label>
+                                    <input class="form-control" asp-for="Cvv" placeholder="Cvv" />
+                                </div>
                             </div>
                         </div>
+                       
                     </div>
                     <div class="row">
-                        <div class="col-md-5 pl-1">
+                        <div class="col-md-4 pr-1">
                             <div class="form-group">
-                                <label>Cartao</label>
-                                <select asp-items="@ViewBag.Cartoes"
-                                        class="form-control" name="drpCartoes">
-                                    <option> -- SELECIONE -- </option>
-                                </select>
+                                <label>Tipo do cartão</label>
+                                <input class="form-control" asp-for="Tipo" placeholder="Crédito / Débito / Crédito & Débito" />
                             </div>
                         </div>
-                        <div class="col-md-4 pl-1">
+                        <div class="col-md-5 pr-1">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Parcelas</label>
-                                <input type="email" class="form-control" asp-for="Parcelas" placeholder="Parcelas" />
+                                <div class="form-group">
+                                    <label>Data de Validade</label>
+                                    <input class="form-control" asp-for="DataValidade" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 pr-1">
+                            <div class="form-group">
+                                <label>Dia de Vencimento</label>
+                                <input class="form-control" asp-for="DiaVencimento" placeholder="Ex: 10" />
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="update ml-auto mr-auto">
-                            <button type="submit" class="btn btn-primary btn-round" asp-action="Index">Voltar</button>
-                        </div>
-                        <div class="update ml-auto mr-auto">
-                            <button type="submit" class="btn btn-primary btn-round" value="Cadastrar">Cadastrar</button>
+                            <button type="submit" class="btn btn-default btn-round" asp-action="Index">Voltar</button>
+                            <button type="submit" class="btn btn-success btn-round" value="Cadastrar">Cadastrar</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-</div>*@
+</div>

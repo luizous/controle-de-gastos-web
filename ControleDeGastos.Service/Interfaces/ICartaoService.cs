@@ -1,13 +1,13 @@
 ﻿using ControleDeGastos.Domain;
 using System.Collections.Generic;
 
-namespace ControleDeGastos.Services.Interfaces
+namespace ControleDeGastos.Service.Interfaces
 {
     public interface ICartaoService<T>
     {
         bool Cadastrar(Cartao c, Usuario usuario);
-        bool Excluir(Cartao c);
+        bool Remover(int? idCartao);
         List<Cartao> Listar(int idusuario);
-        Cartao ObterCartaoPorId(int idCartao);
+        Cartao Obter(int? idCartao);
     }
 }

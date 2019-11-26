@@ -29,15 +29,15 @@ namespace ControleDeGastos.Repository
                 _context.SaveChanges();
                 return true;
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return false;
             }
         }
         #endregion
 
-        #region Excluir
-        public bool Excluir(Categoria ca)
+        #region Remover
+        public bool Remover(Categoria ca)
         {
             try
             {
@@ -59,11 +59,13 @@ namespace ControleDeGastos.Repository
         }
         #endregion
 
-        #region ObterCategoriaPorId
-        public Categoria ObterCategoriaPorId(int idCategoria)
+        #region Obter
+        public Categoria Obter(int? idCategoria)
         {
-            return _context.Categorias.FirstOrDefault(x => x.IdCategoria == idCategoria);
+            return _context.Categorias.Find(idCategoria);
         }
         #endregion
+
+
     }
 }

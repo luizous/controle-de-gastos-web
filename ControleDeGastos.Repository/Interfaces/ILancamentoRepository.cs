@@ -7,7 +7,8 @@ namespace ControleDeGastos.Repository.Interfaces
     {
         bool Cadastrar(Lancamento r, Usuario usuario);
         bool Editar(Lancamento r);
-        List<Lancamento> ListarLancamento(int idUsuario);
+        Lancamento Obter(int? idLancamento);
+        List<Lancamento> Listar(int idUsuario);
         List<Lancamento> ListarRecentes(int idUsuario);
         List<Lancamento> ListarLancamentoDia(int idUsuario);
         List<Lancamento> ListarLancamentoMesAtual(int idUsuario);

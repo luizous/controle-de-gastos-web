@@ -36,8 +36,8 @@ namespace ControleDeGastos.Repository
         }
         #endregion
 
-        #region Excluir
-        public bool Excluir(Cartao c)
+        #region Remover
+        public bool Remover(Cartao c)
         {
             try
             {
@@ -58,10 +58,10 @@ namespace ControleDeGastos.Repository
             .ToList();
         #endregion
 
-        #region ObterCartaoPorId
-        public Cartao ObterCartaoPorId(int idCartao)
+        #region Obter
+        public Cartao Obter(int? idCartao)
         {
-            return _context.Cartoes.FirstOrDefault(x => x.IdCartao == idCartao);
+            return _context.Cartoes.Find(idCartao);
         }
         #endregion
     }

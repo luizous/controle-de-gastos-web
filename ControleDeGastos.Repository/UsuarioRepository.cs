@@ -79,6 +79,10 @@ namespace ControleDeGastos.Repository
         public List<Usuario> ListarUsuarios() => _context.Usuarios.ToList();
         #endregion
 
+        #region Obter
+        public Usuario Obter(int idUsuario) => _context.Usuarios.FirstOrDefault(x => x.IdUsuario == idUsuario);
+        #endregion
+
         #region Editar
         public bool Editar(Usuario u)
         {

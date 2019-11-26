@@ -1,0 +1,74 @@
+﻿@model Lancamento
+@{
+    ViewData["Title"] = "CdG - Edição de lançamento";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card card-user">
+            <div class="card-header">
+                <h5 class="card-title">Editar lançamento</h5>
+            </div>
+            <div class="card-body">
+                <form asp-action="Editar" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-4 pr-1">
+                            <div class="form-group">
+                                <label>Descricao</label>
+                                <input type="text" class="form-control" asp-for="Descricao" placeholder="Descricao" />
+                            </div>
+                        </div>
+                        <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                                <label>Valor</label>
+                                <input type="number" class="form-control" asp-for="Valor" placeholder="Valor" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                                <label>Data do Lançamento</label>
+                                <input class="form-control" asp-for="DataLancamento" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 pr-1">
+                            <div class="form-group">
+                                <label>Categoria</label>
+                                <select asp-items="@ViewBag.Categorias"
+                                        class="form-control" name="drpCategorias">
+                                    <option> -- SELECIONE -- </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 pl-1">
+                            <div class="form-group">
+                                <label>Cartao</label>
+                                <select asp-items="@ViewBag.Cartoes"
+                                        class="form-control" name="drpCartoes">
+                                    <option> -- SELECIONE -- </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pl-1">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Parcelas</label>
+                                <input type="number" class="form-control" asp-for="Parcelas" placeholder="Parcelas" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="update ml-auto mr-auto">
+                            <button type="submit" class="btn btn-default btn-round" asp-action="Index">Voltar</button>
+                        </div>
+                        <div class="update ml-auto mr-auto">
+                            <button type="submit" class="btn btn-success btn-round" value="Editar">Salvar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -13,6 +13,8 @@ namespace ControleDeGastos.Repository
         public DbSet<Cartao> Cartoes { get; set; }
         public DbSet<Lancamento> Lancamentos { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Meta> Metas { get; set; }
+        public DbSet<Poupanca> Poupancas { get; set; }
 
         //protected override void OnModelCreating(DbModelBuilder modelBuilder)
         //{

@@ -4,76 +4,203 @@
     Layout = "~/Views/Shared/_LayoutCadastro.cshtml";
 }
 
-<div class="row" style="padding-top:100px; padding-left:300px;margin-right: 0px; margin-left: 0px;">
-    <div class="col-md-8">
-        <div class="card card-user">
-            <div class="card-header">
-                <h5 class="card-title">Cadastro de Usuário</h5>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card card-user">
+                <div class="image">
+                    <img src="../assets/img/damir-bosnjak.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="author">
+                        <a href="#">
+                            <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+                            <h5 class="title">Chet Faker</h5>
+                        </a>
+                        <p class="description">
+                            f
+                        </p>
+                    </div>
+                    <p class="description text-center">
+                        "I like the way you work it
+                        <br> No diggity
+                        <br> I wanna bag it up"
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <hr>
+                    <div class="button-container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-6 ml-auto">
+                                <h5>
+                                    12
+                                    <br>
+                                    <small>Files</small>
+                                </h5>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
+                                <h5>
+                                    2GB
+                                    <br>
+                                    <small>Used</small>
+                                </h5>
+                            </div>
+                            <div class="col-lg-3 mr-auto">
+                                <h5>
+                                    24,6$
+                                    <br>
+                                    <small>Spent</small>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-                <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
-                    <div class="row">
-                        
-                        <div class="col-md-5 pr-1">
-                            <div class="form-group">
-                                <label>Nome</label>
-                                <input type="text" class="form-control" asp-for="Nome" placeholder="Nome" />
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Team Members</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled team-members">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-2 col-2">
+                                    <div class="avatar">
+                                        <img src="../assets/img/faces/ayo-ogunseinde-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-7">
+                                    DJ Khaled
+                                    <br />
+                                    <span class="text-muted">
+                                        <small>Offline</small>
+                                    </span>
+                                </div>
+                                <div class="col-md-3 col-3 text-right">
+                                    <btn class="btn btn-sm btn-outline-success btn-round btn-icon"><i class="fa fa-envelope"></i></btn>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-2 col-2">
+                                    <div class="avatar">
+                                        <img src="../assets/img/faces/joe-gardner-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-7">
+                                    Creative Tim
+                                    <br />
+                                    <span class="text-success">
+                                        <small>Available</small>
+                                    </span>
+                                </div>
+                                <div class="col-md-3 col-3 text-right">
+                                    <btn class="btn btn-sm btn-outline-success btn-round btn-icon"><i class="fa fa-envelope"></i></btn>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-2 col-2">
+                                    <div class="avatar">
+                                        <img src="../assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-ms-7 col-7">
+                                    Flume
+                                    <br />
+                                    <span class="text-danger">
+                                        <small>Busy</small>
+                                    </span>
+                                </div>
+                                <div class="col-md-3 col-3 text-right">
+                                    <btn class="btn btn-sm btn-outline-success btn-round btn-icon"><i class="fa fa-envelope"></i></btn>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card card-user">
+                <div class="card-header">
+                    <h5 class="card-title">Cadastro de Usuário</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col-md-4 pr-1">
+                                <div class="form-group">
+                                    <label>Nome</label>
+                                    <input type="text" class="form-control" asp-for="Nome" placeholder="Nome" />
+                                    <span asp-validation-for="Nome" class="text-primary"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 pr-1">
+                                <div class="form-group">
+                                    <label>Sobrenome</label>
+                                    <input type="text" class="form-control" asp-for="Sobrenome" placeholder="Sobrenome" />
+                                    <span asp-validation-for="Sobrenome" class="text-primary"></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-5 pr-1">
-                            <div class="form-group">
-                                <label>Sobrenome</label>
-                                <input type="text" class="form-control" asp-for="Sobrenome" placeholder="Sobrenome" />
+                        <div class="row">
+                            <div class="col-md-3 pr-1">
+                                <div class="form-group">
+                                    <label>CPF</label>
+                                    <input type="text" class="form-control" asp-for="Cpf" placeholder="CPF" />
+                                    <span asp-validation-for="Cpf" class="text-primary"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 pr-1">
+                                <div class="form-group">
+                                    <label>E-mail</label>
+                                    <input type="email" class="form-control" asp-for="Email" placeholder="E-mail" />
+                                    <span asp-validation-for="Email" class="text-primary"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-2 pr-1">
+                                <div class="form-group">
+                                    <label>Salário</label>
+                                    <input type="text" class="form-control" asp-for="Salario" placeholder="Salário" />
+                                    <span asp-validation-for="Salario" class="text-primary"></span>
+                                </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 pr-1">
-                            <div class="form-group">
-                                <label>Salário</label>
-                                <input type="text" class="form-control" asp-for="Salario" placeholder="Salário" />
+                        <div class="row">
+                            <div class="col-md-2 pr-1">
+                                <div class="form-group">
+                                    <label>Username</label>
+                                    <input type="text" class="form-control" asp-for="Login" placeholder="Username" />
+                                    <span asp-validation-for="Login" class="text-primary"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 pr-1">
+                                <div class="form-group">
+                                    <label>Senha</label>
+                                    <input type="password" class="form-control" asp-for="Senha" placeholder="Senha" />
+                                    <span asp-validation-for="Senha" class="text-primary"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 pr-1">
+                                <div class="form-group">
+                                    <label>Confirmar Senha</label>
+                                    <input type="password" class="form-control" asp-for="ConfirmacaoSenha" placeholder="Confirmar Senha" />
+                                    <span asp-validation-for="ConfirmacaoSenha" class="text-primary"></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4 pr-1">
-                            <div class="form-group">
-                                <label>CPF</label>
-                                <input type="text" class="form-control" asp-for="Cpf" placeholder="CPF" />
+                        <div class="row">
+                            <div class="update ml-auto mr-auto">
+                                <button type="submit" class="btn btn-default btn-round" asp-action="Index">Voltar</button>
+                                <button type="submit" class="btn btn-success btn-round" value="Cadastrar">Cadastrar</button>
                             </div>
                         </div>
-                        <div class="col-md-4 pl-1">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">E-mail</label>
-                                <input type="email" class="form-control" asp-for="Email" placeholder="E-mail" />
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5 pl-1">
-                            <div class="form-group">
-                                <label>Login</label>
-                                <input type="text" class="form-control" asp-for="Login" placeholder="Login" />
-                            </div>
-                        </div>
-                        <div class="col-md-5 pl-1">
-                            <div class="form-group">
-                                <label>Senha</label>
-                                <input type="password" class="form-control" asp-for="Senha" placeholder="Senha" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="update ml-auto mr-auto">
-                            <button type="submit" class="btn btn-primary btn-round" asp-action="Index">Voltar</button>
-                        </div>
-                        <div class="update ml-auto mr-auto">
-                            <button type="submit" class="btn btn-primary btn-round" value="Cadastrar">Cadastrar</button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
 

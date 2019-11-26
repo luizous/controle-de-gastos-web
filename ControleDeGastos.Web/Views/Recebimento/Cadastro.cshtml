@@ -1,0 +1,52 @@
+﻿@model Recebimento
+@{
+    ViewData["Title"] = "CdG - Cadastro de recebimento";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card card-user">
+            <div class="card-header">
+                <h5 class="card-title">Novo Recebimento</h5>
+            </div>
+            <div class="card-body">
+                <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                                <label>Fornecedor</label>
+                                <input type="text" class="form-control" asp-for="Fornecedor" placeholder="Fornecedor" />
+                            </div>
+                        </div>
+                        <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                                <label>Descrição</label>
+                                <input type="text" class="form-control" asp-for="Descricao" placeholder="Descrição" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 pr-1">
+                            <div class="form-group">
+                                <label>Valor</label>
+                                <input class="form-control" asp-for="Valor" placeholder="R$" />
+                            </div>
+                        </div>
+                        <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                                <label>Data do recebimento</label>
+                                <input class="form-control" asp-for="DataRecebimento" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="update ml-auto mr-auto">
+                            <button type="submit" class="btn btn-default btn-round" asp-action="Index">Voltar</button>
+                            <button type="submit" class="btn btn-success btn-round" value="Cadastrar">Cadastrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

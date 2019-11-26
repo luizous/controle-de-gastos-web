@@ -106,6 +106,46 @@ namespace ControleDeGastos.Repository.Migrations
                     b.ToTable("Lancamento");
                 });
 
+            modelBuilder.Entity("ControleDeGastos.Domain.Meta", b =>
+                {
+                    b.Property<int>("IdMeta")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("DataCadastro");
+
+                    b.Property<string>("Texto");
+
+                    b.Property<int?>("UsuarioIdUsuario");
+
+                    b.HasKey("IdMeta");
+
+                    b.HasIndex("UsuarioIdUsuario");
+
+                    b.ToTable("Meta");
+                });
+
+            modelBuilder.Entity("ControleDeGastos.Domain.Poupanca", b =>
+                {
+                    b.Property<int>("IdPoupanca")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("DataCadastro");
+
+                    b.Property<string>("Descricao");
+
+                    b.Property<int?>("UsuarioIdUsuario");
+
+                    b.Property<double>("Valor");
+
+                    b.HasKey("IdPoupanca");
+
+                    b.HasIndex("UsuarioIdUsuario");
+
+                    b.ToTable("Poupanca");
+                });
+
             modelBuilder.Entity("ControleDeGastos.Domain.Recebimento", b =>
                 {
                     b.Property<int>("IdRecebimento")
@@ -141,17 +181,22 @@ namespace ControleDeGastos.Repository.Migrations
 
                     b.Property<DateTime>("DataCadastro");
 
-                    b.Property<string>("Email");
+                    b.Property<string>("Email")
+                        .IsRequired();
 
-                    b.Property<string>("Login");
+                    b.Property<string>("Login")
+                        .IsRequired();
 
-                    b.Property<string>("Nome");
+                    b.Property<string>("Nome")
+                        .IsRequired();
 
                     b.Property<double>("Salario");
 
-                    b.Property<string>("Senha");
+                    b.Property<string>("Senha")
+                        .IsRequired();
 
-                    b.Property<string>("Sobrenome");
+                    b.Property<string>("Sobrenome")
+                        .IsRequired();
 
                     b.HasKey("IdUsuario");
 
@@ -343,6 +388,20 @@ namespace ControleDeGastos.Repository.Migrations
                         .WithMany()
                         .HasForeignKey("CategoriaIdCategoria");
 
+                    b.HasOne("ControleDeGastos.Domain.Usuario", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("UsuarioIdUsuario");
+                });
+
+            modelBuilder.Entity("ControleDeGastos.Domain.Meta", b =>
+                {
+                    b.HasOne("ControleDeGastos.Domain.Usuario", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("UsuarioIdUsuario");
+                });
+
+            modelBuilder.Entity("ControleDeGastos.Domain.Poupanca", b =>
+                {
                     b.HasOne("ControleDeGastos.Domain.Usuario", "Usuario")
                         .WithMany()
                         .HasForeignKey("UsuarioIdUsuario");

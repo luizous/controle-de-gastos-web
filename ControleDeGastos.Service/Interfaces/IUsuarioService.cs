@@ -1,7 +1,7 @@
 ﻿using ControleDeGastos.Domain;
 using System.Collections.Generic;
 
-namespace ControleDeGastos.Services.Interfaces
+namespace ControleDeGastos.Service.Interfaces
 {
     public interface IUsuarioService<T>
     {
@@ -11,6 +11,7 @@ namespace ControleDeGastos.Services.Interfaces
         Usuario BuscarPorLogin(Usuario u);
         bool Logar(string email, string senha);
         List<Usuario> ListarUsuarios();
+        Usuario Obter(int idUsuario);
         bool Editar(Usuario u);
     }
 }

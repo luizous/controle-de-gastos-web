@@ -1,7 +1,6 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Repository;
 using ControleDeGastos.Service;
-using ControleDeGastos.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -15,8 +14,8 @@ namespace ControleDeGastos.Web
 {
     public class Startup
     {
-        // Add-Migration NomeMigracao -Project: Repository; 
-        // Update-Database -verbose -Project: Repository
+        // Add-Migration NomeMigracao -Project: ControleDeGastos.Repository; 
+        // Update-Database -verbose -Project: ControleDeGastos.Repository
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -58,9 +57,10 @@ namespace ControleDeGastos.Web
                 .AddDefaultTokenProviders();
             services.ConfigureApplicationCookie(options =>
             {
-                options.LoginPath = "/Usuario/Login";
+                options.LoginPath = "/Usuario/Index";
                 options.AccessDeniedPath = "/Usuario/AcessoNegado";
             });
+            services.AddSession();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -81,6 +81,7 @@ namespace ControleDeGastos.Web
             app.UseCookiePolicy();
             app.UseSession();
             app.UseAuthentication();
+            
 
             app.UseMvc(routes =>
             {

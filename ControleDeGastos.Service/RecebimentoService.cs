@@ -1,8 +1,9 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Repository;
-using ControleDeGastos.Services.Interfaces;
+using ControleDeGastos.Service.Interfaces;
+using System.Collections.Generic;
 
-namespace ControleDeGastos.Services
+namespace ControleDeGastos.Service
 {
     public class RecebimentoService : IRecebimentoService<Recebimento>
     {
@@ -11,7 +12,7 @@ namespace ControleDeGastos.Services
         #endregion
 
         #region Construtor
-        private RecebimentoService(RecebimentoRepository recebimentoRepository)
+        public RecebimentoService(RecebimentoRepository recebimentoRepository)
         {
             _recebimentoRepository = recebimentoRepository;
         }
@@ -28,6 +29,20 @@ namespace ControleDeGastos.Services
         public bool Editar(Recebimento r)
         {
             return _recebimentoRepository.Editar(r);
+        }
+        #endregion
+
+        #region Listar
+        public List<Recebimento> Listar(int idUsuario)
+        {
+            return _recebimentoRepository.Listar(idUsuario);
+        }
+        #endregion
+
+        #region Obter
+        public Recebimento Obter(int? idRecebimento)
+        {
+            return _recebimentoRepository.Obter(idRecebimento);
         }
         #endregion
 

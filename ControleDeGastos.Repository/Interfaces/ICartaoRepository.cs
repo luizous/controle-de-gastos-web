@@ -6,8 +6,8 @@ namespace ControleDeGastos.Repository.Interfaces
     public interface ICartaoRepository<T>
     {
         bool Cadastrar(Cartao c, Usuario usuario);
-        bool Excluir(Cartao c);
+        bool Remover(Cartao c);
         List<Cartao> Listar(int idusuario);
-        Cartao ObterCartaoPorId(int idCartao);
+        Cartao Obter(int? idCartao);
     }
 }

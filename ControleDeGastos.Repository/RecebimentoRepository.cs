@@ -1,6 +1,5 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Repository.Interfaces;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,7 +41,7 @@ namespace ControleDeGastos.Repository
         {
             try
             {
-                _context.Entry(r).State = EntityState.Modified;
+                _context.Recebimentos.Update(r);
                 _context.SaveChanges();
                 return true;
             }
@@ -57,6 +56,13 @@ namespace ControleDeGastos.Repository
         public List<Recebimento> Listar(int idUsuario) => _context.Recebimentos
             .Where(x => x.Usuario.IdUsuario == idUsuario)
             .ToList();
+        #endregion
+
+        #region Obter
+        public Recebimento Obter(int? idRecebimento)
+        {
+            return _context.Recebimentos.Find(idRecebimento);
+        }
         #endregion
 
         #region ListarRecentes

@@ -26,3 +26,16 @@ C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcor
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.deps.json
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.dll
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.pdb
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.deps.json
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.pdb
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.pdb
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.pdb
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csprojAssemblyReference.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.AssemblyInfoInputs.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.AssemblyInfo.cs
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csproj.CopyComplete
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.pdb

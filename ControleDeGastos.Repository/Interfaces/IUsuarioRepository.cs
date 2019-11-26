@@ -12,5 +12,6 @@ namespace ControleDeGastos.Repository.Interfaces
         bool Logar(string email, string senha);
         List<Usuario> ListarUsuarios();
         bool Editar(Usuario u);
+        Usuario Obter(int idUsuario);
     }
 }

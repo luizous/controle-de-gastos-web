@@ -1,8 +1,9 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Repository;
-using ControleDeGastos.Services.Interfaces;
+using ControleDeGastos.Service.Interfaces;
+using System.Collections.Generic;
 
-namespace ControleDeGastos.Services
+namespace ControleDeGastos.Service
 {
     public class LancamentoService : ILancamentoService<Lancamento>
     {
@@ -29,6 +30,20 @@ namespace ControleDeGastos.Services
         {
             return _lancamentoRepository.Editar(l);
 
+        }
+        #endregion
+
+        #region Obter
+        public Lancamento Obter(int? idLancamento)
+        {
+            return _lancamentoRepository.Obter(idLancamento);
+        }
+        #endregion
+
+        #region Listar
+        public List<Lancamento> Listar(int idUsuario)
+        {
+            return _lancamentoRepository.Listar(idUsuario);
         }
         #endregion
 

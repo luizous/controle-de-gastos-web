@@ -1,12 +1,82 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
+﻿@{
+    ViewData["Title"] = "CdG - Meus cartões";
 }
 
-Novo cartão
-<div class="img-botao-add-lancamento">
-    <a asp-action="Cadastro">
-        <img src="~/images/plus.png" />
-    </a>
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card" style="width: 100%;">
+                <div class="card-header">
+                    <h5 style="text-align: center;"><small>Estes são os cartões que você cadastrou. </br> Você pode adicionar um novo clicando no botão ao lado.</small></h5>
+                    <div class="row" style="margin-left: 5px; margin-top: -80px; text-transform: uppercase;">
+                        <a class="blockquote blockquote-primary" asp-action="Cadastro" style="cursor: pointer"><small><b>+ Novo cartão</b></small></a>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    @if (ViewBag.Cartoes.Count == 0)
+                    {
+                        <p class="text-danger" style="text-align:center;"><b>NÃO HÁ CARTÕES CADASTRADOS</b></p>
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="text-primary">
+                                    <th>Agência</th>
+                                    <th>Banco</th>
+                                    <th>Conta</th>
+                                    <th>CVV</th>
+                                    <th>Validade</th>
+                                    <th>Dia de vencimento</th>
+                                    <th>Nome impresso no cartão</th>
+                                    <th>Número</th>
+                                    <th>Tipo</th>
+                                </thead>
+                                <tbody>
+                                    @foreach (Cartao item in ViewBag.Cartoes)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @item.Agencia
+                                            </td>
+                                            <td>
+                                                @item.Banco
+                                            </td>
+                                            <td>
+                                                @item.Conta
+                                            </td>
+                                            <td>
+                                                @item.Cvv
+                                            </td>
+                                            <td>
+                                                @item.DataValidade.ToString("dd/MM/yyyy")
+                                            </td>
+                                            <td>
+                                                @item.DiaVencimento
+                                            </td>
+                                            <td>
+                                                @item.NomeSobrenome
+                                            </td>
+                                            <td>
+                                                @item.Numero
+                                            </td>
+                                            <td>
+                                                @item.Tipo
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-danger" asp-route-idCartao="@item.IdCartao" asp-action="Remover">X</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </div>
 

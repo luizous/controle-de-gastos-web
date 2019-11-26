@@ -8,6 +8,7 @@ namespace ControleDeGastos.Repository.Interfaces
         bool Cadastrar(Recebimento r, Usuario usuario);
         bool Editar(Recebimento r);
         List<Recebimento> Listar(int idUsuario);
+        Recebimento Obter(int? idRecebimento);
         List<Recebimento> ListarRecentes(int idUsuario);
         List<Recebimento> ListarRecebimentoDia(int idUsuario);
         List<Recebimento> ListarRecebimentoMesAtual(int idUsuario);

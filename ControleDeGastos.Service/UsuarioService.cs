@@ -1,9 +1,9 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Repository;
-using ControleDeGastos.Services.Interfaces;
+using ControleDeGastos.Service.Interfaces;
 using System.Collections.Generic;
 
-namespace ControleDeGastos.Services
+namespace ControleDeGastos.Service
 {
     public class UsuarioService : IUsuarioService<Usuario>
     {
@@ -59,6 +59,14 @@ namespace ControleDeGastos.Services
             return _usuarioRepository.ListarUsuarios();
         }
         #endregion
+
+        #region Obter
+        public Usuario Obter(int idUsuario)
+        {
+            return _usuarioRepository.Obter(idUsuario);
+        }
+        #endregion
+
 
         #region Editar
         public bool Editar(Usuario u)
