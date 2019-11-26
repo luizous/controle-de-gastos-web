@@ -1,0 +1,137 @@
+[33mcommit 234b7a4fffdf9f4a7e51f91c1650b9ab92d0a42a[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Tue Nov 26 02:35:24 2019 -0300
+
+    Cadastro/Edição/Listagem de recebimento, categoria, lançamento e cartão
+
+[33mcommit aded53caccdf79581dcf4ae833fe9e0b3ecd5ad6[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Fri Nov 22 13:16:45 2019 -0300
+
+    Correção projeto domain
+
+[33mcommit bcee3fad3987d9509f8e6677a062321b5978a821[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Fri Nov 22 13:14:01 2019 -0300
+
+    Exclusão do projeto domain errado
+
+[33mcommit 7e94d366f6a8b66d992a38732aa4f90db73b8e84[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Thu Nov 21 21:56:18 2019 -0300
+
+    login_logout_cartao
+
+[33mcommit 194d0d32ea19781424e03189e0496fd498825663[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Wed Nov 20 00:10:08 2019 -0300
+
+    Alguns ajustes nas telas de cadastro lançamento e usuário
+
+[33mcommit c5d81118fc1d94136d2da1b41bd76f7691093ac7[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Tue Nov 19 22:01:43 2019 -0300
+
+    Classes Poupanca e metas + logo
+
+[33mcommit d7d265580e82e5c35a8b8ab6155d7edc5fb5777c[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Mon Nov 18 22:35:49 2019 -0300
+
+    Colocar imagem no perfil e etc
+
+[33mcommit 19155c6a95ccd9e2f04abca7fb09c66700d69124[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Mon Nov 18 13:11:11 2019 -0300
+
+    Algumas views e links do menu
+
+[33mcommit b4587d0ee4db2655ed91ee72d7ae924856adf712[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Tue Nov 12 21:43:14 2019 -0300
+
+    Login e dashboard
+
+[33mcommit 7f3b34c72ce2cd79f4c6914317b265049b01388f[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Thu Nov 7 22:00:33 2019 -0300
+
+    Correção interfaces, página de cadastro de usuário e correção atributos
+
+[33mcommit 2b24a94a2849e358f8c5748636aa914b9aedd4a9[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Tue Nov 5 22:12:46 2019 -0300
+
+    Layout dashboard e alteração layout login
+
+[33mcommit 5502e46f1e351544b76b8a1a83226bce6109d843[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Tue Nov 5 17:35:06 2019 -0300
+
+    Mais layout
+
+[33mcommit 1a36e0af02883900f42f56065c9d240bd89aefa3[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Sun Nov 3 11:51:57 2019 -0300
+
+    Finalização layout login
+
+[33mcommit ff71c44959abea4c0d67f694ae701c5b687184c6[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Sat Nov 2 23:38:47 2019 -0300
+
+    Layout login quase pronto
+
+[33mcommit f269490ce38ab9dadad77c93ad1e7900bcbaf55a[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Sat Nov 2 12:09:34 2019 -0300
+
+    Colocação dos métodos no service e interfaces
+
+[33mcommit 9f9fe49b291d52b8e68a2975c49365eaa3743174[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Thu Oct 31 22:11:28 2019 -0300
+
+    Inicio do layout
+
+[33mcommit 04468cd7b2771b2c56042760530e761f1d1fcc46[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Thu Oct 31 22:01:21 2019 -0300
+
+    Staged files
+
+[33mcommit 22c81fb887b4b040999c2c97a4b641480a672687[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Thu Oct 31 21:58:33 2019 -0300
+
+    Não sei, só apreceu as alterações...
+
+[33mcommit 319bd015fafe5bed8ed19434a132b841a51214a4[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Thu Oct 31 21:47:52 2019 -0300
+
+    Correção porta localhost
+
+[33mcommit ee4f9f4662ff53b17fc01334885e3fa00254157a[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Thu Oct 31 21:36:37 2019 -0300
+
+    Restruturação do projeto
+
+[33mcommit 8f294e79119274a5e965fd4f5a0810f48ca145ca[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Thu Oct 31 19:01:43 2019 -0300
+
+    Correção no problema das interfaces
+
+[33mcommit f42bcb078e92dd23b68bd5b9802169b17c01e68f[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Tue Oct 29 21:46:59 2019 -0300
+
+    Atualizando o projeto para DDD
+
+[33mcommit ebc99ec9376ce17671093027c06cc687a424e59c[m
+Author: luizous <luizaruivoms@gmail.com>
+Date:   Mon Oct 28 22:01:20 2019 -0300
+
+    Commit inicial
