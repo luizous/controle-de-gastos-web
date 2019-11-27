@@ -24,8 +24,8 @@ namespace ControleDeGastos.Repository
         {
             try
             {
-                r.Usuario = usuario;
-                _context.Recebimentos.Add(p);
+                p.Usuario = usuario;
+                _context.Poupancas.Add(p);
                 _context.SaveChanges();
                 return true;
             }

@@ -104,3 +104,11 @@ C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.csproj.CopyComplete
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.dll
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.pdb
+C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.csprojAssemblyReference.cache
+C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.RazorAssemblyInfo.cache
+C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.RazorAssemblyInfo.cs
+C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.AssemblyInfoInputs.cache
+C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.AssemblyInfo.cs
+C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.dll
+C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.pdb

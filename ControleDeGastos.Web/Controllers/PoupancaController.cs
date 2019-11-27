@@ -1,4 +1,5 @@
-﻿using ControleDeGastos.Service;
+﻿using ControleDeGastos.Domain;
+using ControleDeGastos.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ControleDeGastos.Web.Controllers
@@ -40,7 +41,7 @@ namespace ControleDeGastos.Web.Controllers
             if (ModelState.IsValid)
             {
                 var usuario = _usuarioService.Obter(1);
-                _poupancaService.Cadastrar(r, usuario);
+                _poupancaService.Cadastrar(p, usuario);
             }
             return View();
         }

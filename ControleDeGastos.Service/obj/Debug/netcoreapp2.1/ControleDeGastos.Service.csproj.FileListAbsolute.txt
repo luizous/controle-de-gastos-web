@@ -39,3 +39,9 @@ C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGasto
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csproj.CopyComplete
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.dll
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.pdb
+C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csprojAssemblyReference.cache
+C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.AssemblyInfoInputs.cache
+C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.AssemblyInfo.cs
+C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.dll
+C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.pdb
