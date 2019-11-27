@@ -53,6 +53,7 @@ namespace ControleDeGastos.Repository.Migrations
                 {
                     IdUsuario = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Token = table.Column<Guid>(nullable: false),
                     Nome = table.Column<string>(nullable: false),
                     Sobrenome = table.Column<string>(nullable: false),
                     Cpf = table.Column<string>(nullable: true),

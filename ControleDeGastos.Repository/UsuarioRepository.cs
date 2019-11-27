@@ -98,5 +98,9 @@ namespace ControleDeGastos.Repository
             }
         }
         #endregion
+
+        #region ObterPorToken
+        public Usuario ObterPorToken(Guid token) => _context.Usuarios.FirstOrDefault(x => x.Token == token);
+        #endregion
     }
 }

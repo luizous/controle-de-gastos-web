@@ -9,6 +9,9 @@ namespace ControleDeGastos.Domain
     {
         [Key]
         public int IdUsuario { get; set; }
+
+        public Guid Token { get; set; }
+
         [Display(Name = "Nome:")]
         [Required(ErrorMessage = "Campo obrigatório!")]
         public string Nome { get; set; }

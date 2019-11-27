@@ -15,6 +15,7 @@ C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGasto
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Domain\obj\Debug\netcoreapp2.1\ControleDeGastos.Domain.AssemblyInfo.cs
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Domain\obj\Debug\netcoreapp2.1\ControleDeGastos.Domain.dll
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Domain\obj\Debug\netcoreapp2.1\ControleDeGastos.Domain.pdb
+<<<<<<< HEAD
 C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Domain\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.deps.json
 C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Domain\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.dll
 C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Domain\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.pdb
@@ -24,3 +25,14 @@ C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Domain\obj\Debu
 C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Domain\obj\Debug\netcoreapp2.1\ControleDeGastos.Domain.AssemblyInfo.cs
 C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Domain\obj\Debug\netcoreapp2.1\ControleDeGastos.Domain.dll
 C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Domain\obj\Debug\netcoreapp2.1\ControleDeGastos.Domain.pdb
+=======
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Domain\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.deps.json
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Domain\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.dll
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Domain\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.pdb
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Domain\obj\Debug\netcoreapp2.1\ControleDeGastos.Domain.csprojAssemblyReference.cache
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Domain\obj\Debug\netcoreapp2.1\ControleDeGastos.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Domain\obj\Debug\netcoreapp2.1\ControleDeGastos.Domain.AssemblyInfoInputs.cache
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Domain\obj\Debug\netcoreapp2.1\ControleDeGastos.Domain.AssemblyInfo.cs
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Domain\obj\Debug\netcoreapp2.1\ControleDeGastos.Domain.dll
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Domain\obj\Debug\netcoreapp2.1\ControleDeGastos.Domain.pdb
+>>>>>>> origin/Api

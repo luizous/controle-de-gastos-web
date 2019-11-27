@@ -1,6 +1,7 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Repository;
 using ControleDeGastos.Service.Interfaces;
+using System;
 using System.Collections.Generic;
 
 namespace ControleDeGastos.Service
@@ -67,6 +68,12 @@ namespace ControleDeGastos.Service
         }
         #endregion
 
+        #region ObterPorToken
+        public Usuario ObterPorToken(Guid token)
+        {
+            return _usuarioRepository.ObterPorToken(token);
+        }
+        #endregion
 
         #region Editar
         public bool Editar(Usuario u)
