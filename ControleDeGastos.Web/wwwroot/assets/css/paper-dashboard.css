@@ -28,12 +28,6 @@ Copyright (c) 2015 Daniel Eden
     cursor: pointer;
 }
 
-.img-botao-add-lancamento {
-    width: 30px;
-    margin: -25px 0 10px 130px;
-    cursor: pointer;
-}
-
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -5503,7 +5497,7 @@ License - nucleoapp.com/license/
 }
 
 .card .card-body {
-  padding: 10px 10px 10px 15px;
+  padding: 10px 10px 10px 10px;
 }
 
 .card .card-body.table-full-width {
@@ -5735,7 +5729,7 @@ License - nucleoapp.com/license/
 }
 
 .card-stats .card-body {
-  padding: 15px 15px 0px;
+  padding: 15px 15px 0px 0px;
 }
 
 .card-stats .card-body .numbers {

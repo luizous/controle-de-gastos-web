@@ -1,15 +1,6 @@
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.csprojAssemblyReference.cache
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.csproj.CoreCompileInputs.cache
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.AssemblyInfoInputs.cache
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.AssemblyInfo.cs
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.deps.json
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.dll
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.pdb
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.dll
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.pdb
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.csproj.CopyComplete
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.dll
-C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.pdb
+C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.deps.json
+C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.dll
+C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.pdb
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.dll
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.pdb
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.csprojAssemblyReference.cache
@@ -19,23 +10,3 @@ C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\net
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.csproj.CopyComplete
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.dll
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.pdb
-C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.deps.json
-C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.dll
-C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.pdb
-C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.deps.json
-C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.dll
-C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.pdb
-C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.dll
-C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Repository\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.pdb
-C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.csprojAssemblyReference.cache
-C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.AssemblyInfoInputs.cache
-C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.AssemblyInfo.cs
-C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.csproj.CopyComplete
-C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.dll
-C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.pdb
-C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.csprojAssemblyReference.cache
-C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.csproj.CoreCompileInputs.cache
-C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.AssemblyInfoInputs.cache
-C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.AssemblyInfo.cs
-C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.dll
-C:\Users\Aluno\Downloads\controle-de-gastos-web\ControleDeGastos.Repository\obj\Debug\netcoreapp2.1\ControleDeGastos.Repository.pdb

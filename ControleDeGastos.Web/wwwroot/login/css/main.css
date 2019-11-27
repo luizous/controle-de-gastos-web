@@ -189,9 +189,9 @@ iframe {
 
 .container-title {
     margin-top: 250px;
-    margin-bottom:-270px;
-    margin-right:25px;
-    text-align:center;
+    margin-bottom: -270px;
+    margin-right: 25px;
+    text-align: center;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -199,7 +199,6 @@ iframe {
 .limiter {
     width: 100%;
     margin: 0 auto;
-    
 }
 
 .container-login100 {
@@ -247,7 +246,7 @@ iframe {
 [  ]*/
 .login100-form {
     width: 290px;
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 .login100-form-title {
@@ -296,7 +295,7 @@ iframe {
     width: 100%;
     height: 100%;
     box-shadow: 0px 0px 0px 0px;
-    color: #ff8c00;
+    color: #6BBAA7;
 }
 
 .input100:focus + .focus-input100 {
@@ -342,7 +341,7 @@ iframe {
 }
 
 .input100:focus + .focus-input100 + .symbol-input100 {
-    color: #ff8c00;
+    color: #6BBAA7;
     padding-left: 28px;
 }
 
@@ -552,11 +551,10 @@ iframe {
 }
 /*------------------------------------------------------------------
 [ Criadas ]*/
-.texto-index-ola{
+.texto-index-ola {
     margin-left: 180px;
     margin-bottom: 50px;
     margin-right: 200px;
     margin-top: 80px;
     text-align: center;
 }
-

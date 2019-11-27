@@ -11,15 +11,19 @@ namespace ControleDeGastos.Web.Controllers
     {
         #region Atributos
         private readonly UsuarioService _usuarioService;
+        private readonly LancamentoService _lancamentoService;
+        private readonly RecebimentoService _recebimentoService;
         private readonly UserManager<UsuarioLogado> _userManager;
         private readonly SignInManager<UsuarioLogado> _signInManager;
         #endregion
 
         #region Construtor
-        public UsuarioController(UsuarioService usuarioService,UserManager<UsuarioLogado> userManager,
-            SignInManager<UsuarioLogado> signInManager)
+        public UsuarioController(UsuarioService usuarioService, LancamentoService lancamentoService, RecebimentoService recebimentoService,
+            UserManager<UsuarioLogado> userManager, SignInManager<UsuarioLogado> signInManager)
         {
             _usuarioService = usuarioService;
+            _lancamentoService = lancamentoService;
+            _recebimentoService = recebimentoService;
             _userManager = userManager;
             _signInManager = signInManager;
         }
@@ -93,6 +97,9 @@ namespace ControleDeGastos.Web.Controllers
         #region Dashboard
         public IActionResult Dashboard()
         {
+            var u = _usuarioService.ObterPorToken(Guid.Parse(_userManager.GetUserId(User)));
+            ViewBag.Lancamentos = _lancamentoService.Listar(u.IdUsuario);
+            ViewBag.Recebimentos = _recebimentoService.Listar(u.IdUsuario);
             return View();
         }
         #endregion

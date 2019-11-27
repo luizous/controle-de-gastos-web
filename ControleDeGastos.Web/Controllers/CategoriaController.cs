@@ -40,8 +40,7 @@ namespace ControleDeGastos.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var usuario = _usuarioService.ObterPorToken(Guid.Parse(_userManager.GetUserId(User)));
-                _categoriaService.Cadastrar(c, usuario);
+                _categoriaService.Cadastrar(c, _usuarioService.ObterPorToken(Guid.Parse(_userManager.GetUserId(User))));
             }
             return View(c);
         }
