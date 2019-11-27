@@ -5,11 +5,13 @@ VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleDeGastos.Web", "ControleDeGastos.Web\ControleDeGastos.Web.csproj", "{0C7AF105-E31F-4343-92E4-14CCAFF85B0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleDeGastos.Repository", "ControleDeGastos.Repository\ControleDeGastos.Repository.csproj", "{11212BB1-1720-49AD-A863-98E9E4A7AE2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleDeGastos.Repository", "ControleDeGastos.Repository\ControleDeGastos.Repository.csproj", "{11212BB1-1720-49AD-A863-98E9E4A7AE2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleDeGastos.Domain", "ControleDeGastos.Domain\ControleDeGastos.Domain.csproj", "{A892F95C-EC53-450B-8617-B2E1815C7EA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleDeGastos.Domain", "ControleDeGastos.Domain\ControleDeGastos.Domain.csproj", "{A892F95C-EC53-450B-8617-B2E1815C7EA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleDeGastos.Service", "ControleDeGastos.Service\ControleDeGastos.Service.csproj", "{C1064337-34CD-4CF1-BDA9-D40D4BB34E65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleDeGastos.Service", "ControleDeGastos.Service\ControleDeGastos.Service.csproj", "{C1064337-34CD-4CF1-BDA9-D40D4BB34E65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleDeGastos.Api", "ControleDeGastos.Api\ControleDeGastos.Api.csproj", "{19690ECF-7015-45E8-8EEB-64A687B6D1CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C1064337-34CD-4CF1-BDA9-D40D4BB34E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1064337-34CD-4CF1-BDA9-D40D4BB34E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1064337-34CD-4CF1-BDA9-D40D4BB34E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19690ECF-7015-45E8-8EEB-64A687B6D1CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19690ECF-7015-45E8-8EEB-64A687B6D1CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19690ECF-7015-45E8-8EEB-64A687B6D1CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19690ECF-7015-45E8-8EEB-64A687B6D1CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

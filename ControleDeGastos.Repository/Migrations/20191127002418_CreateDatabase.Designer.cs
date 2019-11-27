@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ControleDeGastos.Repository.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20191126153107_CreateDatabase")]
+    [Migration("20191127002418_CreateDatabase")]
     partial class CreateDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -199,6 +199,8 @@ namespace ControleDeGastos.Repository.Migrations
 
                     b.Property<string>("Sobrenome")
                         .IsRequired();
+
+                    b.Property<Guid>("Token");
 
                     b.HasKey("IdUsuario");
 

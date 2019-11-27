@@ -1,7 +1,9 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Service;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 
 namespace ControleDeGastos.Web.Controllers
 {
@@ -12,15 +14,18 @@ namespace ControleDeGastos.Web.Controllers
         private readonly CartaoService _cartaoService;
         private readonly LancamentoService _lancamentoService;
         private readonly UsuarioService _usuarioService;
+        private readonly UserManager<UsuarioLogado> _userManager;
         #endregion
 
         #region Construtor
-        public LancamentoController(CategoriaService categoriaService, CartaoService cartaoService, LancamentoService lancamentoService, UsuarioService usuarioService)
+        public LancamentoController(CategoriaService categoriaService, CartaoService cartaoService, 
+            LancamentoService lancamentoService, UsuarioService usuarioService, UserManager<UsuarioLogado> userManager)
         {
             _categoriaService = categoriaService;
             _cartaoService = cartaoService;
             _lancamentoService = lancamentoService;
             _usuarioService = usuarioService;
+            _userManager = userManager;
         }
         #endregion
 
@@ -35,7 +40,8 @@ namespace ControleDeGastos.Web.Controllers
         #region Cadastro
         public IActionResult Cadastro()
         {
-            ViewBag.Categorias = new SelectList(_categoriaService.ListarPorUsuario(1), "IdCategoria", "Titulo");
+            var teste = Convert.ToInt32(_userManager.GetUserId(User));
+            ViewBag.Categorias = new SelectList(_categoriaService.ListarPorUsuario(Convert.ToInt32(_userManager.GetUserId(User))), "IdCategoria", "Titulo");
             ViewBag.Cartoes = new SelectList(_cartaoService.Listar(1), "IdCartao", "Banco");
             return View();
         }

@@ -1,4 +1,5 @@
 ﻿using ControleDeGastos.Domain;
+using System;
 using System.Collections.Generic;
 
 namespace ControleDeGastos.Repository.Interfaces
@@ -13,5 +14,6 @@ namespace ControleDeGastos.Repository.Interfaces
         List<Usuario> ListarUsuarios();
         bool Editar(Usuario u);
         Usuario Obter(int idUsuario);
+        Usuario ObterPorToken(Guid token);
     }
 }

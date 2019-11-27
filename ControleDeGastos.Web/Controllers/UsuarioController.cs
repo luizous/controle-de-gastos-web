@@ -48,12 +48,13 @@ namespace ControleDeGastos.Web.Controllers
                 UsuarioLogado usuarioLogado = new UsuarioLogado
                 {
                     Email = u.Email,
-                    UserName = u.Login
+                    UserName = u.Email
                 };
                 IdentityResult result = await _userManager.CreateAsync(usuarioLogado, u.Senha);
                 if (result.Succeeded)
                 {
                     await _signInManager.SignInAsync(usuarioLogado, isPersistent: false);
+                    u.Token = Guid.Parse(usuarioLogado.Id);
                     if (_usuarioService.Cadastrar(u))
                     {
                         return RedirectToAction("Index");

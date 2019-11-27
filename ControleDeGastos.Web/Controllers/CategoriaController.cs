@@ -1,28 +1,36 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Service;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace ControleDeGastos.Web.Controllers
 {
+    [Authorize]
     public class CategoriaController : Controller
     {
         #region Atributos
         private readonly CategoriaService _categoriaService;
         private readonly UsuarioService _usuarioService;
+        private readonly UserManager<UsuarioLogado> _userManager;
         #endregion
 
         #region Construtor
-        public CategoriaController(CategoriaService categoriaService, UsuarioService usuarioService)
+        public CategoriaController(CategoriaService categoriaService, UsuarioService usuarioService,
+            UserManager<UsuarioLogado> userManager)
         {
             _categoriaService = categoriaService;
             _usuarioService = usuarioService;
+            _userManager = userManager;
         }
         #endregion
 
         #region Index
         public IActionResult Index()
         {
-            ViewBag.Categorias = _categoriaService.ListarPorUsuario(1);
+            var usuario = _usuarioService.ObterPorToken(Guid.Parse(_userManager.GetUserId(User)));
+            ViewBag.Categorias = _categoriaService.ListarPorUsuario(usuario.IdUsuario);
             return View();
         }
         #endregion
@@ -32,8 +40,7 @@ namespace ControleDeGastos.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                ////// ----------> COLOCAR O USUARIO LOGADO (ABAIXO) CORRETAMENTE <---------
-                var usuario = _usuarioService.Obter(1);
+                var usuario = _usuarioService.ObterPorToken(Guid.Parse(_userManager.GetUserId(User)));
                 _categoriaService.Cadastrar(c, usuario);
             }
             return View(c);

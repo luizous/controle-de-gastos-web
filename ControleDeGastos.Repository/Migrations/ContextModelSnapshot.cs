@@ -198,6 +198,8 @@ namespace ControleDeGastos.Repository.Migrations
                     b.Property<string>("Sobrenome")
                         .IsRequired();
 
+                    b.Property<Guid>("Token");
+
                     b.HasKey("IdUsuario");
 
                     b.ToTable("Usuario");
