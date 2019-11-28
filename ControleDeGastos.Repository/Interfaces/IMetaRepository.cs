@@ -1,10 +1,11 @@
-﻿using System;
+﻿using ControleDeGastos.Domain;
 using System.Collections.Generic;
-using System.Text;
 
 namespace ControleDeGastos.Repository.Interfaces
 {
     public interface IMetaRepository<T>
     {
+        List<Meta> Listar(int idUsuario);
+        bool Remover(Meta m);
     }
 }
