@@ -64,7 +64,7 @@ using ControleDeGastos.Service;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(25, 1700, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8ded24795e9432db3111fbc655f2f1d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ed5e072c89f847d8937dbd52ddb7ab6f", async() => {
                 BeginContext(31, 13, true);
                 WriteLiteral("\r\n    <title>");
                 EndContext();
@@ -79,7 +79,7 @@ using ControleDeGastos.Service;
                 WriteLiteral("</title>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <!--===============================================================================================-->\r\n    ");
                 EndContext();
                 BeginContext(282, 58, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3d268a3af3dc4e45b37bbc6f279fa81f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5d39fe7372984a438abb6e8ecaa06bc0", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -130,7 +130,7 @@ using ControleDeGastos.Service;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(1727, 1069, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c82dd28317ff4da4919f45353ec9b0c5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d96f9d58400484fbf0afd689e90f383", async() => {
                 BeginContext(1751, 37, true);
                 WriteLiteral("\r\n    <div class=\"limiter\">\r\n        ");
                 EndContext();

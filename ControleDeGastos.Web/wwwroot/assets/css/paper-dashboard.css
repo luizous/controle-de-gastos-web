@@ -23,9 +23,13 @@ Copyright (c) 2015 Daniel Eden
 */
 
 .img-relatorio {
-    width: 100px;
-    margin: 100px 100px 100px 100px;
+    width: 150px;
     cursor: pointer;
+}
+
+.img-flecha {
+    width: 75px;
+    transform: rotate(-145deg);
 }
 
 .animated {

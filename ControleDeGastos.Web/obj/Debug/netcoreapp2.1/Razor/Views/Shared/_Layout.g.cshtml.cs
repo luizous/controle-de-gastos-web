@@ -87,12 +87,12 @@ The above copyright notice and this permission notice shall be included in all c
 ");
             EndContext();
             BeginContext(633, 766, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1dfa95e6d19c420b88ad020466b7eaaa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ab9597e10f9d431ab8c974eb3fe9210d", async() => {
                 BeginContext(639, 36, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\" />\r\n    ");
                 EndContext();
                 BeginContext(675, 56, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "97acf4d9ac92428a96d603e19f4cca69", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "300cc7cf59b9495e978f7e6f8cfef2f0", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -129,7 +129,7 @@ The above copyright notice and this permission notice shall be included in all c
     ");
                 EndContext();
                 BeginContext(1256, 63, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "68ece43642a74edfaf26cc088b11a098", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c63c23a0bc424963bab02486cde3f069", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -148,7 +148,7 @@ The above copyright notice and this permission notice shall be included in all c
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(1325, 65, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bb80e9a26e9c40e89c6e7a5a08cfc21b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9aeee832b1ec438985a0b1bfe3653643", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -182,7 +182,7 @@ The above copyright notice and this permission notice shall be included in all c
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(1401, 6842, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7cc0592057e14918aca185e758129532", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea4410e486484e14b880fb492f821366", async() => {
                 BeginContext(1416, 267, true);
                 WriteLiteral(@"
     <div class=""wrapper "">
@@ -193,7 +193,7 @@ The above copyright notice and this permission notice shall be included in all c
                         ");
                 EndContext();
                 BeginContext(1683, 38, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "21c2ecbb84ba4222965c2b539b63e4bf", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3854757d795d4fb1939465673724a111", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -292,7 +292,7 @@ The above copyright notice and this permission notice shall be included in all c
                         ");
                 EndContext();
                 BeginContext(4953, 551, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "535e3bbbcffc4c9699901ae0f2389099", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f77e55c4bdc94bf0b9e4a386765aa7b0", async() => {
                     BeginContext(4959, 67, true);
                     WriteLiteral("\r\n                            <div class=\"input-group no-border\">\r\n");
                     EndContext();

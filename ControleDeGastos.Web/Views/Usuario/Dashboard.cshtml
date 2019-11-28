@@ -3,14 +3,10 @@
     ViewData["Title"] = "Dashboard - Controle de Gastos";
 }
 
-<div class="img-relatorio">
-    <img src="~/images/newspaper.png" />
-</div>
-
 <div class="content">
     <div class="row">
         <div class="col-md-12">
-            <div class="card" style="width: 100%;">
+            <div class="card" style="width: 70%;">
                 <div class="card-body">
                     @if (ViewBag.Lancamentos.Count == 0)
                     {
@@ -56,7 +52,7 @@
 <div class="content">
     <div class="row">
         <div class="col-md-12">
-            <div class="card" style="width: 100%;">
+            <div class="card" style="width: 70%;">
                 <div class="card-body">
                     @if (ViewBag.Recebimentos.Count == 0)
                     {
@@ -93,6 +89,19 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div class="row" style="float: right; margin-right: 60px;">
+    IMPRIMIR RELATÓRIO
+</div>
+<div class="row" style="float: right; margin-right: 10px;">
 
+    <div class="img-relatorio">
+        <img src="~/images/newspaper.png" />
+    </div>
+</div>
+<div class="row" style="float: right; margin-right: 10px;">
+    <div class="img-flecha">
+        <img src="~/images/back-arrow.png" />
     </div>
 </div>

@@ -80,7 +80,7 @@ using ControleDeGastos.Service;
                         ");
             EndContext();
             BeginContext(551, 130, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "edeee667c9df4d23ab9e91e23ceef1c6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c5b26254d498483fa594e70ccf511aef", async() => {
                 BeginContext(638, 39, true);
                 WriteLiteral("<small><b>+ Novo lancamento</b></small>");
                 EndContext();
@@ -214,7 +214,7 @@ using ControleDeGastos.Service;
             WriteLiteral("</td>\r\n                                            <td>");
             EndContext();
             BeginContext(2444, 129, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0bd4a3d772647ce8db5abe7cd0b5664", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "05791fb56ca7471d8c2575b9b176136c", async() => {
                 BeginContext(2535, 34, true);
                 WriteLiteral("<big><big><big>✎</big></big></big>");
                 EndContext();
