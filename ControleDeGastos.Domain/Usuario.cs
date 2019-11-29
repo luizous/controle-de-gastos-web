@@ -19,7 +19,6 @@ namespace ControleDeGastos.Domain
         [Display(Name = "Sobrenome:")]
         [Required(ErrorMessage = "Campo obrigatório!")]
         public string Sobrenome { get; set; }
-
         public string Cpf { get; set; }
 
         [Display(Name = "E-mail:")]

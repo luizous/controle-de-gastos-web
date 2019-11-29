@@ -1,0 +1,57 @@
+﻿@model  Poupanca
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<h2>PoupancaCadastro</h2>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Cadastro de Conta Poupança</h5>
+
+            </div>
+            <div class="card-body">
+                <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-4 pr-1">
+                            <div class="form-group">
+                                <label>Banco</label>
+                                <input type="text" class="form-control" asp-for="Banco" placeholder="Banco" />
+                                <span asp-validation-for="Banco" class="text-primary"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pr-1">
+                            <div class="form-group">
+                                <label>Conta</label>
+                                <input type="text" class="form-control" asp-for="NumeroConta" placeholder="Conta" />
+                                <span asp-validation-for="NumeroConta" class="text-primary"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 pr-1">
+                            <div class="form-group">
+                                <label>Valor</label>
+                                <input type="text" class="form-control" asp-for="Valor" placeholder="Valor" />
+                                <span asp-validation-for="Valor" class="text-primary"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="update ml-auto mr-auto">
+                            <button type="submit" class="btn btn-default btn-round" asp-action="Index">Voltar</button>
+                            <button type="submit" class="btn btn-success btn-round" value="Cadastrar">Cadastrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
