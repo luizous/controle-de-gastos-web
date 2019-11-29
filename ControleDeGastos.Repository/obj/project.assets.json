@@ -4400,6 +4400,11 @@
       "projectPath": "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Repository\\obj\\",
+      "projectUniqueName": "C:\\Users\\Aluno\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj",
+      "projectName": "ControleDeGastos.Repository",
+      "projectPath": "C:\\Users\\Aluno\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj",
+      "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aluno\\controle-de-gastos-web\\ControleDeGastos.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -4420,6 +4425,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
+              "projectPath": "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj"
             "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
               "projectPath": "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj"
             }

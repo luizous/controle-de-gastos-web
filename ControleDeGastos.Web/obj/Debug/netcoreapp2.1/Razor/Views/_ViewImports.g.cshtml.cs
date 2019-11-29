@@ -14,6 +14,7 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #line 1 "C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\Views\_ViewImports.cshtml"
+#line 1 "C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Web\Views\_ViewImports.cshtml"
 using ControleDeGastos.Web;
 
 #line default

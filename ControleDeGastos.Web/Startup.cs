@@ -39,12 +39,14 @@ namespace ControleDeGastos.Web
             services.AddScoped<LancamentoService>();
             services.AddScoped<UsuarioService>();
             services.AddScoped<RecebimentoService>();
+            services.AddScoped<PoupancaService>();
 
             services.AddScoped<CartaoRepository>();
             services.AddScoped<CategoriaRepository>();
             services.AddScoped<LancamentoRepository>();
             services.AddScoped<RecebimentoRepository>();
             services.AddScoped<UsuarioRepository>();
+            services.AddScoped<PoupancaRepository>();
 
             services.AddDbContext<Context>
                 (options => options.UseSqlServer

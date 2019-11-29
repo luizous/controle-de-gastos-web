@@ -31,12 +31,13 @@
                                 <tbody>
                                     @foreach (Poupanca item in ViewBag.Poupancas)
                                     {
-                                        <tr>
-                                            <td>@item.Descricao</td>
-                                            <td>@item.Valor</td>
-                                            <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
-                                            <td><a class="btn btn-warning" asp-action="Edicao" asp-route-idPoupanca="@item.IdPoupanca"><big><big><big>✎</big></big></big></a></td>
-                                        </tr>
+                                    <tr>
+                                        <td>@item.Banco</td>
+                                        <td>@item.NumeroConta</td>
+                                        <td>@item.Valor</td>
+                                        <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
+                                        <td><a class="btn btn-warning" asp-action="Edicao" asp-route-idPoupanca="@item.IdPoupanca"><big><big><big>✎</big></big></big></a></td>
+                                    </tr>
                                     }
                                 </tbody>
                             </table>
