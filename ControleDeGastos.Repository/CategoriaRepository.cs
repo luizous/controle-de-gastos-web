@@ -65,7 +65,5 @@ namespace ControleDeGastos.Repository
             return _context.Categorias.Find(idCategoria);
         }
         #endregion
-
-
     }
 }

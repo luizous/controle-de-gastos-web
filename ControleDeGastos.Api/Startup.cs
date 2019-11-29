@@ -26,12 +26,14 @@ namespace ControleDeGastos.Api
             services.AddScoped<LancamentoService>();
             services.AddScoped<UsuarioService>();
             services.AddScoped<RecebimentoService>();
+            services.AddScoped<MetaService>();
 
             services.AddScoped<CartaoRepository>();
             services.AddScoped<CategoriaRepository>();
             services.AddScoped<LancamentoRepository>();
             services.AddScoped<RecebimentoRepository>();
             services.AddScoped<UsuarioRepository>();
+            services.AddScoped<MetaRepository>();
 
             services.AddDbContext<Context>
                 (options => options.UseSqlServer

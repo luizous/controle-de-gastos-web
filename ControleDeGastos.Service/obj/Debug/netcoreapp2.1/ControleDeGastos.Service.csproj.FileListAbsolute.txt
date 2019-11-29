@@ -12,6 +12,7 @@ C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcor
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csproj.CopyComplete
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.dll
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.pdb
+<<<<<<< HEAD
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.deps.json
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.dll
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.pdb
@@ -26,3 +27,19 @@ C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcore
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csproj.CopyComplete
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.dll
 C:\Users\Aluno\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.pdb
+=======
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.deps.json
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.dll
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.pdb
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.dll
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.dll
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.pdb
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.pdb
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csprojAssemblyReference.cache
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.AssemblyInfoInputs.cache
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.AssemblyInfo.cs
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csproj.CopyComplete
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.dll
+C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.pdb
+>>>>>>> 33e052752d99dce5982cadf69b7c9f12dd376356

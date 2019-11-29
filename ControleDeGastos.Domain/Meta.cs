@@ -12,5 +12,10 @@ namespace ControleDeGastos.Domain
         public string Texto { get; set; }
         public DateTime DataCadastro { get; set; }
         public Usuario Usuario { get; set; }
+
+        public Meta()
+        {
+            DataCadastro = DateTime.Now;
+        }
     }
 }
