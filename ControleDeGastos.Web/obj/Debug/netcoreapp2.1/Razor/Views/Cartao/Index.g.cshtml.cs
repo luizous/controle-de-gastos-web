@@ -77,7 +77,7 @@ using ControleDeGastos.Service;
                         ");
             EndContext();
             BeginContext(541, 126, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf5d52e6ca4e4a7186326bd8e1a8d4f8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9956d1190aa541898550addb7d73f8d0", async() => {
                 BeginContext(628, 35, true);
                 WriteLiteral("<small><b>+ Novo cartão</b></small>");
                 EndContext();
@@ -233,7 +233,7 @@ using ControleDeGastos.Service;
             WriteLiteral("\r\n                                            </td>\r\n                                            <td>\r\n                                                ");
             EndContext();
             BeginContext(3545, 88, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c38a8579c73d49a4b27933f584dfcece", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c3415a8547d4a1c982ad4d23294e91d", async() => {
                 BeginContext(3628, 1, true);
                 WriteLiteral("X");
                 EndContext();

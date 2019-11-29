@@ -32,7 +32,13 @@ namespace ControleDeGastos.Web.Controllers
         #region Index
         public IActionResult Index()
         {
-            ViewBag.Lancamentos = _lancamentoService.Listar(1);
+            var usuario = _usuarioService.ObterPorToken(Guid.Parse(_userManager.GetUserId(User)));
+            ViewBag.Lancamentos = _lancamentoService.Listar(usuario.IdUsuario);
+            foreach (var item in ViewBag.Lancamentos)
+            {
+                ViewBag.Categoria = _categoriaService.Obter(item.Categoria.IdCategoria).Titulo;
+                ViewBag.Cartao = _cartaoService.Obter(item.Cartao.IdCartao).Banco;
+            }
             return View();
         }
         #endregion
@@ -40,19 +46,21 @@ namespace ControleDeGastos.Web.Controllers
         #region Cadastro
         public IActionResult Cadastro()
         {
-            var teste = Convert.ToInt32(_userManager.GetUserId(User));
-            ViewBag.Categorias = new SelectList(_categoriaService.ListarPorUsuario(Convert.ToInt32(_userManager.GetUserId(User))), "IdCategoria", "Titulo");
+            var usuario = _usuarioService.ObterPorToken(Guid.Parse(_userManager.GetUserId(User)));
+            ViewBag.Categorias = new SelectList(_categoriaService.ListarPorUsuario(usuario.IdUsuario), "IdCategoria", "Titulo");
             ViewBag.Cartoes = new SelectList(_cartaoService.Listar(1), "IdCartao", "Banco");
             return View();
         }
         #endregion
 
         #region Cadastrar
-        public IActionResult Cadastrar(Lancamento l)
+        public IActionResult Cadastrar(Lancamento l, int drpCategorias, int drpCartoes)
         {
             if (ModelState.IsValid)
             {
-                var usuario = _usuarioService.Obter(1);
+                l.Categoria = _categoriaService.Obter(drpCategorias);
+                l.Cartao = _cartaoService.Obter(drpCartoes);
+                var usuario = _usuarioService.ObterPorToken(Guid.Parse(_userManager.GetUserId(User)));
                 _lancamentoService.Cadastrar(l, usuario);
             }
             return View();

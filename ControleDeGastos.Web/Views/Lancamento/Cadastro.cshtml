@@ -5,11 +5,11 @@
 
 <div class="row">
     <div class="col-md-8">
-        <div class="card card-user">
+        <div class="card">
             <div class="card-header">
                 <h5 class="card-title">Novo Lançamento</h5>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="width: 130%;">
                 <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-md-4 pr-1">
@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-5 pl-1">
+                        <div class="col-md-5 pr-1">
                             <div class="form-group">
                                 <label>Cartao</label>
                                 <select asp-items="@ViewBag.Cartoes"
@@ -52,7 +52,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-4 pl-1">
+                        <div class="col-md-4 pr-1">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Parcelas</label>
                                 <input type="number" class="form-control" asp-for="Parcelas" placeholder="Parcelas" />
@@ -61,10 +61,8 @@
                     </div>
                     <div class="row">
                         <div class="update ml-auto mr-auto">
-                            <button type="submit" class="btn btn-primary btn-round" asp-action="Index">Voltar</button>
-                        </div>
-                        <div class="update ml-auto mr-auto">
-                            <button type="submit" class="btn btn-primary btn-round" value="Cadastrar">Cadastrar</button>
+                            <button type="submit" class="btn btn-default btn-round" asp-action="Index">Voltar</button>
+                            <button type="submit" class="btn btn-success btn-round" value="Cadastrar">Cadastrar</button>
                         </div>
                     </div>
                 </form>

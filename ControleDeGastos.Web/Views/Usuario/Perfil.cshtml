@@ -5,12 +5,12 @@
 
 <div class="row">
     <div class="col-md-4">
-        <div class="card card-user">
+        <div class="card">
             <div class="image">
                 <img src="../assets/img/damir-bosnjak.jpg" alt="...">
             </div>
             <div class="card-body">
-                                <p class="description text-center">
+                <p class="description text-center">
                     "I like the way you work it
                     <br> No diggity
                     <br> I wanna bag it up"
@@ -48,48 +48,31 @@
         <div class="card">
             <div class="card-header">
                 <h4 class="card-title">Minhas categorias</h4>
+                <form style="margin-left: 210px; margin-top: -52px;">
+                    <button type="submit" class="btn btn-success btn-round" asp-controller="Categoria" asp-action="Index">+</button>
+                </form>
             </div>
             <div class="card-body">
                 <ul class="list-unstyled team-members">
-                    
-                        <li>
-                            <div class="row">
-                                <div class="col-md-2 col-2">
-                                    <div class="avatar">
-                                        <img src="../assets/img/faces/joe-gardner-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-7">
-                                    Creative Tim
-                                    <br />
-                                    <span class="text-success">
-                                        <small>Available</small>
-                                    </span>
-                                </div>
-                                <div class="col-md-3 col-3 text-right">
-                                    <btn class="btn btn-sm btn-outline-success btn-round btn-icon"><i class="fa fa-envelope"></i></btn>
+                    <li>
+                        <div class="row">
+                            <div class="col-md-2 col-2">
+                                <div class="avatar">
+                                    <img src="../assets/img/faces/joe-gardner-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="row">
-                                <div class="col-md-2 col-2">
-                                    <div class="avatar">
-                                        <img src="../assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                    </div>
-                                </div>
-                                <div class="col-ms-7 col-7">
-                                    Flume
-                                    <br />
-                                    <span class="text-danger">
-                                        <small>Busy</small>
-                                    </span>
-                                </div>
-                                <div class="col-md-3 col-3 text-right">
-                                    <btn class="btn btn-sm btn-outline-success btn-round btn-icon"><i class="fa fa-envelope"></i></btn>
-                                </div>
+                            <div class="col-md-7 col-7">
+                                Creative Tim
+                                <br />
+                                <span class="text-success">
+                                    <small>Available</small>
+                                </span>
                             </div>
-                        </li>
+                            <div class="col-md-3 col-3 text-right">
+                                <btn class="btn btn-sm btn-outline-danger btn-round btn-icon"><i class="fa fa-trash"></i></btn>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>

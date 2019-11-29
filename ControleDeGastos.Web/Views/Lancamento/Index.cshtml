@@ -9,7 +9,7 @@
             <div class="card" style="width: 100%;">
                 <div class="card-header">
                     <h5 style="text-align: center;"><small>Estes são os lançamentos que você cadastrou. </br> Você pode adicionar um novo clicando no botão ao lado.</small></h5>
-                    <div class="row" style="margin-left: 5px; margin-top: -80px; text-transform: uppercase;">
+                    <div class="row" style="margin-left: 5px; margin-top: -70px; text-transform: uppercase;">
                         <a class="blockquote blockquote-primary" asp-action="Cadastro" style="cursor: pointer"><small><b>+ Novo lancamento</b></small></a>
                     </div>
                 </div>
@@ -39,11 +39,11 @@
                                             <td>@item.Valor</td>
                                             <td>@item.DataLancamento.ToString("dd/MM/yyyy")</td>
                                             <td>@item.Descricao</td>
-                                            <td>@item.Categoria</td>
+                                            <td>@ViewBag.Categoria</td>
                                             <td>@item.Parcelas</td>
-                                            <td>@item.Cartao</td>
+                                            <td>@ViewBag.Cartao</td>
                                             <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
-                                            <td><a class="btn btn-warning" asp-action="Edicao" asp-route-idLancamento="@item.IdLancamento"><big><big><big>✎</big></big></big></a></td>
+                                            <td><a class="btn btn-warning" asp-action="Edicao" asp-route-idLancamento="@item.IdLancamento"><big>✎</big></a></td>
                                         </tr>
                                     }
                                 </tbody>

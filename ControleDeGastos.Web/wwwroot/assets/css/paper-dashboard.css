@@ -23,13 +23,25 @@ Copyright (c) 2015 Daniel Eden
 */
 
 .img-relatorio {
-    width: 150px;
+    width: 13%;
     cursor: pointer;
+    float: right;
+    margin: 0px -200px 0px 0px;
 }
 
 .img-flecha {
-    width: 75px;
+    width: 7%;
+    float: right;
     transform: rotate(-145deg);
+    margin-right: 200px;
+    margin-top: 50px;
+}
+
+.text-relatorio {
+    width: 50%;
+    float: left;
+    margin-left: 20px;
+    text-align: center;
 }
 
 .animated {
@@ -2503,7 +2515,7 @@ a.text-gray:hover {
 
 body {
   color: #2c2c2c;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -4466,11 +4478,12 @@ License - nucleoapp.com/license/
 }
 
 .table>thead>tr>th {
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 700;
   padding-bottom: 0;
   text-transform: uppercase;
   border: 0;
+  text-align: center;
 }
 
 .table .radio,
@@ -4494,14 +4507,15 @@ License - nucleoapp.com/license/
   left: -3px;
 }
 
-.table>thead>tr>th,
-.table>tbody>tr>th,
-.table>tfoot>tr>th,
-.table>thead>tr>td,
-.table>tbody>tr>td,
-.table>tfoot>tr>td {
-  padding: 12px 7px;
-  vertical-align: middle;
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    padding: 12px 7px;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .table .th-description {
@@ -4528,13 +4542,15 @@ License - nucleoapp.com/license/
   margin: 0px;
 }
 
-.table>tbody>tr {
-  position: relative;
+.table > tbody > tr {
+    position: relative;
+    text-align: center;
 }
 
-.table-shopping>thead>tr>th {
-  font-size: 1em;
-  text-transform: uppercase;
+.table-shopping > thead > tr > th {
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .table-shopping>tbody>tr>td {

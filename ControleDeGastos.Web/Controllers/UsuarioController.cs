@@ -13,17 +13,22 @@ namespace ControleDeGastos.Web.Controllers
         private readonly UsuarioService _usuarioService;
         private readonly LancamentoService _lancamentoService;
         private readonly RecebimentoService _recebimentoService;
+        private readonly CategoriaService _categoriaService;
+        private readonly CartaoService _cartaoService;
         private readonly UserManager<UsuarioLogado> _userManager;
         private readonly SignInManager<UsuarioLogado> _signInManager;
         #endregion
 
         #region Construtor
-        public UsuarioController(UsuarioService usuarioService, LancamentoService lancamentoService, RecebimentoService recebimentoService,
+        public UsuarioController(CategoriaService categoriaService, CartaoService cartaoService, 
+            UsuarioService usuarioService, LancamentoService lancamentoService, RecebimentoService recebimentoService,
             UserManager<UsuarioLogado> userManager, SignInManager<UsuarioLogado> signInManager)
         {
             _usuarioService = usuarioService;
             _lancamentoService = lancamentoService;
             _recebimentoService = recebimentoService;
+            _categoriaService = categoriaService;
+            _cartaoService = cartaoService;
             _userManager = userManager;
             _signInManager = signInManager;
         }
@@ -100,6 +105,16 @@ namespace ControleDeGastos.Web.Controllers
             var u = _usuarioService.ObterPorToken(Guid.Parse(_userManager.GetUserId(User)));
             ViewBag.Lancamentos = _lancamentoService.Listar(u.IdUsuario);
             ViewBag.Recebimentos = _recebimentoService.Listar(u.IdUsuario);
+            foreach (var item in ViewBag.Lancamentos)
+            {
+                ViewBag.Categoria = _categoriaService.Obter(item.Categoria.IdCategoria).Titulo;
+                ViewBag.Cartao = _cartaoService.Obter(item.Cartao.IdCartao).Banco;
+            }
+            foreach (var item in ViewBag.Recebimentos)
+            {
+                ViewBag.Categoria = _categoriaService.Obter(item.Categoria.IdCategoria).Titulo;
+                ViewBag.Cartao = _cartaoService.Obter(item.Cartao.IdCartao).Banco;
+            }
             return View();
         }
         #endregion
