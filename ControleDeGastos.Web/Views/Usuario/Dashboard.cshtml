@@ -3,10 +3,18 @@
     ViewData["Title"] = "Dashboard - Controle de Gastos";
 }
 
+<div class="img-flecha">
+    <img src="~/images/back-arrow.png" />
+</div>
+<div class="img-relatorio">
+    <div class="text-relatorio"><p class="text-dark">VER RELATÓRIO</p></div> <br />
+    <img src="~/images/newspaper.png" />
+</div>
+
 <div class="content">
     <div class="row">
         <div class="col-md-12">
-            <div class="card" style="width: 70%;">
+            <div class="card" style="width: 99%;">
                 <div class="card-body">
                     @if (ViewBag.Lancamentos.Count == 0)
                     {
@@ -18,7 +26,7 @@
                             <table class="table">
                                 <thead class="text-primary">
                                 <th>Valor</th>
-                                <th>Lançado em</th>
+                                <th>Lançamento</th>
                                 <th>Descrição</th>
                                 <th>Categoria</th>
                                 <th>Qtd. parcela</th>
@@ -32,11 +40,11 @@
                                             <td>@item.Valor</td>
                                             <td>@item.DataLancamento.ToString("dd/MM/yyyy")</td>
                                             <td>@item.Descricao</td>
-                                            <td>@item.Categoria</td>
+                                            <td>@ViewBag.Categoria</td>
                                             <td>@item.Parcelas</td>
-                                            <td>@item.Cartao</td>
+                                            <td>@ViewBag.Cartao</td>
                                             <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
-                                            <td><a class="btn btn-warning" asp-action="Edicao" asp-route-idLancamento="@item.IdLancamento"><big><big><big>✎</big></big></big></a></td>
+                                            <td><a class="btn btn-warning" asp-action="Edicao" asp-route-idLancamento="@item.IdLancamento"><big>✎</big></a></td>
                                         </tr>
                                     }
                                 </tbody>
@@ -75,7 +83,7 @@
                                     {
                                         <tr>
                                             <td>@item.Fornecedor</td>
-                                            <td> @item.Descricao</td>
+                                            <td>@item.Descricao</td>
                                             <td>@item.Valor</td>
                                             <td>@item.DataRecebimento.ToString("dd/MM/yyyy")</td>
                                             <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
@@ -89,19 +97,5 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="row" style="float: right; margin-right: 60px;">
-    IMPRIMIR RELATÓRIO
-</div>
-<div class="row" style="float: right; margin-right: 10px;">
-
-    <div class="img-relatorio">
-        <img src="~/images/newspaper.png" />
-    </div>
-</div>
-<div class="row" style="float: right; margin-right: 10px;">
-    <div class="img-flecha">
-        <img src="~/images/back-arrow.png" />
     </div>
 </div>
