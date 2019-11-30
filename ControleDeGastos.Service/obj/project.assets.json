@@ -4406,27 +4406,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aluno\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\gabri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj",
+      "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj",
       "projectName": "ControleDeGastos.Service",
-      "projectPath": "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj",
-      "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Service\\obj\\",
+      "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj",
+      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Service\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -4438,8 +4431,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
-              "projectPath": "C:\\Users\\Aluno\\Desktop\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj"
+            "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
+              "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj"
             }
           }
         }
@@ -4461,10 +4454,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

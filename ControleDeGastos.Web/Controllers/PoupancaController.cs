@@ -1,5 +1,6 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Service;
+using ControleDeGastos.Web.Helpers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ControleDeGastos.Web.Controllers
@@ -9,13 +10,15 @@ namespace ControleDeGastos.Web.Controllers
         #region Atributos
         private readonly PoupancaService _poupancaService;
         private readonly UsuarioService _usuarioService;
+        private readonly UsuarioAutenticado _usuarioAutenticado;
         #endregion
 
         #region Construtor
-        public PoupancaController(PoupancaService poupancaService, UsuarioService usuarioService)
+        public PoupancaController(PoupancaService poupancaService, UsuarioService usuarioService, UsuarioAutenticado usuarioAutenticado)
         {
             _poupancaService = poupancaService;
             _usuarioService = usuarioService;
+            _usuarioAutenticado = usuarioAutenticado;
         }
         #endregion
 
@@ -40,7 +43,7 @@ namespace ControleDeGastos.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var usuario = _usuarioService.Obter(1);
+                var usuario = _usuarioService.Obter(_usuarioAutenticado.IdUsuario());
                 _poupancaService.Cadastrar(p, usuario);
             }
             return View();

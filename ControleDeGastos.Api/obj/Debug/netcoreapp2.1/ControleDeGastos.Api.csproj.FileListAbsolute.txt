@@ -40,3 +40,26 @@ C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Api\obj\Debug\net
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Api\obj\Debug\netcoreapp2.1\ControleDeGastos.Api.csproj.CopyComplete
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Api\obj\Debug\netcoreapp2.1\ControleDeGastos.Api.dll
 C:\Users\Aluno\Desktop\controle-de-gastos-web\ControleDeGastos.Api\obj\Debug\netcoreapp2.1\ControleDeGastos.Api.pdb
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\bin\Debug\netcoreapp2.1\ControleDeGastos.Api.deps.json
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\bin\Debug\netcoreapp2.1\ControleDeGastos.Api.runtimeconfig.json
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\bin\Debug\netcoreapp2.1\ControleDeGastos.Api.runtimeconfig.dev.json
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\bin\Debug\netcoreapp2.1\ControleDeGastos.Api.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\bin\Debug\netcoreapp2.1\ControleDeGastos.Api.pdb
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.pdb
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.pdb
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.pdb
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\obj\Debug\netcoreapp2.1\ControleDeGastos.Api.csprojAssemblyReference.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\obj\Debug\netcoreapp2.1\ControleDeGastos.Api.RazorAssemblyInfo.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\obj\Debug\netcoreapp2.1\ControleDeGastos.Api.RazorAssemblyInfo.cs
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\obj\Debug\netcoreapp2.1\ControleDeGastos.Api.AssemblyInfoInputs.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\obj\Debug\netcoreapp2.1\ControleDeGastos.Api.AssemblyInfo.cs
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\obj\Debug\netcoreapp2.1\ControleDeGastos.Api.RazorTargetAssemblyInfo.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\obj\Debug\netcoreapp2.1\ControleDeGastos.Api.csproj.CopyComplete
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\obj\Debug\netcoreapp2.1\ControleDeGastos.Api.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Api\obj\Debug\netcoreapp2.1\ControleDeGastos.Api.pdb

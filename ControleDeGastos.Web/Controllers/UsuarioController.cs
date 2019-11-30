@@ -1,5 +1,6 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Service;
+using ControleDeGastos.Web.Helpers;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -17,12 +18,13 @@ namespace ControleDeGastos.Web.Controllers
         private readonly CartaoService _cartaoService;
         private readonly UserManager<UsuarioLogado> _userManager;
         private readonly SignInManager<UsuarioLogado> _signInManager;
+        private readonly UsuarioAutenticado _usuarioAutenticado;
         #endregion
 
         #region Construtor
         public UsuarioController(CategoriaService categoriaService, CartaoService cartaoService, 
             UsuarioService usuarioService, LancamentoService lancamentoService, RecebimentoService recebimentoService,
-            UserManager<UsuarioLogado> userManager, SignInManager<UsuarioLogado> signInManager)
+            UserManager<UsuarioLogado> userManager, SignInManager<UsuarioLogado> signInManager, UsuarioAutenticado usuarioAutenticado)
         {
             _usuarioService = usuarioService;
             _lancamentoService = lancamentoService;
@@ -31,6 +33,7 @@ namespace ControleDeGastos.Web.Controllers
             _cartaoService = cartaoService;
             _userManager = userManager;
             _signInManager = signInManager;
+            _usuarioAutenticado = usuarioAutenticado;
         }
         #endregion
 
@@ -102,9 +105,8 @@ namespace ControleDeGastos.Web.Controllers
         #region Dashboard
         public IActionResult Dashboard()
         {
-            var u = _usuarioService.ObterPorToken(Guid.Parse(_userManager.GetUserId(User)));
-            ViewBag.Lancamentos = _lancamentoService.Listar(u.IdUsuario);
-            ViewBag.Recebimentos = _recebimentoService.Listar(u.IdUsuario);
+            ViewBag.Lancamentos = _lancamentoService.Listar(_usuarioAutenticado.IdUsuario());
+            ViewBag.Recebimentos = _recebimentoService.Listar(_usuarioAutenticado.IdUsuario());
             foreach (var item in ViewBag.Lancamentos)
             {
                 ViewBag.Categoria = _categoriaService.Obter(item.Categoria.IdCategoria).Titulo;

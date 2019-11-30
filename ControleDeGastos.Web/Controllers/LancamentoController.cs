@@ -1,5 +1,6 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Service;
+using ControleDeGastos.Web.Helpers;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -13,27 +14,24 @@ namespace ControleDeGastos.Web.Controllers
         private readonly CategoriaService _categoriaService;
         private readonly CartaoService _cartaoService;
         private readonly LancamentoService _lancamentoService;
-        private readonly UsuarioService _usuarioService;
-        private readonly UserManager<UsuarioLogado> _userManager;
+        private readonly UsuarioAutenticado _usuarioAutenticado;
         #endregion
 
         #region Construtor
         public LancamentoController(CategoriaService categoriaService, CartaoService cartaoService, 
-            LancamentoService lancamentoService, UsuarioService usuarioService, UserManager<UsuarioLogado> userManager)
+            LancamentoService lancamentoService, UsuarioAutenticado usuarioAutenticado)
         {
             _categoriaService = categoriaService;
             _cartaoService = cartaoService;
             _lancamentoService = lancamentoService;
-            _usuarioService = usuarioService;
-            _userManager = userManager;
+            _usuarioAutenticado = usuarioAutenticado;
         }
         #endregion
 
         #region Index
         public IActionResult Index()
         {
-            var usuario = _usuarioService.ObterPorToken(Guid.Parse(_userManager.GetUserId(User)));
-            ViewBag.Lancamentos = _lancamentoService.Listar(usuario.IdUsuario);
+            ViewBag.Lancamentos = _lancamentoService.Listar(_usuarioAutenticado.IdUsuario());
             foreach (var item in ViewBag.Lancamentos)
             {
                 ViewBag.Categoria = _categoriaService.Obter(item.Categoria.IdCategoria).Titulo;
@@ -46,8 +44,7 @@ namespace ControleDeGastos.Web.Controllers
         #region Cadastro
         public IActionResult Cadastro()
         {
-            var usuario = _usuarioService.ObterPorToken(Guid.Parse(_userManager.GetUserId(User)));
-            ViewBag.Categorias = new SelectList(_categoriaService.ListarPorUsuario(usuario.IdUsuario), "IdCategoria", "Titulo");
+            ViewBag.Categorias = new SelectList(_categoriaService.ListarPorUsuario(_usuarioAutenticado.IdUsuario()), "IdCategoria", "Titulo");
             ViewBag.Cartoes = new SelectList(_cartaoService.Listar(1), "IdCartao", "Banco");
             return View();
         }
@@ -60,8 +57,7 @@ namespace ControleDeGastos.Web.Controllers
             {
                 l.Categoria = _categoriaService.Obter(drpCategorias);
                 l.Cartao = _cartaoService.Obter(drpCartoes);
-                var usuario = _usuarioService.ObterPorToken(Guid.Parse(_userManager.GetUserId(User)));
-                _lancamentoService.Cadastrar(l, usuario);
+                _lancamentoService.Cadastrar(l, _usuarioAutenticado.Usuario());
             }
             return View();
         }
@@ -70,8 +66,8 @@ namespace ControleDeGastos.Web.Controllers
         #region Edicao
         public IActionResult Edicao(int? idLancamento)
         {
-            ViewBag.Categorias = new SelectList(_categoriaService.ListarPorUsuario(1), "IdCategoria", "Titulo");
-            ViewBag.Cartoes = new SelectList(_cartaoService.Listar(1), "IdCartao", "Banco");
+            ViewBag.Categorias = new SelectList(_categoriaService.ListarPorUsuario(_usuarioAutenticado.IdUsuario()), "IdCategoria", "Titulo");
+            ViewBag.Cartoes = new SelectList(_cartaoService.Listar(_usuarioAutenticado.IdUsuario()), "IdCartao", "Banco");
             return View(_lancamentoService.Obter(idLancamento));
         }
         #endregion

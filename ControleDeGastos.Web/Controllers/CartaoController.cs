@@ -1,5 +1,6 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Service;
+using ControleDeGastos.Web.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,20 +13,22 @@ namespace ControleDeGastos.Web.Controllers
         #region Atributos
         private readonly CartaoService _cartaoService;
         private readonly UsuarioService _usuarioService;
+        private readonly UsuarioAutenticado _usuarioAutenticado;
         #endregion
 
         #region Construtor
-        public CartaoController(CartaoService cartaoService, UsuarioService usuarioService)
+        public CartaoController(CartaoService cartaoService, UsuarioService usuarioService, UsuarioAutenticado usuarioAutenticado)
         {
             _cartaoService = cartaoService;
             _usuarioService = usuarioService;
+            _usuarioAutenticado = usuarioAutenticado;
         }
         #endregion
 
         #region Index
         public IActionResult Index()
         {
-            ViewBag.Cartoes = _cartaoService.Listar(1);
+            ViewBag.Cartoes = _cartaoService.Listar(_usuarioAutenticado.IdUsuario());
             return View();
         }
         #endregion
@@ -43,8 +46,7 @@ namespace ControleDeGastos.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                ////// ----------> COLOCAR O USUARIO LOGADO (ABAIXO) CORRETAMENTE <---------
-                var usuario = _usuarioService.Obter(1);
+                var usuario = _usuarioService.Obter(_usuarioAutenticado.IdUsuario());
                 _cartaoService.Cadastrar(c, usuario);
             }
             return View();

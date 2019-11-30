@@ -2,8 +2,5 @@
 
 namespace ControleDeGastos.Domain
 {
-    public class UsuarioLogado : IdentityUser
-    {
-
-    }
+    public class UsuarioLogado : IdentityUser { }
 }

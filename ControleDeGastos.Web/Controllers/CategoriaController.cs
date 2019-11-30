@@ -1,5 +1,6 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Service;
+using ControleDeGastos.Web.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -13,24 +14,23 @@ namespace ControleDeGastos.Web.Controllers
         #region Atributos
         private readonly CategoriaService _categoriaService;
         private readonly UsuarioService _usuarioService;
-        private readonly UserManager<UsuarioLogado> _userManager;
+        private readonly UsuarioAutenticado _usuarioAutenticado;
         #endregion
 
         #region Construtor
         public CategoriaController(CategoriaService categoriaService, UsuarioService usuarioService,
-            UserManager<UsuarioLogado> userManager)
+            UsuarioAutenticado usuarioAutenticado)
         {
             _categoriaService = categoriaService;
             _usuarioService = usuarioService;
-            _userManager = userManager;
+            _usuarioAutenticado = usuarioAutenticado;
         }
         #endregion
 
         #region Index
         public IActionResult Index()
         {
-            var usuario = _usuarioService.ObterPorToken(Guid.Parse(_userManager.GetUserId(User)));
-            ViewBag.Categorias = _categoriaService.ListarPorUsuario(usuario.IdUsuario);
+            ViewBag.Categorias = _categoriaService.ListarPorUsuario(_usuarioAutenticado.IdUsuario());
             return View();
         }
         #endregion
@@ -40,7 +40,7 @@ namespace ControleDeGastos.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                _categoriaService.Cadastrar(c, _usuarioService.ObterPorToken(Guid.Parse(_userManager.GetUserId(User))));
+                _categoriaService.Cadastrar(c, _usuarioAutenticado.Usuario());
             }
             return View(c);
         }

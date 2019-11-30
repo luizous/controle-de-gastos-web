@@ -1,5 +1,6 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Service;
+using ControleDeGastos.Web.Helpers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ControleDeGastos.Web.Controllers
@@ -9,20 +10,22 @@ namespace ControleDeGastos.Web.Controllers
         #region Atributos
         private readonly RecebimentoService _recebimentoService;
         private readonly UsuarioService _usuarioService;
+        private readonly UsuarioAutenticado _usuarioAutenticado;
         #endregion
 
         #region Construtor
-        public RecebimentoController(RecebimentoService recebimentoService, UsuarioService usuarioService)
+        public RecebimentoController(RecebimentoService recebimentoService, UsuarioService usuarioService, UsuarioAutenticado usuarioAutenticado)
         {
             _recebimentoService = recebimentoService;
             _usuarioService = usuarioService;
+            _usuarioAutenticado = usuarioAutenticado;
         }
         #endregion
 
         #region Index
         public IActionResult Index()
         {
-            ViewBag.Recebimentos = _recebimentoService.Listar(1);
+            ViewBag.Recebimentos = _recebimentoService.Listar(_usuarioAutenticado.IdUsuario());
             return View();
         }
         #endregion
@@ -40,7 +43,7 @@ namespace ControleDeGastos.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var usuario = _usuarioService.Obter(1);
+                var usuario = _usuarioService.Obter(_usuarioAutenticado.IdUsuario());
                 _recebimentoService.Cadastrar(r, usuario);
             }
             return View();
