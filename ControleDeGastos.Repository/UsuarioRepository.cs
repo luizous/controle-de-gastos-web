@@ -62,19 +62,6 @@ namespace ControleDeGastos.Repository
         }
         #endregion
 
-        #region Logar
-        public bool Logar(string login, string senha)
-        {
-            var usuario = _context.Usuarios.FirstOrDefault(x => x.Email.Equals(login) && x.Senha.Equals(senha));
-            if (usuario == null)
-                usuario = _context.Usuarios.FirstOrDefault(x => x.Login.Equals(login) && x.Senha.Equals(senha));
-            UsuarioLogado = usuario;
-            if (usuario != null)
-                return true;
-            else return false;
-        }
-        #endregion
-
         #region Listar
         public List<Usuario> ListarUsuarios() => _context.Usuarios.ToList();
         #endregion

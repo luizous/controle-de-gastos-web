@@ -47,13 +47,6 @@ namespace ControleDeGastos.Service
         }
         #endregion
 
-        #region Logar
-        public bool Logar(string login, string senha)
-        {
-            return _usuarioRepository.Logar(login, senha);
-        }
-        #endregion
-
         #region Listar
         public List<Usuario> ListarUsuarios()
         {

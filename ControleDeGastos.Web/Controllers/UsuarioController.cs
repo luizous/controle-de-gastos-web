@@ -85,8 +85,7 @@ namespace ControleDeGastos.Web.Controllers
         public async Task<IActionResult> Login(Usuario u)
         {
             var result = await _signInManager.PasswordSignInAsync(u.Email, u.Senha, true, lockoutOnFailure: false);
-            if (!result.Succeeded)
-                result = await _signInManager.PasswordSignInAsync(u.Login, u.Senha, true, lockoutOnFailure: false);
+
             if (result.Succeeded)
             {
                 return RedirectToAction("Dashboard", "Usuario");
