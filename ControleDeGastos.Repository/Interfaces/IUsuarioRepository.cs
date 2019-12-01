@@ -10,7 +10,6 @@ namespace ControleDeGastos.Repository.Interfaces
         Usuario GetUsuarioLogado();
         Usuario BuscarPorCpf(Usuario u);
         Usuario BuscarPorLogin(Usuario u);
-        bool Logar(string email, string senha);
         List<Usuario> ListarUsuarios();
         bool Editar(Usuario u);
         Usuario Obter(int idUsuario);

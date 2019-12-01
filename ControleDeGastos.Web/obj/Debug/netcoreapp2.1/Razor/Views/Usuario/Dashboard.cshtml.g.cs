@@ -69,7 +69,7 @@ using ControleDeGastos.Service;
             WriteLiteral("\r\n\r\n<div class=\"img-relatorio\">\r\n    <div class=\"img-flecha\">\r\n        ");
             EndContext();
             BeginContext(156, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b8f469bbc3d94df988abdc20ba417e24", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0500448f8bab481c95e7884c89dbc5e6", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -87,7 +87,7 @@ using ControleDeGastos.Service;
             WriteLiteral("\r\n    </div>\r\n    <div class=\"text-relatorio\"><p class=\"text-dark\">VER RELATÓRIO</p></div> <br />\r\n    ");
             EndContext();
             BeginContext(296, 36, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "507fbe9c62504c41ac93eb90b2d1d4b0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "34f4963ce98b46f78d6702c7efbf9bc4", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -215,7 +215,7 @@ using ControleDeGastos.Service;
             WriteLiteral("</td>\r\n                                            <td>");
             EndContext();
             BeginContext(2292, 107, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a537f68921aa4994b89c7d6f3b85484a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19febdd4a9aa4c54a250c9c53bd768cf", async() => {
                 BeginContext(2383, 12, true);
                 WriteLiteral("<big>✎</big>");
                 EndContext();
@@ -356,7 +356,7 @@ using ControleDeGastos.Service;
             WriteLiteral("</td>\r\n                                            <td>");
             EndContext();
             BeginContext(4485, 131, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b720a4e84d33412b9bfd807ea4c704fa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "73b2cd67af7a4b2ebb37553f67308000", async() => {
                 BeginContext(4578, 34, true);
                 WriteLiteral("<big><big><big>✎</big></big></big>");
                 EndContext();

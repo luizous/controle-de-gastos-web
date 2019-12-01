@@ -10,7 +10,6 @@ namespace ControleDeGastos.Service.Interfaces
         Usuario GetUsuarioLogado();
         Usuario BuscarPorCpf(Usuario u);
         Usuario BuscarPorLogin(Usuario u);
-        bool Logar(string email, string senha);
         List<Usuario> ListarUsuarios();
         Usuario Obter(int idUsuario);
         Usuario ObterPorToken(Guid token);
