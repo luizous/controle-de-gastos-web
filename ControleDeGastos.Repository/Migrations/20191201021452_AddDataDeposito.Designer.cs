@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ControleDeGastos.Repository.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20191130233530_CreateDatabase")]
-    partial class CreateDatabase
+    [Migration("20191201021452_AddDataDeposito")]
+    partial class AddDataDeposito
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -133,17 +133,19 @@ namespace ControleDeGastos.Repository.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Banco");
+                    b.Property<int?>("CartaoIdCartao");
 
                     b.Property<DateTime>("DataCadastro");
 
-                    b.Property<string>("NumeroConta");
+                    b.Property<DateTime>("DataDeposito");
 
                     b.Property<int?>("UsuarioIdUsuario");
 
                     b.Property<double>("Valor");
 
                     b.HasKey("IdPoupanca");
+
+                    b.HasIndex("CartaoIdCartao");
 
                     b.HasIndex("UsuarioIdUsuario");
 
@@ -408,6 +410,10 @@ namespace ControleDeGastos.Repository.Migrations
 
             modelBuilder.Entity("ControleDeGastos.Domain.Poupanca", b =>
                 {
+                    b.HasOne("ControleDeGastos.Domain.Cartao", "Cartao")
+                        .WithMany()
+                        .HasForeignKey("CartaoIdCartao");
+
                     b.HasOne("ControleDeGastos.Domain.Usuario", "Usuario")
                         .WithMany()
                         .HasForeignKey("UsuarioIdUsuario");

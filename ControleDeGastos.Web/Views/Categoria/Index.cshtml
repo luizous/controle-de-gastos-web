@@ -6,47 +6,56 @@
 <div class="content">
     <div class="row">
         <div class="col-md-12">
-            <div class="card" style="width: 700px;">
+            <div class="card" style="width: 50%;">
                 <div class="card-header">
-                    <h5 style="text-align: center;"><small>Estas são as categorias que você cadastrou. </br> Você pode adicionar uma nova categoria no campo abaixo.</small></h5>
+                    <h5 style="text-align: center;"><small>Estas são as <b>categorias</b> que você cadastrou.</small></h5>
+                    <p class="text-info" style="text-align:center;">Escreva o título da categoria no campo abaixo e clique no <b>+</b> para cadastrar.</p>
                 </div>
-                <div class="row" style="margin-left: 80px;">
-                    <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
-                        <div class="col-md-10">
+                <div class="row" style="width: 100%; margin-left: 30%;">
+                    <form asp-action="Cadastrar">
+                        <div class="col-md-10 pr-1">
                             <div class="form-group">
-                                <input type="text" class="form-control" asp-for="Titulo" placeholder="Titulo" />
-                                <button type="submit" class="btn btn-success btn-round" style="margin-top: -50px; margin-left: 450px;" value="Cadastrar">+</button>
+                                <input class="form-control" style="width: 150%;" asp-for="Titulo" placeholder="Nova Categoria" />
+                                <button type="submit" class="btn btn-success btn-round" style="margin-top: -31%; margin-left: 155%;" value="Cadastrar">+</button>
                                 <span asp-validation-for="Titulo" class="text-primary"></span>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead class="text-primary">
-                            <th>
-                                Titulo
-                            </th>
-                            <th>
-                                Deletar
-                            </th>
-                            </thead>
-                            <tbody>
-                                @foreach (Categoria item in ViewBag.Categorias)
-                                {
-                                    <tr>
-                                        <td>
-                                            @item.Titulo
-                                        </td>
-                                        <td>
-                                            <a class="btn btn-sm btn-outline-danger btn-round btn-icon" asp-route-idCategoria="@item.IdCategoria" asp-action="Remover"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
-                    </div>
+                    @if (ViewBag.Categorias.Count == 0)
+                    {
+                        <p class="text-danger" style="text-align:center;"><b>NÃO HÁ CATEGORIAS CADASTRADAS</b></p>
+                        
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="text-primary">
+                                <th>
+                                    Titulo
+                                </th>
+                                <th>
+                                    Deletar
+                                </th>
+                                </thead>
+                                <tbody>
+                                    @foreach (Categoria item in ViewBag.Categorias)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @item.Titulo
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-sm btn-outline-danger btn-round btn-icon" asp-route-idCategoria="@item.IdCategoria" asp-action="Remover"><i class="fa fa-trash"></i></a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
                 </div>
             </div>
         </div>

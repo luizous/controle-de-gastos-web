@@ -23,24 +23,23 @@ Copyright (c) 2015 Daniel Eden
 */
 
 .img-relatorio {
-    width: 13%;
+    width: 11%;
     cursor: pointer;
     float: right;
-    margin: 0px -200px 0px 0px;
+    margin-right: 10%;
 }
 
 .img-flecha {
-    width: 7%;
+    width: 40%;
     float: right;
     transform: rotate(-145deg);
-    margin-right: 200px;
-    margin-top: 50px;
+    margin-right: 100%;
 }
 
 .text-relatorio {
     width: 50%;
     float: left;
-    margin-left: 20px;
+    margin-left: 20%;
     text-align: center;
 }
 
@@ -5049,7 +5048,7 @@ License - nucleoapp.com/license/
   position: relative;
   float: right;
   width: calc(100% - 260px);
-  background-color: #f4f3ef;
+  background-color: #EFEFEF;
   -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);

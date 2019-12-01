@@ -1,33 +1,25 @@
 ﻿@model  Poupanca
 @{
-    ViewData["Title"] = "Cadastro";
+    ViewData["Title"] = "CdG - Depósito na Poupança";
 }
-
-<h2>PoupancaCadastro</h2>
-
 
 <div class="row">
     <div class="col-md-8">
-        <div class="card">
+        <div class="card" style="width: 70%;">
             <div class="card-header">
-                <h5 class="card-title">Cadastro de Conta Poupança</h5>
-
+                <h5 class="card-title">Cadastro de Depósito na Poupança</h5>
+                <p class="text-info"><b>Você precisa ter um cartão cadastrado para escolher o banco em que o depósito será feito.</b></p>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="width: 100%; margin-left: 15%;">
                 <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
                     <div class="row">
-                        <div class="col-md-4 pr-1">
+                        <div class="col-md-8 pr-1">
                             <div class="form-group">
                                 <label>Banco</label>
-                                <input type="text" class="form-control" asp-for="Banco" placeholder="Banco" />
-                                <span asp-validation-for="Banco" class="text-primary"></span>
-                            </div>
-                        </div>
-                        <div class="col-md-4 pr-1">
-                            <div class="form-group">
-                                <label>Conta</label>
-                                <input type="text" class="form-control" asp-for="NumeroConta" placeholder="Conta" />
-                                <span asp-validation-for="NumeroConta" class="text-primary"></span>
+                                <select asp-items="@ViewBag.Cartoes"
+                                        class="form-control" name="drpCartoes">
+                                    <option> -- SELECIONE -- </option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -37,6 +29,12 @@
                                 <label>Valor</label>
                                 <input type="text" class="form-control" asp-for="Valor" placeholder="Valor" />
                                 <span asp-validation-for="Valor" class="text-primary"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                                <label>Data do Depósito</label>
+                                <input class="form-control" asp-for="DataDeposito" />
                             </div>
                         </div>
                     </div>

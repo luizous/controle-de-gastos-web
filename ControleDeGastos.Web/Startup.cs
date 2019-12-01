@@ -51,7 +51,6 @@ namespace ControleDeGastos.Web
             services.AddScoped<PoupancaRepository>();
 
             services.AddScoped<UsuarioAutenticado>();
-            services.AddScoped<ClaimsPrincipal>();
 
             services.AddDbContext<Context>
                 (options => options.UseSqlServer

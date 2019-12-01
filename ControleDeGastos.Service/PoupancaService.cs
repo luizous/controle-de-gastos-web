@@ -11,6 +11,13 @@ namespace ControleDeGastos.Service
         private readonly PoupancaRepository _poupancaRepository;
         #endregion
 
+        #region Construtor
+        public PoupancaService(PoupancaRepository poupancaRepository)
+        {
+            _poupancaRepository = poupancaRepository;
+        }
+        #endregion
+
         #region Cadastrar
         public bool Cadastrar(Poupanca p, Usuario usuario)
         {

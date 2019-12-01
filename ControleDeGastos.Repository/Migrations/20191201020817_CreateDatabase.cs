@@ -246,29 +246,6 @@ namespace ControleDeGastos.Repository.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Poupanca",
-                columns: table => new
-                {
-                    IdPoupanca = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Banco = table.Column<string>(nullable: true),
-                    NumeroConta = table.Column<string>(nullable: true),
-                    Valor = table.Column<double>(nullable: false),
-                    DataCadastro = table.Column<DateTime>(nullable: false),
-                    UsuarioIdUsuario = table.Column<int>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Poupanca", x => x.IdPoupanca);
-                    table.ForeignKey(
-                        name: "FK_Poupanca_Usuario_UsuarioIdUsuario",
-                        column: x => x.UsuarioIdUsuario,
-                        principalTable: "Usuario",
-                        principalColumn: "IdUsuario",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Recebimento",
                 columns: table => new
                 {
@@ -286,6 +263,34 @@ namespace ControleDeGastos.Repository.Migrations
                     table.PrimaryKey("PK_Recebimento", x => x.IdRecebimento);
                     table.ForeignKey(
                         name: "FK_Recebimento_Usuario_UsuarioIdUsuario",
+                        column: x => x.UsuarioIdUsuario,
+                        principalTable: "Usuario",
+                        principalColumn: "IdUsuario",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Poupanca",
+                columns: table => new
+                {
+                    IdPoupanca = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    CartaoIdCartao = table.Column<int>(nullable: true),
+                    Valor = table.Column<double>(nullable: false),
+                    DataCadastro = table.Column<DateTime>(nullable: false),
+                    UsuarioIdUsuario = table.Column<int>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Poupanca", x => x.IdPoupanca);
+                    table.ForeignKey(
+                        name: "FK_Poupanca_Cartao_CartaoIdCartao",
+                        column: x => x.CartaoIdCartao,
+                        principalTable: "Cartao",
+                        principalColumn: "IdCartao",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Poupanca_Usuario_UsuarioIdUsuario",
                         column: x => x.UsuarioIdUsuario,
                         principalTable: "Usuario",
                         principalColumn: "IdUsuario",
@@ -400,6 +405,11 @@ namespace ControleDeGastos.Repository.Migrations
                 column: "UsuarioIdUsuario");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Poupanca_CartaoIdCartao",
+                table: "Poupanca",
+                column: "CartaoIdCartao");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Poupanca_UsuarioIdUsuario",
                 table: "Poupanca",
                 column: "UsuarioIdUsuario");
@@ -446,10 +456,10 @@ namespace ControleDeGastos.Repository.Migrations
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "Cartao");
+                name: "Categoria");
 
             migrationBuilder.DropTable(
-                name: "Categoria");
+                name: "Cartao");
 
             migrationBuilder.DropTable(
                 name: "Usuario");

@@ -1,5 +1,6 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Repository.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,6 +55,7 @@ namespace ControleDeGastos.Repository
 
         #region Listar
         public List<Poupanca> Listar(int idUsuario) => _context.Poupancas
+            .Include("Cartao")
             .Where(x => x.Usuario.IdUsuario == idUsuario)
             .ToList();
         #endregion

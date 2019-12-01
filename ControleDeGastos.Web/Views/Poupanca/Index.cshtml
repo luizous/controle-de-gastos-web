@@ -8,9 +8,10 @@
         <div class="col-md-12">
             <div class="card" style="width: 100%;">
                 <div class="card-header">
-                    <h5 style="text-align: center;"><small>Estes são os valores que você cadastrou. </br> Você pode adicionar um novo clicando no botão ao lado.</small></h5>
-                    <div class="row" style="margin-left: 5px; margin-top: -80px; text-transform: uppercase;">
-                        <a class="blockquote blockquote-primary" asp-action="Cadastro" style="cursor: pointer"><small><b>+ Novo lancamento</b></small></a>
+                    <h5 style="text-align: center;"><small>Estes são os valores que você depositou na sua <b>poupança</b>.</small></h5>
+                    <p class="text-info" style="text-align:center;"> Você pode adicionar um novo clicando no botão ao lado.</p>
+                    <div class="row" style="margin-left: 5px; margin-top: -70px; text-transform: uppercase;">
+                        <a class="blockquote blockquote-primary" asp-action="Cadastro" style="cursor: pointer"><small><b>+ Novo depósito</b></small></a>
                     </div>
                 </div>
 
@@ -24,17 +25,18 @@
                         <div class="table-responsive">
                             <table class="table">
                                 <thead class="text-primary">
-                                <th>Descrição</th>
-                                <th>Valor</th>
-                                <th>Data de Cadastro</th>
+                                    <th>Banco</th>
+                                    <th>Valor</th>
+                                    <th>Data do Depósito</th>
+                                    <th>Data de Cadastro</th>
                                 </thead>
                                 <tbody>
                                     @foreach (Poupanca item in ViewBag.Poupancas)
                                     {
                                     <tr>
-                                        <td>@item.Banco</td>
-                                        <td>@item.NumeroConta</td>
+                                        <td>@ViewBag.Banco</td>
                                         <td>@item.Valor</td>
+                                        <td>@item.DataDeposito.ToString("dd/MM/yyyy")</td>
                                         <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
                                         <td><a class="btn btn-sm btn-outline-warning btn-round btn-icon" asp-action="Edicao" asp-route-idPoupanca="@item.IdPoupanca"><i class="fa fa-edit"></i></a></td>
                                     </tr>

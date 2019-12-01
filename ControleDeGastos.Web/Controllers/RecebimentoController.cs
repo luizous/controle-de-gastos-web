@@ -42,9 +42,7 @@ namespace ControleDeGastos.Web.Controllers
         public IActionResult Cadastrar(Recebimento r)
         {
             if (ModelState.IsValid)
-            {
                 _recebimentoService.Cadastrar(r, _usuarioAutenticado.Usuario(User));
-            }
             return View();
         }
         #endregion

@@ -48,13 +48,13 @@
         <div class="card">
             <form>
                 <div class="card-header">
-                    <h4 class="card-title">Minhas categorias</h4>
+                    <h5 class="card-title">Minhas categorias</h5>
                     <button type="submit" class="btn btn-success btn-round" style="margin-left: 250px; margin-top:-55px;" asp-controller="Categoria" asp-action="Index">+</button>
                 </div>
                 <div class="card-body">
                     <ul class="list-unstyled team-members">
                         <li>
-                            <div class="row" style="overflow: scroll; width: 98%; height: 200px; margin-left: 5px;">
+                            <div class="row" style="overflow: scroll; width: 98%; height: 150px; margin-left: 1%;">
                                 @if (ViewBag.Categorias.Count == 0)
                                 {
                                     <p class="text-danger" style="margin-left: 20px;"><b>NÃO HÁ CATEGORIAS CADASTRADAS</b></p>
@@ -83,11 +83,12 @@
         </div>
     </div>
     <div class="col-md-8">
-        <div class="card card-user">
+        <div class="card" style="width: 70%;">
             <div class="card-header">
-                <h5 class="card-title">Edit Profile</h5>
+                <h5 class="card-title">Meus dados</h5>
+                <p class="text-info">Você pode editar seus dados quando quiser. Só não esqueça clicar em <b>SALVAR DADOS</b> para completar a edição!</p>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="width:145%; margin-left: 1%;">
                 <form asp-action="Editar" method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-md-4 pr-1">
@@ -129,7 +130,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-2 pr-1">
+                        <div class="col-md-3 pr-1">
                             <div class="form-group">
                                 <label>Username</label>
                                 <input type="text" class="form-control" asp-for="Login" placeholder="Username" />
@@ -143,7 +144,7 @@
                                 <span asp-validation-for="Senha" class="text-primary"></span>
                             </div>
                         </div>
-                        <div class="col-md-3 pr-1">
+                        <div class="col-md-2 pr-1">
                             <div class="form-group">
                                 <label>Confirmar Senha</label>
                                 <input type="password" class="form-control" asp-for="ConfirmacaoSenha" placeholder="Confirmar Senha" />
@@ -151,7 +152,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" style="margin-left: 19%;">
                         <div class="update ml-auto mr-auto">
                             <button type="submit" class="btn btn-success btn-round" value="Editar">Salvar dados</button>
                         </div>

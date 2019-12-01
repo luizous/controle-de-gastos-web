@@ -3,10 +3,11 @@
     ViewData["Title"] = "Dashboard - Controle de Gastos";
 }
 
-<div class="img-flecha">
-    <img src="~/images/back-arrow.png" />
-</div>
+
 <div class="img-relatorio">
+    <div class="img-flecha">
+        <img src="~/images/back-arrow.png" />
+    </div>
     <div class="text-relatorio"><p class="text-dark">VER RELATÓRIO</p></div> <br />
     <img src="~/images/newspaper.png" />
 </div>
@@ -14,11 +15,12 @@
 <div class="content">
     <div class="row">
         <div class="col-md-12">
-            <div class="card" style="width: 99%;">
+            <div class="card" style="width: 80%;">
                 <div class="card-body">
                     @if (ViewBag.Lancamentos.Count == 0)
                     {
                         <p class="text-danger" style="text-align:center;"><b>NÃO HÁ LANÇAMENTOS CADASTRADOS</b></p>
+                        <p class="text-info" style="text-align:center;">No menu ao lado, clique em LANÇAMENTOS para cadastrar!</p>
                     }
                     else
                     {
@@ -60,11 +62,12 @@
 <div class="content">
     <div class="row">
         <div class="col-md-12">
-            <div class="card" style="width: 70%;">
+            <div class="card" style="width: 80%;">
                 <div class="card-body">
                     @if (ViewBag.Recebimentos.Count == 0)
                     {
                         <p class="text-danger" style="text-align:center;"><b>NÃO HÁ RECEBIMENTOS CADASTRADOS</b></p>
+                        <p class="text-info" style="text-align:center;">No menu ao lado, clique em RECEBIMENTOS para cadastrar!</p>
                     }
                     else
                     {

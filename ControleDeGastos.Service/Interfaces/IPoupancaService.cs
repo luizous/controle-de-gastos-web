@@ -11,6 +11,6 @@ namespace ControleDeGastos.Service.Interfaces
         bool Cadastrar(Poupanca p, Usuario usuario);
         bool Editar(Poupanca p);
         Poupanca Obter(int? idPoupanca);
-        List<Poupanca> Listar(int idusuario);
+        List<Poupanca> Listar(int idUsuario);
     }
 }

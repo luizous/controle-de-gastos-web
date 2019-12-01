@@ -15,13 +15,5 @@ namespace ControleDeGastos.Repository
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Meta> Metas { get; set; }
         public DbSet<Poupanca> Poupancas { get; set; }
-
-        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        //{
-        //    // configura apenas 1 propriedade
-        //    modelBuilder.Entity<Lancamento>()
-        //        .Property(e => e.DataLancamento)
-        //        .HasColumnType("datetime2");
-        //}
     }
 }

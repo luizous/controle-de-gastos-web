@@ -4,14 +4,16 @@ using ControleDeGastos.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ControleDeGastos.Repository.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20191201020817_CreateDatabase")]
+    partial class CreateDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -134,8 +136,6 @@ namespace ControleDeGastos.Repository.Migrations
                     b.Property<int?>("CartaoIdCartao");
 
                     b.Property<DateTime>("DataCadastro");
-
-                    b.Property<DateTime>("DataDeposito");
 
                     b.Property<int?>("UsuarioIdUsuario");
 

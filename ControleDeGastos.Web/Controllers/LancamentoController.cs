@@ -45,7 +45,7 @@ namespace ControleDeGastos.Web.Controllers
         public IActionResult Cadastro()
         {
             ViewBag.Categorias = new SelectList(_categoriaService.ListarPorUsuario(_usuarioAutenticado.IdUsuario(User)), "IdCategoria", "Titulo");
-            ViewBag.Cartoes = new SelectList(_cartaoService.Listar(1), "IdCartao", "Banco");
+            ViewBag.Cartoes = new SelectList(_cartaoService.Listar(_usuarioAutenticado.IdUsuario(User)), "IdCartao", "Banco");
             return View();
         }
         #endregion
