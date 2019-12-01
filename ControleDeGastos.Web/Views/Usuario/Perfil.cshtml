@@ -46,35 +46,40 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Minhas categorias</h4>
-                <form style="margin-left: 210px; margin-top: -52px;">
-                    <button type="submit" class="btn btn-success btn-round" asp-controller="Categoria" asp-action="Index">+</button>
-                </form>
-            </div>
-            <div class="card-body">
-                <ul class="list-unstyled team-members">
-                    <li>
-                        <div class="row">
-                            <div class="col-md-2 col-2">
-                                <div class="avatar">
-                                    <img src="../assets/img/faces/joe-gardner-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                </div>
+            <form>
+                <div class="card-header">
+                    <h4 class="card-title">Minhas categorias</h4>
+                    <button type="submit" class="btn btn-success btn-round" style="margin-left: 250px; margin-top:-55px;" asp-controller="Categoria" asp-action="Index">+</button>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled team-members">
+                        <li>
+                            <div class="row" style="overflow: scroll; width: 98%; height: 200px; margin-left: 5px;">
+                                @if (ViewBag.Categorias.Count == 0)
+                                {
+                                    <p class="text-danger" style="margin-left: 20px;"><b>NÃO HÁ CATEGORIAS CADASTRADAS</b></p>
+                                }
+                                @foreach (Categoria item in ViewBag.Categorias)
+                                {
+                                    <div class="col-md-7 col-7" style="margin-left: 20px; margin-top: 5px;">
+                                        <tr>
+                                            <td>
+                                                @item.Titulo
+                                            </td>
+                                        </tr>
+                                    </div>
+                                    <div class="col-md-3 col-3 text-right" style="margin-left: -100px; margin-top: -10px;">
+                                        <a class="btn btn-sm btn-outline-danger btn-round btn-icon" asp-controller="Categoria" asp-route-idCategoria="@item.IdCategoria" asp-action="Remover"><i class="fa fa-trash"></i></a>
+                                    </div>
+                                    <div class="text-gray" style="margin-left: 25px; margin-bottom: 10px; margin-top: -15px;">
+                                        __________________________________________________
+                                    </div>
+                                }
                             </div>
-                            <div class="col-md-7 col-7">
-                                Creative Tim
-                                <br />
-                                <span class="text-success">
-                                    <small>Available</small>
-                                </span>
-                            </div>
-                            <div class="col-md-3 col-3 text-right">
-                                <btn class="btn btn-sm btn-outline-danger btn-round btn-icon"><i class="fa fa-trash"></i></btn>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
         </div>
     </div>
     <div class="col-md-8">

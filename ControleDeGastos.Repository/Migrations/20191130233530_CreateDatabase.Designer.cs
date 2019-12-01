@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ControleDeGastos.Repository.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20191127153719_CreateDatabase")]
+    [Migration("20191130233530_CreateDatabase")]
     partial class CreateDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -133,9 +133,11 @@ namespace ControleDeGastos.Repository.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Banco");
+
                     b.Property<DateTime>("DataCadastro");
 
-                    b.Property<string>("Descricao");
+                    b.Property<string>("NumeroConta");
 
                     b.Property<int?>("UsuarioIdUsuario");
 

@@ -4,6 +4,7 @@ using ControleDeGastos.Web.Helpers;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace ControleDeGastos.Web.Controllers
@@ -105,8 +106,8 @@ namespace ControleDeGastos.Web.Controllers
         #region Dashboard
         public IActionResult Dashboard()
         {
-            ViewBag.Lancamentos = _lancamentoService.Listar(_usuarioAutenticado.IdUsuario());
-            ViewBag.Recebimentos = _recebimentoService.Listar(_usuarioAutenticado.IdUsuario());
+            ViewBag.Lancamentos = _lancamentoService.Listar(_usuarioAutenticado.IdUsuario(User));
+            ViewBag.Recebimentos = _recebimentoService.Listar(_usuarioAutenticado.IdUsuario(User));
             foreach (var item in ViewBag.Lancamentos)
             {
                 ViewBag.Categoria = _categoriaService.Obter(item.Categoria.IdCategoria).Titulo;
@@ -124,6 +125,7 @@ namespace ControleDeGastos.Web.Controllers
         #region Perfil
         public IActionResult Perfil()
         {
+            ViewBag.Categorias = _categoriaService.ListarPorUsuario(_usuarioAutenticado.IdUsuario(User));
             return View();
         }
         #endregion

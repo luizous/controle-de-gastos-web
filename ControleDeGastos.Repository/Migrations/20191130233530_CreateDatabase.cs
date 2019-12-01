@@ -251,7 +251,8 @@ namespace ControleDeGastos.Repository.Migrations
                 {
                     IdPoupanca = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Descricao = table.Column<string>(nullable: true),
+                    Banco = table.Column<string>(nullable: true),
+                    NumeroConta = table.Column<string>(nullable: true),
                     Valor = table.Column<double>(nullable: false),
                     DataCadastro = table.Column<DateTime>(nullable: false),
                     UsuarioIdUsuario = table.Column<int>(nullable: true)

@@ -31,7 +31,7 @@ namespace ControleDeGastos.Web.Controllers
         #region Index
         public IActionResult Index()
         {
-            ViewBag.Lancamentos = _lancamentoService.Listar(_usuarioAutenticado.IdUsuario());
+            ViewBag.Lancamentos = _lancamentoService.Listar(_usuarioAutenticado.IdUsuario(User));
             foreach (var item in ViewBag.Lancamentos)
             {
                 ViewBag.Categoria = _categoriaService.Obter(item.Categoria.IdCategoria).Titulo;
@@ -44,7 +44,7 @@ namespace ControleDeGastos.Web.Controllers
         #region Cadastro
         public IActionResult Cadastro()
         {
-            ViewBag.Categorias = new SelectList(_categoriaService.ListarPorUsuario(_usuarioAutenticado.IdUsuario()), "IdCategoria", "Titulo");
+            ViewBag.Categorias = new SelectList(_categoriaService.ListarPorUsuario(_usuarioAutenticado.IdUsuario(User)), "IdCategoria", "Titulo");
             ViewBag.Cartoes = new SelectList(_cartaoService.Listar(1), "IdCartao", "Banco");
             return View();
         }
@@ -57,7 +57,7 @@ namespace ControleDeGastos.Web.Controllers
             {
                 l.Categoria = _categoriaService.Obter(drpCategorias);
                 l.Cartao = _cartaoService.Obter(drpCartoes);
-                _lancamentoService.Cadastrar(l, _usuarioAutenticado.Usuario());
+                _lancamentoService.Cadastrar(l, _usuarioAutenticado.Usuario(User));
             }
             return View();
         }
@@ -66,8 +66,8 @@ namespace ControleDeGastos.Web.Controllers
         #region Edicao
         public IActionResult Edicao(int? idLancamento)
         {
-            ViewBag.Categorias = new SelectList(_categoriaService.ListarPorUsuario(_usuarioAutenticado.IdUsuario()), "IdCategoria", "Titulo");
-            ViewBag.Cartoes = new SelectList(_cartaoService.Listar(_usuarioAutenticado.IdUsuario()), "IdCartao", "Banco");
+            ViewBag.Categorias = new SelectList(_categoriaService.ListarPorUsuario(_usuarioAutenticado.IdUsuario(User)), "IdCategoria", "Titulo");
+            ViewBag.Cartoes = new SelectList(_cartaoService.Listar(_usuarioAutenticado.IdUsuario(User)), "IdCartao", "Banco");
             return View(_lancamentoService.Obter(idLancamento));
         }
         #endregion

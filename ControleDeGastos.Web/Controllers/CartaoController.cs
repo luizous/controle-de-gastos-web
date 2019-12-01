@@ -28,7 +28,7 @@ namespace ControleDeGastos.Web.Controllers
         #region Index
         public IActionResult Index()
         {
-            ViewBag.Cartoes = _cartaoService.Listar(_usuarioAutenticado.IdUsuario());
+            ViewBag.Cartoes = _cartaoService.Listar(_usuarioAutenticado.IdUsuario(User));
             return View();
         }
         #endregion
@@ -46,7 +46,7 @@ namespace ControleDeGastos.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var usuario = _usuarioService.Obter(_usuarioAutenticado.IdUsuario());
+                var usuario = _usuarioService.Obter(_usuarioAutenticado.IdUsuario(User));
                 _cartaoService.Cadastrar(c, usuario);
             }
             return View();

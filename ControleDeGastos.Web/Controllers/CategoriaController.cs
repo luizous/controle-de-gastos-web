@@ -30,7 +30,7 @@ namespace ControleDeGastos.Web.Controllers
         #region Index
         public IActionResult Index()
         {
-            ViewBag.Categorias = _categoriaService.ListarPorUsuario(_usuarioAutenticado.IdUsuario());
+            ViewBag.Categorias = _categoriaService.ListarPorUsuario(_usuarioAutenticado.IdUsuario(User));
             return View();
         }
         #endregion
@@ -40,7 +40,7 @@ namespace ControleDeGastos.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                _categoriaService.Cadastrar(c, _usuarioAutenticado.Usuario());
+                _categoriaService.Cadastrar(c, _usuarioAutenticado.Usuario(User));
             }
             return View(c);
         }
@@ -57,7 +57,7 @@ namespace ControleDeGastos.Web.Controllers
             {
                 //Redirecionar para uma página de erro
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("Perfil", "Usuario");
         }
         #endregion
     }

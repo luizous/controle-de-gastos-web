@@ -1,6 +1,7 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Repository;
 using ControleDeGastos.Service;
+using ControleDeGastos.Web.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -9,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Security.Claims;
 
 namespace ControleDeGastos.Web
 {
@@ -47,6 +49,9 @@ namespace ControleDeGastos.Web
             services.AddScoped<RecebimentoRepository>();
             services.AddScoped<UsuarioRepository>();
             services.AddScoped<PoupancaRepository>();
+
+            services.AddScoped<UsuarioAutenticado>();
+            services.AddScoped<ClaimsPrincipal>();
 
             services.AddDbContext<Context>
                 (options => options.UseSqlServer

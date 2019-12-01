@@ -25,7 +25,7 @@ namespace ControleDeGastos.Web.Controllers
         #region Index
         public IActionResult Index()
         {
-            ViewBag.Recebimentos = _recebimentoService.Listar(_usuarioAutenticado.IdUsuario());
+            ViewBag.Recebimentos = _recebimentoService.Listar(_usuarioAutenticado.IdUsuario(User));
             return View();
         }
         #endregion
@@ -43,8 +43,7 @@ namespace ControleDeGastos.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var usuario = _usuarioService.Obter(_usuarioAutenticado.IdUsuario());
-                _recebimentoService.Cadastrar(r, usuario);
+                _recebimentoService.Cadastrar(r, _usuarioAutenticado.Usuario(User));
             }
             return View();
         }

@@ -43,7 +43,7 @@
                                             <td>@item.Parcelas</td>
                                             <td>@ViewBag.Cartao</td>
                                             <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
-                                            <td><a class="btn btn-warning" asp-action="Edicao" asp-route-idLancamento="@item.IdLancamento"><big>✎</big></a></td>
+                                            <td><a class="btn btn-sm btn-outline-warning btn-round btn-icon" asp-action="Edicao" asp-route-idLancamento="@item.IdLancamento"><i class="fa fa-edit"></i></a></td>
                                         </tr>
                                     }
                                 </tbody>

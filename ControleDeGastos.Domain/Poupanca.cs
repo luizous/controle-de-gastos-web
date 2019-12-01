@@ -9,7 +9,8 @@ namespace ControleDeGastos.Domain
     {
         [Key]
         public int IdPoupanca { get; set; }
-        public string Descricao { get; set; }
+        public string Banco { get; set; }
+        public string NumeroConta { get; set; }
         public double Valor { get; set; }
         public DateTime DataCadastro { get; set; }
         public Usuario Usuario{ get; set; }

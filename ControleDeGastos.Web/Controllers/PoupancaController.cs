@@ -25,7 +25,7 @@ namespace ControleDeGastos.Web.Controllers
         #region Index
         public IActionResult Index()
         {
-            ViewBag.Poupancas = _poupancaService.Listar(1);
+            ViewBag.Poupancas = _poupancaService.Listar(_usuarioAutenticado.IdUsuario(User));
             return View();
         }
         #endregion
@@ -43,8 +43,7 @@ namespace ControleDeGastos.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var usuario = _usuarioService.Obter(_usuarioAutenticado.IdUsuario());
-                _poupancaService.Cadastrar(p, usuario);
+                _poupancaService.Cadastrar(p, _usuarioAutenticado.Usuario(User));
             }
             return View();
         }

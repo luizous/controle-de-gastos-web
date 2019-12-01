@@ -131,9 +131,11 @@ namespace ControleDeGastos.Repository.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Banco");
+
                     b.Property<DateTime>("DataCadastro");
 
-                    b.Property<string>("Descricao");
+                    b.Property<string>("NumeroConta");
 
                     b.Property<int?>("UsuarioIdUsuario");
 
