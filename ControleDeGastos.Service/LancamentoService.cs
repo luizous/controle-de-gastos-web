@@ -47,11 +47,18 @@ namespace ControleDeGastos.Service
         }
         #endregion
 
+        #region ListarRecentes
+        public List<Lancamento> ListarRecentes(int idUsuario)
+        {
+            return _lancamentoRepository.ListarRecentes(idUsuario);
+        }
+        #endregion
+
         #region CalculoDiaAtual
         public double CalculoDiaAtual(int idUsuario)
         {
             var resultado = 0.0;
-            var lancamentos = _lancamentoRepository.ListarLancamentoDia(idUsuario);
+            var lancamentos = ListarDia(idUsuario);
             foreach (var item in lancamentos)
             {
                 resultado += item.Valor;
@@ -64,7 +71,7 @@ namespace ControleDeGastos.Service
         public double CalculoMesAtual(int idUsuario)
         {
             var resultado = 0.0;
-            var lancamentos = _lancamentoRepository.ListarLancamentoMesAtual(idUsuario);
+            var lancamentos = ListarMesAtual(idUsuario);
             foreach (var item in lancamentos)
             {
                 resultado += item.Valor;
@@ -77,7 +84,7 @@ namespace ControleDeGastos.Service
         public double CalculoMesPassado(int idUsuario)
         {
             var resultado = 0.0;
-            var lancamentos = _lancamentoRepository.ListarLancamentoMesPassado(idUsuario);
+            var lancamentos = ListarMesPassado(idUsuario);
             foreach (var item in lancamentos)
             {
                 resultado += item.Valor;
@@ -90,7 +97,7 @@ namespace ControleDeGastos.Service
         public double CalculoQuinzenal(int idUsuario)
         {
             var resultado = 0.0;
-            var lancamentos = _lancamentoRepository.ListarLancamentoQuinzenal(idUsuario);
+            var lancamentos = ListarQuinzenal(idUsuario);
             foreach (var item in lancamentos)
             {
                 resultado += item.Valor;
@@ -103,12 +110,47 @@ namespace ControleDeGastos.Service
         public double CalculoPorCategoria(int idUsuario, int idCategoria)
         {
             var resultado = 0.0;
-            var lancamentos = _lancamentoRepository.ListarPorCategoria(idUsuario, idCategoria);
+            var lancamentos = ListarPorCategoria(idUsuario, idCategoria);
             foreach (var item in lancamentos)
             {
                 resultado += item.Valor;
             }
             return resultado;
+        }
+        #endregion
+
+        #region ListarDia
+        public List<Lancamento> ListarPorCategoria(int idUsuario, int idCategoria)
+        {
+            return _lancamentoRepository.ListarPorCategoria(idUsuario, idCategoria);
+        }
+        #endregion
+
+        #region ListarDia
+        public List<Lancamento> ListarDia(int idUsuario)
+        {
+            return _lancamentoRepository.ListarDia(idUsuario);
+        }
+        #endregion
+
+        #region ListarMesAtual
+        public List<Lancamento> ListarMesAtual(int idUsuario)
+        {
+            return _lancamentoRepository.ListarMesAtual(idUsuario);
+        }
+        #endregion
+
+        #region ListarMesPassado
+        public List<Lancamento> ListarMesPassado(int idUsuario)
+        {
+            return _lancamentoRepository.ListarMesPassado(idUsuario);
+        }
+        #endregion
+
+        #region ListarQuinzenal
+        public List<Lancamento> ListarQuinzenal(int idUsuario)
+        {
+            return _lancamentoRepository.ListarQuinzenal(idUsuario);
         }
         #endregion
     }

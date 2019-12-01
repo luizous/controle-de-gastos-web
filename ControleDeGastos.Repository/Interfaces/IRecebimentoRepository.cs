@@ -10,9 +10,9 @@ namespace ControleDeGastos.Repository.Interfaces
         List<Recebimento> Listar(int idUsuario);
         Recebimento Obter(int? idRecebimento);
         List<Recebimento> ListarRecentes(int idUsuario);
-        List<Recebimento> ListarRecebimentoDia(int idUsuario);
-        List<Recebimento> ListarRecebimentoMesAtual(int idUsuario);
-        List<Recebimento> ListarRecebimentoMesPassado(int idUsuario);
-        List<Recebimento> ListarRecebimentoQuinzenal(int idUsuario);
+        List<Recebimento> ListarDia(int idUsuario);
+        List<Recebimento> ListarMesAtual(int idUsuario);
+        List<Recebimento> ListarMesPassado(int idUsuario);
+        List<Recebimento> ListarQuinzenal(int idUsuario);
     }
 }

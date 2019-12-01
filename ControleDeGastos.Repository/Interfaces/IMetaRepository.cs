@@ -7,5 +7,6 @@ namespace ControleDeGastos.Repository.Interfaces
     {
         List<Meta> Listar(int idUsuario);
         bool Remover(Meta m);
+        bool Conquistada(Meta m);
     }
 }

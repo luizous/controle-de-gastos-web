@@ -112,7 +112,11 @@ namespace ControleDeGastos.Repository.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<bool>("Conquistada");
+
                     b.Property<DateTime>("DataCadastro");
+
+                    b.Property<DateTime>("DataFinal");
 
                     b.Property<string>("Texto");
 

@@ -1,0 +1,92 @@
+﻿@model Meta
+@{
+    ViewData["Title"] = "CdG - Minhas metas";
+}
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card" style="width: 50%;">
+                <div class="card-header">
+                    <h5 style="text-align: center;"><small>Estas são as <b>metas</b> que você cadastrou.</small></h5>
+                    <p class="text-info" style="text-align:center;">Escolha a data final que pretende realizar essa meta e sua descrição nos campos abaixo. Depois clique no <b>+</b> para cadastrar.</p>
+                </div>
+                <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
+                    <div class="row" style="width: 98%; margin-left: 1%;">
+                        <div class="col-md-2" style="margin-right: -11%; margin-top: 2%;">
+                            <p class="text-black">Até</p>
+                        </div>
+                        <div class="col-md-4 pr-1">
+                            <div class="form-group">
+                                <input class="form-control" asp-for="DataFinal" />
+                            </div>
+                        </div>
+                        <div class="col-md-2 pr-1" style="margin-right: -7%; margin-top: 2%;">
+                            <p class="text-black">pretendo</p>
+                        </div>
+                        <div class="col-md-5 pr-1" style="margin-right: -7%;">
+                            <div class="form-group">
+                                <input class="form-control" asp-for="Texto" placeholder="..." />
+                            </div>
+                        </div>
+                        <div class="col-md-2 pr-1">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-round" style="margin-top: 1.6%; margin-left: 40%;" value="Cadastrar">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="card-body">
+                    @if (ViewBag.Metas.Count == 0)
+                    {
+                        <p class="text-danger" style="text-align:center;"><b>NÃO HÁ METAS CADASTRADAS</b></p>
+
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="text-primary">
+                                <th>
+                                    Meta
+                                </th>
+                                <th>
+                                    Conquistada!
+                                </th>
+                                <th>
+                                    Remover
+                                </th>
+                                </thead>
+                                <tbody>
+                                    @foreach (Meta item in ViewBag.Metas)
+                                    {
+                                        <tr>
+                                            @if (item.Conquistada)
+                                            {
+                                                <td>
+                                                    <div class="text-success" style="text-decoration:line-through;">@item.Texto até @item.DataFinal.Date.ToString("dd/MM/yyyy")</div>
+                                                </td>
+                                            }
+                                            else
+                                            {
+                                                <td>
+                                                    @item.Texto até @item.DataFinal.Date.ToString("dd/MM/yyyy")
+                                                </td>
+                                            }
+                                            <td>
+                                                <a class="btn btn-sm btn-outline-primary btn-round btn-icon" asp-controller="Meta" asp-route-idMeta="@item.IdMeta" asp-action="Conquistada"><i class="fa fa-star"></i></a>
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-sm btn-outline-danger btn-round btn-icon" asp-controller="Meta" asp-route-idMeta="@item.IdMeta" asp-action="Remover"><i class="fa fa-trash"></i></a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

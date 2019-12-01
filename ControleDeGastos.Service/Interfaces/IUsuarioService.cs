@@ -6,13 +6,8 @@ namespace ControleDeGastos.Service.Interfaces
 {
     public interface IUsuarioService<T>
     {
-        bool Cadastrar(Usuario u);
-        Usuario GetUsuarioLogado();
-        Usuario BuscarPorCpf(Usuario u);
-        Usuario BuscarPorLogin(Usuario u);
-        List<Usuario> ListarUsuarios();
+        bool CadastrarOuEditar(Usuario u);
         Usuario Obter(int idUsuario);
         Usuario ObterPorToken(Guid token);
-        bool Editar(Usuario u);
     }
 }

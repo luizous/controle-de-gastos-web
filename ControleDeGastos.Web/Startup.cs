@@ -42,6 +42,7 @@ namespace ControleDeGastos.Web
             services.AddScoped<UsuarioService>();
             services.AddScoped<RecebimentoService>();
             services.AddScoped<PoupancaService>();
+            services.AddScoped<MetaService>();
 
             services.AddScoped<CartaoRepository>();
             services.AddScoped<CategoriaRepository>();
@@ -49,6 +50,7 @@ namespace ControleDeGastos.Web
             services.AddScoped<RecebimentoRepository>();
             services.AddScoped<UsuarioRepository>();
             services.AddScoped<PoupancaRepository>();
+            services.AddScoped<MetaRepository>();
 
             services.AddScoped<UsuarioAutenticado>();
 

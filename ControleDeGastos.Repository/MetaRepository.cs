@@ -22,7 +22,23 @@ namespace ControleDeGastos.Repository
         #region Listar
         public List<Meta> Listar(int idUsuario)
         {
-            return _context.Metas.Where(x => x.Usuario.IdUsuario == idUsuario).ToList();
+            return _context.Metas.Where(x => x.Usuario.IdUsuario == idUsuario).OrderBy(y => y.DataFinal).ToList();
+        }
+        #endregion
+
+        #region Conquistada
+        public bool Conquistada(Meta m)
+        {
+            try
+            {
+                _context.Metas.Update(m);
+                _context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
         #endregion
 

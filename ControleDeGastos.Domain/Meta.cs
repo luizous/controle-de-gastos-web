@@ -10,6 +10,8 @@ namespace ControleDeGastos.Domain
         [Key]
         public int IdMeta { get; set; }
         public string Texto { get; set; }
+        public bool Conquistada { get; set; }
+        public DateTime DataFinal { get; set; }
         public DateTime DataCadastro { get; set; }
         public Usuario Usuario { get; set; }
 

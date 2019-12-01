@@ -15,15 +15,17 @@ namespace ControleDeGastos.Web.Controllers
         private readonly UsuarioService _usuarioService;
         private readonly LancamentoService _lancamentoService;
         private readonly RecebimentoService _recebimentoService;
+        private readonly PoupancaService _poupancaService;
         private readonly CategoriaService _categoriaService;
         private readonly CartaoService _cartaoService;
+        private readonly MetaService _metaService;
         private readonly UserManager<UsuarioLogado> _userManager;
         private readonly SignInManager<UsuarioLogado> _signInManager;
         private readonly UsuarioAutenticado _usuarioAutenticado;
         #endregion
 
         #region Construtor
-        public UsuarioController(CategoriaService categoriaService, CartaoService cartaoService, 
+        public UsuarioController(CategoriaService categoriaService, CartaoService cartaoService, MetaService metaService, PoupancaService poupancaService,
             UsuarioService usuarioService, LancamentoService lancamentoService, RecebimentoService recebimentoService,
             UserManager<UsuarioLogado> userManager, SignInManager<UsuarioLogado> signInManager, UsuarioAutenticado usuarioAutenticado)
         {
@@ -32,6 +34,8 @@ namespace ControleDeGastos.Web.Controllers
             _recebimentoService = recebimentoService;
             _categoriaService = categoriaService;
             _cartaoService = cartaoService;
+            _metaService = metaService;
+            _poupancaService = poupancaService;
             _userManager = userManager;
             _signInManager = signInManager;
             _usuarioAutenticado = usuarioAutenticado;
@@ -52,9 +56,9 @@ namespace ControleDeGastos.Web.Controllers
         }
         #endregion
 
-        #region Cadastrar
+        #region CadastrarOuEditar
         [HttpPost]
-        public async Task<IActionResult> Cadastrar(Usuario u)
+        public async Task<IActionResult> CadastrarOuEditar(Usuario u)
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +72,7 @@ namespace ControleDeGastos.Web.Controllers
                 {
                     await _signInManager.SignInAsync(usuarioLogado, isPersistent: false);
                     u.Token = Guid.Parse(usuarioLogado.Id);
-                    if (_usuarioService.Cadastrar(u))
+                    if (_usuarioService.CadastrarOuEditar(u))
                     {
                         return RedirectToAction("Index");
                     }
@@ -106,18 +110,22 @@ namespace ControleDeGastos.Web.Controllers
         #region Dashboard
         public IActionResult Dashboard()
         {
-            ViewBag.Lancamentos = _lancamentoService.Listar(_usuarioAutenticado.IdUsuario(User));
-            ViewBag.Recebimentos = _recebimentoService.Listar(_usuarioAutenticado.IdUsuario(User));
+            #region Cálculos
+            ViewBag.CalculoRecebimentos = _recebimentoService.CalculoMesAtual(_usuarioAutenticado.IdUsuario(User));
+            ViewBag.CalculoLancamentos = _lancamentoService.CalculoMesAtual(_usuarioAutenticado.IdUsuario(User));
+            ViewBag.CalculoDepositos = _poupancaService.CalculoMesAtual(_usuarioAutenticado.IdUsuario(User));
+            #endregion
+
+            #region Listas
+            ViewBag.Lancamentos = _lancamentoService.ListarRecentes(_usuarioAutenticado.IdUsuario(User));
+            ViewBag.Recebimentos = _recebimentoService.ListarRecentes(_usuarioAutenticado.IdUsuario(User));
             foreach (var item in ViewBag.Lancamentos)
             {
                 ViewBag.Categoria = _categoriaService.Obter(item.Categoria.IdCategoria).Titulo;
                 ViewBag.Cartao = _cartaoService.Obter(item.Cartao.IdCartao).Banco;
             }
-            foreach (var item in ViewBag.Recebimentos)
-            {
-                ViewBag.Categoria = _categoriaService.Obter(item.Categoria.IdCategoria).Titulo;
-                ViewBag.Cartao = _cartaoService.Obter(item.Cartao.IdCartao).Banco;
-            }
+            #endregion
+
             return View();
         }
         #endregion
@@ -125,8 +133,13 @@ namespace ControleDeGastos.Web.Controllers
         #region Perfil
         public IActionResult Perfil()
         {
+            ViewBag.Metas = _metaService.Listar(_usuarioAutenticado.IdUsuario(User));
             ViewBag.Categorias = _categoriaService.ListarPorUsuario(_usuarioAutenticado.IdUsuario(User));
-            return View();
+            ViewBag.CalculoPoupanca = _poupancaService.CalculoMesAtual(_usuarioAutenticado.IdUsuario(User));
+            ViewBag.CalculoLancamento = _lancamentoService.CalculoMesAtual(_usuarioAutenticado.IdUsuario(User));
+            ViewBag.CalculoRecebimento = _recebimentoService.CalculoMesAtual(_usuarioAutenticado.IdUsuario(User));
+
+            return View(_usuarioService.Obter(_usuarioAutenticado.IdUsuario(User)));
         }
         #endregion
 

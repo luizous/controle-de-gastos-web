@@ -10,10 +10,10 @@ namespace ControleDeGastos.Repository.Interfaces
         Lancamento Obter(int? idLancamento);
         List<Lancamento> Listar(int idUsuario);
         List<Lancamento> ListarRecentes(int idUsuario);
-        List<Lancamento> ListarLancamentoDia(int idUsuario);
-        List<Lancamento> ListarLancamentoMesAtual(int idUsuario);
-        List<Lancamento> ListarLancamentoMesPassado(int idUsuario);
-        List<Lancamento> ListarLancamentoQuinzenal(int idUsuario);
+        List<Lancamento> ListarDia(int idUsuario);
+        List<Lancamento> ListarMesAtual(int idUsuario);
+        List<Lancamento> ListarMesPassado(int idUsuario);
+        List<Lancamento> ListarQuinzenal(int idUsuario);
         List<Lancamento> ListarPorCategoria(int idUsuario, int idCategoria);
     }
 }

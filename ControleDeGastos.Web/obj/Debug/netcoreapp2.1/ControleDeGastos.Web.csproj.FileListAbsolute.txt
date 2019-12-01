@@ -112,7 +112,6 @@ C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGasto
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.RazorCoreGenerate.cache
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Cartao\Cadastro.cshtml.g.cs
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Cartao\Index.cshtml.g.cs
-C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Cadastro.cshtml.g.cs
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Index.cshtml.g.cs
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Lancamento\Cadastro.cshtml.g.cs
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Lancamento\Edicao.cshtml.g.cs
@@ -157,3 +156,9 @@ C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGasto
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.pdb
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.Views.pdb
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.csproj.CopyComplete
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Meta\Index.cshtml.g.cs
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Relatorio\Index.cshtml.g.cs
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Relatorio\Hoje.cshtml.g.cs
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Relatorio\MesPassado.cshtml.g.cs
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Relatorio\MesAtual.cshtml.g.cs
+C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Relatorio\Quinzenal.cshtml.g.cs

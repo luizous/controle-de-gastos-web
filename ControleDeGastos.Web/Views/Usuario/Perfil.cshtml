@@ -5,16 +5,49 @@
 
 <div class="row">
     <div class="col-md-4">
-        <div class="card">
+        <div class="card" style="height: 97.5%;">
             <div class="image">
-                <img src="../assets/img/damir-bosnjak.jpg" alt="...">
+                <img src="~/images/ceca221ec0cff1acf98a6ce53141b37d.jpg" />
             </div>
             <div class="card-body">
-                <p class="description text-center">
-                    "I like the way you work it
-                    <br> No diggity
-                    <br> I wanna bag it up"
-                </p>
+                <form>
+                    <div class="card-header">
+                        <h5 class="card-title">Minhas metas</h5>
+                        <button type="submit" class="btn btn-success btn-round" style="margin-left: 250px; margin-top:-55px;" asp-controller="Meta" asp-action="Index">+</button>
+                    </div>
+                    <div class="row" style="overflow: scroll; width: 100%; height: 235px; margin-left: 1%;">
+                        @if (ViewBag.Metas.Count == 0)
+                        {
+                            <p class="text-danger" style="margin-left: 20px;"><b>NÃO HÁ METAS CADASTRADAS</b></p>
+                        }
+                        @foreach (Meta item in ViewBag.Metas)
+                        {
+                            <div class="col-md-7 col-7" style="margin-left: 20px; margin-top: 5px;">
+                                <tr>
+                                    @if (item.Conquistada)
+                                    {
+                                    <td>
+                                        <div class="text-success" style="text-decoration:line-through;">@item.Texto até @item.DataFinal.Date.ToString("dd/MM/yyyy")</div>
+                                    </td>
+                                    }
+                                    else
+                                    {
+                                        <td>
+                                            @item.Texto até @item.DataFinal.Date.ToString("dd/MM/yyyy")
+                                        </td>
+                                    }
+                                </tr>
+                            </div>
+                            <div class="col-md-3 col-3 text-right" style="margin-left: -40px; margin-top: -10px;">
+                                <a class="btn btn-sm btn-outline-primary btn-round btn-icon" asp-controller="Meta" asp-route-idMeta="@item.IdMeta" asp-action="Conquistada"><i class="fa fa-star"></i></a>
+                            </div>
+                            <div class="col-md-3 col-3 text-right" style="margin-left: -30px; margin-top: -10px;">
+                                <a class="btn btn-sm btn-outline-danger btn-round btn-icon" asp-controller="Meta" asp-route-idMeta="@item.IdMeta" asp-action="Remover"><i class="fa fa-trash"></i></a>
+                            </div>
+                            <hr>
+                        }
+                    </div>
+                </form>
             </div>
             <div class="card-footer">
                 <hr>
@@ -22,65 +55,30 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-6 ml-auto">
                             <h5>
-                                12
+                                R$ @ViewBag.CalculoPoupanca
                                 <br>
-                                <small>Files</small>
+                                <small>Poupança</small>
                             </h5>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
+                        <div class="col-lg-3 col-md-6 col-6 ml-auto mr-auto">
                             <h5>
-                                2GB
+                                R$ @ViewBag.CalculoLancamento
                                 <br>
-                                <small>Used</small>
+                                <small>Gastos</small>
                             </h5>
                         </div>
                         <div class="col-lg-3 mr-auto">
                             <h5>
-                                24,6$
+                                R$ @ViewBag.CalculoRecebimento
                                 <br>
-                                <small>Spent</small>
+                                <small>Recebidos</small>
                             </h5>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="card">
-            <form>
-                <div class="card-header">
-                    <h5 class="card-title">Minhas categorias</h5>
-                    <button type="submit" class="btn btn-success btn-round" style="margin-left: 250px; margin-top:-55px;" asp-controller="Categoria" asp-action="Index">+</button>
-                </div>
-                <div class="card-body">
-                    <ul class="list-unstyled team-members">
-                        <li>
-                            <div class="row" style="overflow: scroll; width: 98%; height: 150px; margin-left: 1%;">
-                                @if (ViewBag.Categorias.Count == 0)
-                                {
-                                    <p class="text-danger" style="margin-left: 20px;"><b>NÃO HÁ CATEGORIAS CADASTRADAS</b></p>
-                                }
-                                @foreach (Categoria item in ViewBag.Categorias)
-                                {
-                                    <div class="col-md-7 col-7" style="margin-left: 20px; margin-top: 5px;">
-                                        <tr>
-                                            <td>
-                                                @item.Titulo
-                                            </td>
-                                        </tr>
-                                    </div>
-                                    <div class="col-md-3 col-3 text-right" style="margin-left: -100px; margin-top: -10px;">
-                                        <a class="btn btn-sm btn-outline-danger btn-round btn-icon" asp-controller="Categoria" asp-route-idCategoria="@item.IdCategoria" asp-action="Remover"><i class="fa fa-trash"></i></a>
-                                    </div>
-                                    <div class="text-gray" style="margin-left: 25px; margin-bottom: 10px; margin-top: -15px;">
-                                        __________________________________________________
-                                    </div>
-                                }
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </form>
-        </div>
+        
     </div>
     <div class="col-md-8">
         <div class="card" style="width: 70%;">
@@ -88,20 +86,21 @@
                 <h5 class="card-title">Meus dados</h5>
                 <p class="text-info">Você pode editar seus dados quando quiser. Só não esqueça clicar em <b>SALVAR DADOS</b> para completar a edição!</p>
             </div>
-            <div class="card-body" style="width:145%; margin-left: 1%;">
-                <form asp-action="Editar" method="post" enctype="multipart/form-data">
+            <div class="card-body" style="width: 145%; margin-left: 1%;">
+                <form asp-action="CadastrarOuEditar" method="post">
+                    <input type="hidden" class="form-control" asp-for="IdUsuario" />
                     <div class="row">
                         <div class="col-md-4 pr-1">
                             <div class="form-group">
                                 <label>Nome</label>
-                                <input type="text" class="form-control" asp-for="Nome" value="Nome" />
+                                <input type="text" class="form-control" asp-for="Nome" placeholder="Nome" />
                                 <span asp-validation-for="Nome" class="text-primary"></span>
                             </div>
                         </div>
                         <div class="col-md-4 pr-1">
                             <div class="form-group">
                                 <label>Sobrenome</label>
-                                <input type="text" class="form-control" asp-for="Sobrenome" value="Sobrenome" />
+                                <input type="text" class="form-control" asp-for="Sobrenome" placeholder="Sobrenome" />
                                 <span asp-validation-for="Sobrenome" class="text-primary"></span>
                             </div>
                         </div>
@@ -152,13 +151,46 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" style="margin-left: 19%;">
+                    <div class="row" style="margin-left: 15%;">
                         <div class="update ml-auto mr-auto">
                             <button type="submit" class="btn btn-success btn-round" value="Editar">Salvar dados</button>
                         </div>
                     </div>
                 </form>
             </div>
+        </div>
+        <div class="card"  style="width: 70%;">
+            <form>
+                <div class="card-header">
+                    <h5 class="card-title">Minhas categorias</h5>
+                    <button type="submit" class="btn btn-success btn-round" style="margin-left: 250px; margin-top:-55px;" asp-controller="Categoria" asp-action="Index">+</button>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled team-members">
+                        <li>
+                            <div class="row" style="overflow: scroll; width: 98%; height: 150px; margin-left: 1%;">
+                                @if (ViewBag.Categorias.Count == 0)
+                                {
+                                    <p class="text-danger" style="margin-left: 20px;"><b>NÃO HÁ CATEGORIAS CADASTRADAS</b></p>
+                                }
+                                @foreach (Categoria item in ViewBag.Categorias)
+                                {
+                                    <div class="col-md-7 col-7" style="margin-left: 20px; margin-top: 5px;">
+                                        <tr>
+                                            <td>
+                                                @item.Titulo
+                                            </td>
+                                        </tr>
+                                    </div>
+                                    <div class="col-md-3 col-3 text-right" style="margin-left: -100px; margin-top: -10px;">
+                                        <a class="btn btn-sm btn-outline-danger btn-round btn-icon" asp-controller="Categoria" asp-route-idCategoria="@item.IdCategoria" asp-action="Remover"><i class="fa fa-trash"></i></a>
+                                    </div>
+                                }
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
         </div>
     </div>
 </div>

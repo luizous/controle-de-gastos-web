@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "CdG - Escolha o tipo de relatório";
+}
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card" style="width: 50%;">
+                <div class="card-header">
+                    <h5 style="text-align: center;"><small>Escolha o tipo de <b>relatório</b> que deseja gerar.</small></h5>
+                </div>
+                <div class="card-body" style="margin-left: 20%;">
+                    <a class="btn btn-sm btn-outline-primary" asp-action="Hoje">Hoje</a>
+                    <a class="btn btn-sm btn-outline-primary" asp-action="MesAtual">Mês atual</a>
+                    <a class="btn btn-sm btn-outline-primary" asp-action="Quinzenal">Últimos quinze dias</a>
+                    <a class="btn btn-sm btn-outline-primary" asp-action="MesPassado">Mês passado</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

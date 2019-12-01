@@ -12,5 +12,13 @@ namespace ControleDeGastos.Service.Interfaces
         bool Editar(Poupanca p);
         Poupanca Obter(int? idPoupanca);
         List<Poupanca> Listar(int idUsuario);
+        double CalculoMesAtual(int idUsuario);
+        double CalculoDiaAtual(int idUsuario);
+        double CalculoMesPassado(int idUsuario);
+        double CalculoQuinzenal(int idUsuario);
+        List<Poupanca> ListarDia(int idUsuario);
+        List<Poupanca> ListarMesAtual(int idUsuario);
+        List<Poupanca> ListarMesPassado(int idUsuario);
+        List<Poupanca> ListarQuinzenal(int idUsuario);
     }
 }

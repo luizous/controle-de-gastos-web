@@ -19,38 +19,21 @@ namespace ControleDeGastos.Service
         }
         #endregion
 
-        #region Cadastrar
-        public bool Cadastrar(Usuario u)
+        #region CadastrarOuEditar
+        public bool CadastrarOuEditar(Usuario u)
         {
-            return _usuarioRepository.Cadastrar(u);
-        }
-        #endregion
-
-        #region GetUsuarioLogado
-        public Usuario GetUsuarioLogado()
-        {
-            return _usuarioRepository.GetUsuarioLogado();
-        }
-        #endregion
-
-        #region BuscarPorCpf
-        public Usuario BuscarPorCpf(Usuario u)
-        {
-            return _usuarioRepository.BuscarPorCpf(u);
-        }
-        #endregion
-
-        #region BuscarPorLogin
-        public Usuario BuscarPorLogin(Usuario u)
-        {
-            return _usuarioRepository.BuscarPorLogin(u);
-        }
-        #endregion
-
-        #region Listar
-        public List<Usuario> ListarUsuarios()
-        {
-            return _usuarioRepository.ListarUsuarios();
+            try
+            {
+                if (_usuarioRepository.Validar(u) != null)
+                {
+                    return false;
+                }
+                return _usuarioRepository.CadastrarOuEditar(u);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
         #endregion
 
@@ -65,13 +48,6 @@ namespace ControleDeGastos.Service
         public Usuario ObterPorToken(Guid token)
         {
             return _usuarioRepository.ObterPorToken(token);
-        }
-        #endregion
-
-        #region Editar
-        public bool Editar(Usuario u)
-        {
-            return _usuarioRepository.Editar(u);
         }
         #endregion
     }

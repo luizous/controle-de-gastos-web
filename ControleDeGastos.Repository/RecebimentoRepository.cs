@@ -79,21 +79,21 @@ namespace ControleDeGastos.Repository
         }
         #endregion
 
-        #region ListarLancamentoDia
-        public List<Recebimento> ListarRecebimentoDia(int idUsuario) => _context.Recebimentos
+        #region ListarDia
+        public List<Recebimento> ListarDia(int idUsuario) => _context.Recebimentos
             .Where(x => x.Usuario.IdUsuario == idUsuario &&
                         x.DataRecebimento.Day == DateTime.Now.Day).ToList();
         #endregion
 
-        #region ListarRecebimentoMesAtual
-        public List<Recebimento> ListarRecebimentoMesAtual(int idUsuario) => _context.Recebimentos
+        #region ListarMesAtual
+        public List<Recebimento> ListarMesAtual(int idUsuario) => _context.Recebimentos
             .Where(x => x.Usuario.IdUsuario == idUsuario &&
                         x.DataRecebimento.Month == DateTime.Now.Month)
             .ToList();
         #endregion
 
-        #region ListarRecebimentoMesPassado
-        public List<Recebimento> ListarRecebimentoMesPassado(int idUsuario)
+        #region ListarMesPassado
+        public List<Recebimento> ListarMesPassado(int idUsuario)
         {
             var mesPassado = DateTime.Now.AddMonths(-1).Month;
             return _context.Recebimentos
@@ -103,8 +103,8 @@ namespace ControleDeGastos.Repository
         }
         #endregion
 
-        #region ListarRecebimentoQuinzenal
-        public List<Recebimento> ListarRecebimentoQuinzenal(int idUsuario)
+        #region ListarQuinzenal
+        public List<Recebimento> ListarQuinzenal(int idUsuario)
         {
             var quinzenal = DateTime.Now.Subtract(TimeSpan.FromDays(15));
             return _context.Recebimentos

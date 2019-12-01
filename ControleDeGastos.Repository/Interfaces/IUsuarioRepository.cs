@@ -6,12 +6,7 @@ namespace ControleDeGastos.Repository.Interfaces
 {
     public interface IUsuarioRepository<T>
     {
-        bool Cadastrar(Usuario u);
-        Usuario GetUsuarioLogado();
-        Usuario BuscarPorCpf(Usuario u);
-        Usuario BuscarPorLogin(Usuario u);
-        List<Usuario> ListarUsuarios();
-        bool Editar(Usuario u);
+        bool CadastrarOuEditar(Usuario u);
         Usuario Obter(int idUsuario);
         Usuario ObterPorToken(Guid token);
     }

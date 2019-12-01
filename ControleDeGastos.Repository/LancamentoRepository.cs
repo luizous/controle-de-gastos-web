@@ -14,7 +14,7 @@ namespace ControleDeGastos.Repository
         #endregion
 
         #region Construtor
-        public LancamentoRepository(Context context) 
+        public LancamentoRepository(Context context)
         {
             _context = context;
         }
@@ -23,7 +23,7 @@ namespace ControleDeGastos.Repository
         #region Cadastrar
         public bool Cadastrar(Lancamento l, Usuario usuario)
         {
-            try 
+            try
             {
                 l.Usuario = usuario;
                 _context.Lancamentos.Add(l);
@@ -84,23 +84,29 @@ namespace ControleDeGastos.Repository
         #endregion
 
         #region ListarLancamentoDia
-        public List<Lancamento> ListarLancamentoDia(int idUsuario) => _context.Lancamentos
+        public List<Lancamento> ListarDia(int idUsuario) => _context.Lancamentos
+            .Include("Categoria")
+            .Include("Cartao")
             .Where(x => x.Usuario.IdUsuario == idUsuario &&
                         x.DataLancamento.Day == DateTime.Now.Day).ToList();
         #endregion
 
         #region ListarLancamentoMesAtual
-        public List<Lancamento> ListarLancamentoMesAtual(int idUsuario) => _context.Lancamentos
+        public List<Lancamento> ListarMesAtual(int idUsuario) => _context.Lancamentos
+            .Include("Categoria")
+            .Include("Cartao")
             .Where(x => x.Usuario.IdUsuario == idUsuario &&
                         x.DataLancamento.Month == DateTime.Now.Month)
             .ToList();
         #endregion
 
         #region ListarLancamentoMesPassado
-        public List<Lancamento> ListarLancamentoMesPassado(int idUsuario)
+        public List<Lancamento> ListarMesPassado(int idUsuario)
         {
             var mesPassado = DateTime.Now.AddMonths(-1).Month;
             var lista = _context.Lancamentos
+            .Include("Categoria")
+            .Include("Cartao")
             .Where(x => x.Usuario.IdUsuario == idUsuario &&
                         x.DataLancamento.Month.Equals(mesPassado))
             .ToList();
@@ -109,10 +115,12 @@ namespace ControleDeGastos.Repository
         #endregion
 
         #region ListarLancamentoQuinzenal
-        public List<Lancamento> ListarLancamentoQuinzenal(int idUsuario)
+        public List<Lancamento> ListarQuinzenal(int idUsuario)
         {
             var quinzenal = DateTime.Now.Subtract(TimeSpan.FromDays(15));
             var lista = _context.Lancamentos
+            .Include("Categoria")
+            .Include("Cartao")
             .Where(x => x.Usuario.IdUsuario == idUsuario &&
                         x.DataLancamento >= quinzenal &&
                         x.DataLancamento < DateTime.Now)

@@ -39,6 +39,13 @@ namespace ControleDeGastos.Service
         }
         #endregion
 
+        #region ListarRecentes
+        public List<Recebimento> ListarRecentes(int idUsuario)
+        {
+            return _recebimentoRepository.ListarRecentes(idUsuario);
+        }
+        #endregion
+
         #region Obter
         public Recebimento Obter(int? idRecebimento)
         {
@@ -50,7 +57,7 @@ namespace ControleDeGastos.Service
         public double CalculoDiaAtual(int idUsuario)
         {
             var resultado = 0.0;
-            var recebimentos = _recebimentoRepository.ListarRecebimentoDia(idUsuario);
+            var recebimentos = ListarDia(idUsuario);
             foreach (var item in recebimentos)
             {
                 resultado += item.Valor;
@@ -63,7 +70,7 @@ namespace ControleDeGastos.Service
         public double CalculoMesAtual(int idUsuario)
         {
             var resultado = 0.0;
-            var recebimentos = _recebimentoRepository.ListarRecebimentoMesAtual(idUsuario);
+            var recebimentos = ListarMesAtual(idUsuario);
             foreach (var item in recebimentos)
             {
                 resultado += item.Valor;
@@ -76,7 +83,7 @@ namespace ControleDeGastos.Service
         public double CalculoMesPassado(int idUsuario)
         {
             var resultado = 0.0;
-            var recebimentos = _recebimentoRepository.ListarRecebimentoMesPassado(idUsuario);
+            var recebimentos = ListarMesPassado(idUsuario);
             foreach (var item in recebimentos)
             {
                 resultado += item.Valor;
@@ -89,12 +96,40 @@ namespace ControleDeGastos.Service
         public double CalculoQuinzenal(int idUsuario)
         {
             var resultado = 0.0;
-            var recebimentos = _recebimentoRepository.ListarRecebimentoQuinzenal(idUsuario);
+            var recebimentos = ListarQuinzenal(idUsuario);
             foreach (var item in recebimentos)
             {
                 resultado += item.Valor;
             }
             return resultado;
+        }
+        #endregion
+
+        #region ListarDia
+        public List<Recebimento> ListarDia(int idUsuario)
+        {
+            return _recebimentoRepository.ListarDia(idUsuario);
+        }
+        #endregion
+
+        #region ListarMesAtual
+        public List<Recebimento> ListarMesAtual(int idUsuario)
+        {
+            return _recebimentoRepository.ListarMesAtual(idUsuario);
+        }
+        #endregion
+
+        #region ListarMesPassado
+        public List<Recebimento> ListarMesPassado(int idUsuario)
+        {
+            return _recebimentoRepository.ListarMesPassado(idUsuario);
+        }
+        #endregion
+
+        #region ListarQuinzenal
+        public List<Recebimento> ListarQuinzenal(int idUsuario)
+        {
+            return _recebimentoRepository.ListarQuinzenal(idUsuario);
         }
         #endregion
     }

@@ -66,5 +66,47 @@ namespace ControleDeGastos.Repository
             return _context.Poupancas.Find(idPoupanca);
         }
         #endregion
+
+        #region ListarMesAtual
+        public List<Poupanca> ListarMesAtual(int idUsuario) => _context.Poupancas
+            .Include("Cartao")
+            .Where(x => x.Usuario.IdUsuario == idUsuario &&
+                        x.DataDeposito.Month == DateTime.Now.Month)
+            .ToList();
+        #endregion
+
+        #region ListarDia
+        public List<Poupanca> ListarDia(int idUsuario) => _context.Poupancas
+            .Include("Cartao")
+            .Where(x => x.Usuario.IdUsuario == idUsuario &&
+                        x.DataDeposito.Day == DateTime.Now.Day).ToList();
+        #endregion
+
+        #region ListarLancamentoMesPassado
+        public List<Poupanca> ListarMesPassado(int idUsuario)
+        {
+            var mesPassado = DateTime.Now.AddMonths(-1).Month;
+            var lista = _context.Poupancas
+            .Include("Cartao")
+            .Where(x => x.Usuario.IdUsuario == idUsuario &&
+                        x.DataDeposito.Month.Equals(mesPassado))
+            .ToList();
+            return lista;
+        }
+        #endregion
+
+        #region ListarQuinzenal
+        public List<Poupanca> ListarQuinzenal(int idUsuario)
+        {
+            var quinzenal = DateTime.Now.Subtract(TimeSpan.FromDays(15));
+            var lista = _context.Poupancas
+            .Include("Cartao")
+            .Where(x => x.Usuario.IdUsuario == idUsuario &&
+                        x.DataDeposito >= quinzenal &&
+                        x.DataDeposito < DateTime.Now)
+            .ToList();
+            return lista;
+        }
+        #endregion
     }
 }

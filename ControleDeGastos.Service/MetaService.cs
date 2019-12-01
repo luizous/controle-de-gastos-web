@@ -23,6 +23,7 @@ namespace ControleDeGastos.Service
         #region Cadastrar
         public bool Cadastrar(Meta m, int idUsuario)
         {
+            m.Conquistada = false;
             var usuario = _usuarioRepository.Obter(idUsuario);
             return _metaRepository.Cadastrar(m, usuario);
         }
@@ -36,7 +37,19 @@ namespace ControleDeGastos.Service
         }
         #endregion
 
-        #region ListarPorUsuario
+        #region Conquistada
+        public bool Conquistada(int? idMeta)
+        {
+            var categoria = Obter(idMeta);
+            if (categoria.Conquistada)
+                categoria.Conquistada = false;
+            else
+                categoria.Conquistada = true;
+            return _metaRepository.Conquistada(categoria);
+        }
+        #endregion
+
+        #region Listar
         public List<Meta> Listar(int idUsuario)
         {
             return _metaRepository.Listar(idUsuario);

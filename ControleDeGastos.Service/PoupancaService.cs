@@ -46,5 +46,85 @@ namespace ControleDeGastos.Service
             return _poupancaRepository.Obter(idPoupanca);
         }
         #endregion
+
+        #region CalculoMesAtual
+        public double CalculoMesAtual(int idUsuario)
+        {
+            var resultado = 0.0;
+            var depositos = ListarMesAtual(idUsuario);
+            foreach (var item in depositos)
+            {
+                resultado += item.Valor;
+            }
+            return resultado;
+        }
+        #endregion
+
+        #region CalculoDiaAtual
+        public double CalculoDiaAtual(int idUsuario)
+        {
+            var resultado = 0.0;
+            var lancamentos = ListarDia(idUsuario);
+            foreach (var item in lancamentos)
+            {
+                resultado += item.Valor;
+            }
+            return resultado;
+        }
+        #endregion
+
+        #region CalculoMesPassado
+        public double CalculoMesPassado(int idUsuario)
+        {
+            var resultado = 0.0;
+            var lancamentos = ListarMesPassado(idUsuario);
+            foreach (var item in lancamentos)
+            {
+                resultado += item.Valor;
+            }
+            return resultado;
+        }
+        #endregion
+
+        #region CalculoQuinzenal
+        public double CalculoQuinzenal(int idUsuario)
+        {
+            var resultado = 0.0;
+            var lancamentos = ListarQuinzenal(idUsuario);
+            foreach (var item in lancamentos)
+            {
+                resultado += item.Valor;
+            }
+            return resultado;
+        }
+        #endregion
+
+        #region ListarDia
+        public List<Poupanca> ListarDia(int idUsuario)
+        {
+            return _poupancaRepository.ListarDia(idUsuario);
+        }
+        #endregion
+
+        #region ListarMesAtual
+        public List<Poupanca> ListarMesAtual(int idUsuario)
+        {
+            return _poupancaRepository.ListarMesAtual(idUsuario);
+        }
+        #endregion
+
+        #region ListarMesPassado
+        public List<Poupanca> ListarMesPassado(int idUsuario)
+        {
+            return _poupancaRepository.ListarMesPassado(idUsuario);
+        }
+        #endregion
+
+        #region ListarQuinzenal
+        public List<Poupanca> ListarQuinzenal(int idUsuario)
+        {
+            return _poupancaRepository.ListarQuinzenal(idUsuario);
+        }
+        #endregion
     }
 }
