@@ -38,7 +38,12 @@
         </span>
 
         <div style="margin-top: -285px; margin-left: 540px;">
-            <form class="login100-form validate-form" asp-action="Login" enctype="multipart/form-data">
+            <form class="login100-form validate-form" asp-action="Index" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger alert-dismissible fade show" style="width: 138%;">
+                    <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                        <i class="nc-icon nc-simple-remove"></i>
+                    </button>
+                </div>
                 <div class="wrap-input100 validate-input">
                     <input class="input100" type="text" asp-for="Email" placeholder="Email" />
                     <span class="focus-input100"></span>
@@ -47,7 +52,6 @@
                     </span>
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
-
                 <div class="wrap-input100 validate-input">
                     <input class="input100" type="password" asp-for="Senha" placeholder="Senha" />
                     <span class="focus-input100"></span>
@@ -56,14 +60,10 @@
                     </span>
                     <span asp-validation-for="Senha" class="text-danger"></span>
                 </div>
-
                 <div class="container-login100-form-btn">
-                    <button class="login100-form-btn" value="Logar">
-                        ACESSAR
-                    </button>
+                    <button class="login100-form-btn">ACESSAR</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
-

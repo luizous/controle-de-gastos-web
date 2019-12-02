@@ -13,25 +13,25 @@ namespace ControleDeGastos.Domain
         public Guid Token { get; set; }
 
         [Display(Name = "Nome:")]
-        [Required(ErrorMessage = "Campo obrigatório!")]
+        [Required(ErrorMessage = "Campo nome obrigatório!")]
         public string Nome { get; set; }
 
         [Display(Name = "Sobrenome:")]
-        [Required(ErrorMessage = "Campo obrigatório!")]
+        [Required(ErrorMessage = "Campo sobrenome obrigatório!")]
         public string Sobrenome { get; set; }
 
         public string Cpf { get; set; }
 
         [Display(Name = "E-mail:")]
         [EmailAddress]
-        [Required(ErrorMessage = "Campo obrigatório!")]
+        [Required(ErrorMessage = "Digite o e-mail para continuar com o acesso!")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Campo obrigatório!")]
+        [Required(ErrorMessage = "Campo username é obrigatório!")]
         public string Login { get; set; }
 
         [Display(Name = "Senha:")]
-        [Required(ErrorMessage = "Campo obrigatório!")]
+        [Required(ErrorMessage = "Digite a senha para continuar com o acesso!")]
         public string Senha { get; set; }
 
         [Display(Name = "Confirmação da senha:")]

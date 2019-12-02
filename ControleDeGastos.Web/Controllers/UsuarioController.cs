@@ -49,6 +49,24 @@ namespace ControleDeGastos.Web.Controllers
         }
         #endregion
 
+        #region Index
+        [HttpPost]
+        public async Task<IActionResult> Index(Usuario u)
+        {
+            if (u.Email != null && u.Senha != null)
+            {
+                var result = await _signInManager.PasswordSignInAsync(u.Email, u.Senha, true, lockoutOnFailure: false);
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Dashboard", "Usuario");
+                }
+                ModelState.AddModelError("", "E-mail ou senha incorretos! Tente novamente.");
+            }
+            ModelState.AddModelError("", "E-mail ou senha incorretos! Tente novamente.");
+            return View(u);
+        }
+        #endregion
+
         #region Cadastro
         public IActionResult Cadastro()
         {
@@ -56,9 +74,9 @@ namespace ControleDeGastos.Web.Controllers
         }
         #endregion
 
-        #region CadastrarOuEditar
+        #region Cadastro
         [HttpPost]
-        public async Task<IActionResult> CadastrarOuEditar(Usuario u)
+        public async Task<IActionResult> Cadastro(Usuario u)
         {
             if (ModelState.IsValid)
             {
@@ -78,26 +96,13 @@ namespace ControleDeGastos.Web.Controllers
                     }
                     ModelState.AddModelError("", "Este e-mail já está sendo utilizado!");
                 }
-                AdicionarErros(result);
             }
+            ModelState.AddModelError("", "Erro ao cadastrar usuário. Tente novamente.");
             return View(u);
         }
         #endregion
 
-        #region Login
-        [HttpPost]
-        public async Task<IActionResult> Login(Usuario u)
-        {
-            var result = await _signInManager.PasswordSignInAsync(u.Email, u.Senha, true, lockoutOnFailure: false);
-
-            if (result.Succeeded)
-            {
-                return RedirectToAction("Dashboard", "Usuario");
-            }
-            ModelState.AddModelError("", "Falha no Login");
-            return View();
-        }
-        #endregion
+        
 
         #region Logout
         public async Task<IActionResult> Logout()
@@ -140,16 +145,6 @@ namespace ControleDeGastos.Web.Controllers
             ViewBag.CalculoRecebimento = _recebimentoService.CalculoMesAtual(_usuarioAutenticado.IdUsuario(User));
 
             return View(_usuarioService.Obter(_usuarioAutenticado.IdUsuario(User)));
-        }
-        #endregion
-
-        #region AdicionarErros
-        private void AdicionarErros(IdentityResult result)
-        {
-            foreach (var erro in result.Errors)
-            {
-                ModelState.AddModelError("", erro.Description);
-            }
         }
         #endregion
     }

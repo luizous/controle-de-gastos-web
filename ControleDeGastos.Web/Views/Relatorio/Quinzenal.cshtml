@@ -1,7 +1,143 @@
-﻿
-@{
-    ViewData["Title"] = "Quinzenal";
+﻿@{
+    ViewData["Title"] = "Relatório Quinzenal";
 }
 
-<h2>Quinzenal</h2>
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card" style="width: 80%;">
+                <div class="card-body">
+                    <div class="card-header">
+                        <h5 class="card-title">Relatório quinzenal @DateTime.Now.Subtract(TimeSpan.FromDays(15)).ToString("dd/MM/yyyy") - @DateTime.Now.ToString("dd/MM/yyyy")</h5>
+                    </div>
+                    @* ========= LANÇAMENTOS ========= *@
+                    <div class="row" style="width: 97%; margin-left: 2%;">
+                        @if (ViewBag.Lancamentos.Count == 0)
+                        {
+                            <p class="text-danger" style="text-align:center;"><b>NÃO HÁ LANÇAMENTOS CADASTRADOS NESTE PERÍODO</b></p>
+                        }
+                        else
+                        {
+                            <div class="card-header">
+                                <h5 class="card-title text-warning">LANÇAMENTOS</h5>
+                            </div>
+                            <div class="table-responsive" style="overflow: hidden;">
+                                <table class="table">
+                                    <thead class="text-dark">
+                                    <th>Valor</th>
+                                    <th>Lançamento</th>
+                                    <th>Descrição</th>
+                                    <th>Categoria</th>
+                                    <th>Qtd. parcela</th>
+                                    <th>Cartão</th>
+                                    <th>Cadastro</th>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (Lancamento item in ViewBag.Lancamentos)
+                                        {
+                                            <tr>
+                                                <td>@item.Valor</td>
+                                                <td>@item.DataLancamento.ToString("dd/MM/yyyy")</td>
+                                                <td>@item.Descricao</td>
+                                                <td>@ViewBag.Categoria</td>
+                                                <td>@item.Parcelas</td>
+                                                <td>@ViewBag.Cartao</td>
+                                                <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="stats text-warning" style="margin-left: 45%; margin-top: -3%;">
+                                <hr>
+                                <i class="nc-icon nc-spaceship"></i> R$ @ViewBag.CalculoLancamentos
+                            </div>
+                        }
 
+
+                    </div>
+
+                    @* ========= RECEBIMENTOS ========= *@
+                    <div class="row" style="width: 97%; margin-left: 2%;">
+                        @if (ViewBag.Recebimentos.Count == 0)
+                        {
+                            <p class="text-danger" style="text-align:center;"><b>NÃO HÁ RECEBIMENTOS CADASTRADOS NESTE PERÍODO</b></p>
+                        }
+                        else
+                        {
+                            <div class="card-header">
+                                <h5 class="card-title text-success">RECEBIMENTOS</h5>
+                            </div>
+                            <div class="table-responsive" style="overflow: hidden;">
+                                <table class="table">
+                                    <thead class="text-dark">
+                                    <th>Fornecedor</th>
+                                    <th>Descricao</th>
+                                    <th>Valor</th>
+                                    <th>Data de Recebimento</th>
+                                    <th>Data de cadastro</th>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (Recebimento item in ViewBag.Recebimentos)
+                                        {
+                                            <tr>
+                                                <td>@item.Fornecedor</td>
+                                                <td>@item.Descricao</td>
+                                                <td>@item.Valor</td>
+                                                <td>@item.DataRecebimento.ToString("dd/MM/yyyy")</td>
+                                                <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="stats text-success" style="margin-left: 45%; margin-top: -3%;">
+                                <hr>
+                                <i class="nc-icon nc-money-coins"></i> R$ @ViewBag.CalculoRecebimentos
+                            </div>
+                        }
+                    </div>
+
+                    @* ========= POUPANÇA ========= *@
+                    <div class="row" style="width: 97%; margin-left: 2%;">
+                        @if (ViewBag.Depositos.Count == 0)
+                        {
+                            <p class="text-danger" style="text-align:center;"><b>VOCÊ NÃO DEPOSITOU NENHUM VALOR NESTE PERÍODO</b></p>
+                        }
+                        else
+                        {
+                            <div class="card-header">
+                                <h5 class="card-title text-primary">POUPANÇA</h5>
+                            </div>
+                            <div class="table-responsive" style="overflow: hidden;">
+                                <table class="table">
+                                    <thead class="text-dark">
+                                    <th>Banco</th>
+                                    <th>Valor</th>
+                                    <th>Data do Depósito</th>
+                                    <th>Data de Cadastro</th>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (Poupanca item in ViewBag.Depositos)
+                                        {
+                                            <tr>
+                                                <td>@ViewBag.BancoPoupanca</td>
+                                                <td>@item.Valor</td>
+                                                <td>@item.DataDeposito.ToString("dd/MM/yyyy")</td>
+                                                <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="stats text-success" style="margin-left: 45%;  margin-top: -3%;">
+                                <hr>
+                                <i class="nc-icon nc-diamond"></i> R$ @ViewBag.CalculoDepositos
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

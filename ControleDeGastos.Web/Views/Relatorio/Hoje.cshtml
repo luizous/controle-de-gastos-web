@@ -12,15 +12,15 @@
                     </div>
                     @* ========= LANÇAMENTOS ========= *@
                     <div class="row" style="width: 97%; margin-left: 2%;">
-                        <div class="card-header">
-                            <h5 class="card-title text-warning">LANÇAMENTOS</h5>
-                        </div>
                         @if (ViewBag.Lancamentos.Count == 0)
                         {
                             <p class="text-danger" style="text-align:center;"><b>NÃO HÁ LANÇAMENTOS CADASTRADOS NESTE DIA</b></p>
                         }
                         else
                         {
+                            <div class="card-header">
+                                <h5 class="card-title text-warning">LANÇAMENTOS</h5>
+                            </div>
                             <div class="table-responsive" style="overflow: hidden;">
                                 <table class="table">
                                     <thead class="text-dark">
@@ -48,25 +48,26 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <div class="stats text-warning" style="margin-left: 45%; margin-top: -3%;">
+                                <hr>
+                                <i class="nc-icon nc-spaceship"></i> R$ @ViewBag.CalculoLancamentos
+                            </div>
                         }
 
-                        <div class="stats text-warning" style="margin-left: 45%; margin-top: -3%;">
-                            <hr>
-                            <i class="nc-icon nc-spaceship"></i> R$ @ViewBag.CalculoLancamentos
-                        </div>
+
                     </div>
 
                     @* ========= RECEBIMENTOS ========= *@
                     <div class="row" style="width: 97%; margin-left: 2%;">
-                        <div class="card-header">
-                            <h5 class="card-title text-success">RECEBIMENTOS</h5>
-                        </div>
                         @if (ViewBag.Recebimentos.Count == 0)
                         {
                             <p class="text-danger" style="text-align:center;"><b>NÃO HÁ RECEBIMENTOS CADASTRADOS NESTE DIA</b></p>
                         }
                         else
                         {
+                            <div class="card-header">
+                                <h5 class="card-title text-success">RECEBIMENTOS</h5>
+                            </div>
                             <div class="table-responsive" style="overflow: hidden;">
                                 <table class="table">
                                     <thead class="text-dark">
@@ -90,24 +91,24 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <div class="stats text-success" style="margin-left: 45%; margin-top: -3%;">
+                                <hr>
+                                <i class="nc-icon nc-money-coins"></i> R$ @ViewBag.CalculoRecebimentos
+                            </div>
                         }
-                        <div class="stats text-success" style="margin-left: 45%; margin-top: -3%;">
-                            <hr>
-                            <i class="nc-icon nc-money-coins"></i> R$ @ViewBag.CalculoRecebimentos
-                        </div>
                     </div>
 
                     @* ========= POUPANÇA ========= *@
                     <div class="row" style="width: 97%; margin-left: 2%;">
-                        <div class="card-header">
-                            <h5 class="card-title text-primary">POUPANÇA</h5>
-                        </div>
                         @if (ViewBag.Depositos.Count == 0)
                         {
                             <p class="text-danger" style="text-align:center;"><b>VOCÊ AINDA NÃO DEPOSITOU NENHUM VALOR HOJE</b></p>
                         }
                         else
                         {
+                            <div class="card-header">
+                                <h5 class="card-title text-primary">POUPANÇA</h5>
+                            </div>
                             <div class="table-responsive" style="overflow: hidden;">
                                 <table class="table">
                                     <thead class="text-dark">
@@ -129,11 +130,11 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <div class="stats text-success" style="margin-left: 45%;  margin-top: -3%;">
+                                <hr>
+                                <i class="nc-icon nc-diamond"></i> R$ @ViewBag.CalculoDepositos
+                            </div>
                         }
-                        <div class="stats text-success" style="margin-left: 45%;  margin-top: -3%;">
-                            <hr>
-                            <i class="nc-icon nc-diamond"></i> R$ @ViewBag.CalculoDepositos
-                        </div>
                     </div>
                 </div>
             </div>

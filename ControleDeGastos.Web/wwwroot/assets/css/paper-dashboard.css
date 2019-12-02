@@ -22,27 +22,6 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2015 Daniel Eden
 */
 
-.img-relatorio {
-    width: 11%;
-    cursor: pointer;
-    float: right;
-    margin-right: 10%;
-}
-
-.img-flecha {
-    width: 40%;
-    float: right;
-    transform: rotate(-145deg);
-    margin-right: 100%;
-}
-
-.text-relatorio {
-    width: 50%;
-    float: left;
-    margin-left: 20%;
-    text-align: center;
-}
-
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;

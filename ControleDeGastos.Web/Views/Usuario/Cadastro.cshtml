@@ -4,14 +4,19 @@
     Layout = "~/Views/Shared/_LayoutCadastro.cshtml";
 }
 
-<div class="row">
+<div class="row" style="margin-left: 25%; margin-top: 10%;">
     <div class="col-md-8">
-        <div class="card">
+        <div class="card" style="width: 99%;">
             <div class="card-header">
                 <h5 class="card-title">Cadastro de Usuário</h5>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="width: 140%; margin-left: 2%;">
                 <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger alert-dismissible fade show" style="width: 138%;">
+                        <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="nc-icon nc-simple-remove"></i>
+                        </button>
+                    </div>
                     <div class="row">
                         <div class="col-md-4 pr-1">
                             <div class="form-group">
@@ -87,3 +92,6 @@
 </div>
 
 
+<div class="img-money1">
+    <img src="~/images/notes.png" />
+</div>
