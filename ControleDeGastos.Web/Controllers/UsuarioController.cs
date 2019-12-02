@@ -86,6 +86,14 @@ namespace ControleDeGastos.Web.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (u.IdUsuario > 0)
+                {
+                    if (_usuarioService.CadastrarOuEditar(u))
+                    {
+                        return RedirectToAction("Perfil");
+                    }
+                    ModelState.AddModelError("", "Este e-mail já está sendo utilizado!");
+                }
                 UsuarioLogado usuarioLogado = new UsuarioLogado
                 {
                     Email = u.Email,
@@ -105,6 +113,25 @@ namespace ControleDeGastos.Web.Controllers
             }
             ModelState.AddModelError("", "Erro ao cadastrar usuário. Tente novamente.");
             return View(u);
+        }
+        #endregion
+
+        #region Editar
+        [HttpPost]
+        public async Task<IActionResult> Editar(Usuario u)
+        {
+            if (_usuarioService.CadastrarOuEditar(u))
+            {
+                return RedirectToAction("Perfil");
+            }
+            ModelState.AddModelError("", "Este e-mail já está sendo utilizado!");
+
+            ViewBag.Metas = _metaService.Listar(_usuarioAutenticado.IdUsuario(User));
+            ViewBag.Categorias = _categoriaService.ListarPorUsuario(_usuarioAutenticado.IdUsuario(User));
+            ViewBag.CalculoPoupanca = _poupancaService.CalculoMesAtual(_usuarioAutenticado.IdUsuario(User));
+            ViewBag.CalculoLancamento = _lancamentoService.CalculoMesAtual(_usuarioAutenticado.IdUsuario(User));
+            ViewBag.CalculoRecebimento = _recebimentoService.CalculoMesAtual(_usuarioAutenticado.IdUsuario(User));
+            return View("Perfil", u);
         }
         #endregion
 

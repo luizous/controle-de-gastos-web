@@ -22,7 +22,6 @@ C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\ControleDeGastos.Web.RazorCoreGenerate.cache
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Cartao\Cadastro.g.cshtml.cs
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Cartao\Index.g.cshtml.cs
-C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Cadastro.g.cshtml.cs
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Index.g.cshtml.cs
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Lancamento\Cadastro.g.cshtml.cs
 C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Lancamento\Edicao.g.cshtml.cs
@@ -162,3 +161,10 @@ C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGasto
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Relatorio\MesPassado.cshtml.g.cs
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Relatorio\MesAtual.cshtml.g.cs
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Relatorio\Quinzenal.cshtml.g.cs
+C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Meta\Index.g.cshtml.cs
+C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Poupanca\Cadastro.g.cshtml.cs
+C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Relatorio\Hoje.g.cshtml.cs
+C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Relatorio\Index.g.cshtml.cs
+C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Relatorio\MesAtual.g.cshtml.cs
+C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Relatorio\MesPassado.g.cshtml.cs
+C:\Users\LuizaM\controle-de-gastos-web\ControleDeGastos.Web\obj\Debug\netcoreapp2.1\Razor\Views\Relatorio\Quinzenal.g.cshtml.cs

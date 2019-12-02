@@ -24,10 +24,6 @@ namespace ControleDeGastos.Service
         {
             try
             {
-                if (_usuarioRepository.Validar(u) != null)
-                {
-                    return false;
-                }
                 return _usuarioRepository.CadastrarOuEditar(u);
             }
             catch (Exception)

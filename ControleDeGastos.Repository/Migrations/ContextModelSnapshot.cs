@@ -25,13 +25,17 @@ namespace ControleDeGastos.Repository.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Agencia");
+                    b.Property<string>("Agencia")
+                        .IsRequired();
 
-                    b.Property<string>("Banco");
+                    b.Property<string>("Banco")
+                        .IsRequired();
 
-                    b.Property<string>("Conta");
+                    b.Property<string>("Conta")
+                        .IsRequired();
 
-                    b.Property<string>("Cvv");
+                    b.Property<string>("Cvv")
+                        .IsRequired();
 
                     b.Property<DateTime>("DataCadastro");
 
@@ -39,11 +43,14 @@ namespace ControleDeGastos.Repository.Migrations
 
                     b.Property<int>("DiaVencimento");
 
-                    b.Property<string>("NomeSobrenome");
+                    b.Property<string>("NomeSobrenome")
+                        .IsRequired();
 
-                    b.Property<string>("Numero");
+                    b.Property<string>("Numero")
+                        .IsRequired();
 
-                    b.Property<string>("Tipo");
+                    b.Property<string>("Tipo")
+                        .IsRequired();
 
                     b.Property<int?>("UsuarioIdUsuario");
 
@@ -62,7 +69,8 @@ namespace ControleDeGastos.Repository.Migrations
 
                     b.Property<DateTime>("DataCadastro");
 
-                    b.Property<string>("Titulo");
+                    b.Property<string>("Titulo")
+                        .IsRequired();
 
                     b.Property<int?>("UsuarioIdUsuario");
 
@@ -87,7 +95,8 @@ namespace ControleDeGastos.Repository.Migrations
 
                     b.Property<DateTime>("DataLancamento");
 
-                    b.Property<string>("Descricao");
+                    b.Property<string>("Descricao")
+                        .IsRequired();
 
                     b.Property<int>("Parcelas");
 
@@ -118,7 +127,8 @@ namespace ControleDeGastos.Repository.Migrations
 
                     b.Property<DateTime>("DataFinal");
 
-                    b.Property<string>("Texto");
+                    b.Property<string>("Texto")
+                        .IsRequired();
 
                     b.Property<int?>("UsuarioIdUsuario");
 
@@ -164,9 +174,11 @@ namespace ControleDeGastos.Repository.Migrations
 
                     b.Property<DateTime>("DataRecebimento");
 
-                    b.Property<string>("Descricao");
+                    b.Property<string>("Descricao")
+                        .IsRequired();
 
-                    b.Property<string>("Fornecedor");
+                    b.Property<string>("Fornecedor")
+                        .IsRequired();
 
                     b.Property<int?>("UsuarioIdUsuario");
 

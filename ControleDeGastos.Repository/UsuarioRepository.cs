@@ -31,6 +31,10 @@ namespace ControleDeGastos.Repository
             }
             else
             {
+                if (Validar(u) != null)
+                {
+                    return false;
+                }
                 _context.Usuarios.Add(u);
                 _context.SaveChanges();
             }

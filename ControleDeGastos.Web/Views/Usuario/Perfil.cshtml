@@ -9,6 +9,7 @@
             <div class="image">
                 <img src="~/images/ceca221ec0cff1acf98a6ce53141b37d.jpg" />
             </div>
+            @*CARD MINHAS METAS*@
             <div class="card-body">
                 <form>
                     <div class="card-header">
@@ -49,6 +50,7 @@
                     </div>
                 </form>
             </div>
+            @*RODAPÉ CARD MINHAS METAS COM OS VALORES POUPANÇA/LANÇAMENTO/RECEBIMENTO*@
             <div class="card-footer">
                 <hr>
                 <div class="button-container">
@@ -87,8 +89,13 @@
                 <p class="text-info">Você pode editar seus dados quando quiser. Só não esqueça clicar em <b>SALVAR DADOS</b> para completar a edição!</p>
             </div>
             <div class="card-body" style="width: 145%; margin-left: 1%;">
-                <form asp-action="CadastrarOuEditar" method="post">
+                <form asp-action="Editar" method="post">
                     <input type="hidden" class="form-control" asp-for="IdUsuario" />
+                    <input type="hidden" class="form-control" asp-for="Login" />
+                    <input type="hidden" class="form-control" asp-for="Senha" />
+                    <input type="hidden" class="form-control" asp-for="Email" />
+                    <input type="hidden" class="form-control" asp-for="Token" />
+                    <input type="hidden" class="form-control" asp-for="ConfirmacaoSenha" />
                     <div class="row">
                         <div class="col-md-4 pr-1">
                             <div class="form-group">
@@ -116,8 +123,7 @@
                         <div class="col-md-3 pr-1">
                             <div class="form-group">
                                 <label>E-mail</label>
-                                <input type="email" class="form-control" asp-for="Email" placeholder="E-mail" />
-                                <span asp-validation-for="Email" class="text-primary"></span>
+                                <input type="email" disabled class="form-control" asp-for="Email" placeholder="E-mail" />
                             </div>
                         </div>
                         <div class="col-md-2 pr-1">
@@ -132,22 +138,13 @@
                         <div class="col-md-3 pr-1">
                             <div class="form-group">
                                 <label>Username</label>
-                                <input type="text" class="form-control" asp-for="Login" placeholder="Username" />
-                                <span asp-validation-for="Login" class="text-primary"></span>
+                                <input type="text" disabled class="form-control" asp-for="Login" placeholder="Username" />
                             </div>
                         </div>
-                        <div class="col-md-3 pr-1">
+                        <div class="col-md-5 pr-1">
                             <div class="form-group">
                                 <label>Senha</label>
-                                <input type="text" class="form-control" asp-for="Senha" placeholder="Senha" />
-                                <span asp-validation-for="Senha" class="text-primary"></span>
-                            </div>
-                        </div>
-                        <div class="col-md-2 pr-1">
-                            <div class="form-group">
-                                <label>Confirmar Senha</label>
-                                <input type="password" class="form-control" asp-for="ConfirmacaoSenha" placeholder="Confirmar Senha" />
-                                <span asp-validation-for="ConfirmacaoSenha" class="text-primary"></span>
+                                <input type="text" disabled class="form-control" asp-for="Senha" placeholder="Senha" />
                             </div>
                         </div>
                     </div>
@@ -159,6 +156,7 @@
                 </form>
             </div>
         </div>
+        @*CARD MINHAS CATEGORIAS*@
         <div class="card"  style="width: 70%;">
             <form>
                 <div class="card-header">
