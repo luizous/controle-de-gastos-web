@@ -9,6 +9,8 @@ namespace ControleDeGastos.Domain
     {
         [Key]
         public int IdCategoria { get; set; }
+
+        [Required(ErrorMessage = "Digite o titulo da categoria.")]
         public string Titulo { get; set; }
         public DateTime DataCadastro { get; set; }
         public Usuario Usuario { get; set; }

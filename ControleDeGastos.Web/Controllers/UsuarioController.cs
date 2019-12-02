@@ -1,6 +1,7 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Service;
 using ControleDeGastos.Web.Helpers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace ControleDeGastos.Web.Controllers
 {
+    [Authorize]
     public class UsuarioController : Controller
     {
         #region Atributos
@@ -43,6 +45,7 @@ namespace ControleDeGastos.Web.Controllers
         #endregion
 
         #region Index
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
@@ -51,6 +54,7 @@ namespace ControleDeGastos.Web.Controllers
 
         #region Index
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Index(Usuario u)
         {
             if (u.Email != null && u.Senha != null)
@@ -68,6 +72,7 @@ namespace ControleDeGastos.Web.Controllers
         #endregion
 
         #region Cadastro
+        [AllowAnonymous]
         public IActionResult Cadastro()
         {
             return View();
@@ -76,6 +81,7 @@ namespace ControleDeGastos.Web.Controllers
 
         #region Cadastro
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Cadastro(Usuario u)
         {
             if (ModelState.IsValid)
@@ -101,8 +107,6 @@ namespace ControleDeGastos.Web.Controllers
             return View(u);
         }
         #endregion
-
-        
 
         #region Logout
         public async Task<IActionResult> Logout()

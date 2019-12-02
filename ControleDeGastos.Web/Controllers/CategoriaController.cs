@@ -2,9 +2,7 @@
 using ControleDeGastos.Service;
 using ControleDeGastos.Web.Helpers;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System;
 
 namespace ControleDeGastos.Web.Controllers
 {

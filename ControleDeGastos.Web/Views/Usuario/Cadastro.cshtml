@@ -11,8 +11,8 @@
                 <h5 class="card-title">Cadastro de Usuário</h5>
             </div>
             <div class="card-body" style="width: 140%; margin-left: 2%;">
-                <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
-                    <div asp-validation-summary="ModelOnly" class="alert alert-danger alert-dismissible fade show" style="width: 138%;">
+                <form asp-action="Cadastro" method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger alert-dismissible fade show" style="width: 67%;">
                         <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
                             <i class="nc-icon nc-simple-remove"></i>
                         </button>
@@ -22,14 +22,14 @@
                             <div class="form-group">
                                 <label>Nome</label>
                                 <input type="text" class="form-control" asp-for="Nome" placeholder="Nome" />
-                                <span asp-validation-for="Nome" class="text-primary"></span>
+                                <span asp-validation-for="Nome" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-md-4 pr-1">
                             <div class="form-group">
                                 <label>Sobrenome</label>
                                 <input type="text" class="form-control" asp-for="Sobrenome" placeholder="Sobrenome" />
-                                <span asp-validation-for="Sobrenome" class="text-primary"></span>
+                                <span asp-validation-for="Sobrenome" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
@@ -38,21 +38,21 @@
                             <div class="form-group">
                                 <label>CPF</label>
                                 <input type="text" class="form-control" asp-for="Cpf" placeholder="CPF" />
-                                <span asp-validation-for="Cpf" class="text-primary"></span>
+                                <span asp-validation-for="Cpf" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-md-3 pr-1">
                             <div class="form-group">
                                 <label>E-mail</label>
                                 <input type="email" class="form-control" asp-for="Email" placeholder="E-mail" />
-                                <span asp-validation-for="Email" class="text-primary"></span>
+                                <span asp-validation-for="Email" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-md-2 pr-1">
                             <div class="form-group">
                                 <label>Salário</label>
                                 <input type="text" class="form-control" asp-for="Salario" placeholder="Salário" />
-                                <span asp-validation-for="Salario" class="text-primary"></span>
+                                <span asp-validation-for="Salario" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
@@ -61,37 +61,32 @@
                             <div class="form-group">
                                 <label>Username</label>
                                 <input type="text" class="form-control" asp-for="Login" placeholder="Username" />
-                                <span asp-validation-for="Login" class="text-primary"></span>
+                                <span asp-validation-for="Login" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-md-3 pr-1">
                             <div class="form-group">
                                 <label>Senha</label>
                                 <input type="password" class="form-control" asp-for="Senha" placeholder="Senha" />
-                                <span asp-validation-for="Senha" class="text-primary"></span>
+                                <span asp-validation-for="Senha" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-md-3 pr-1">
                             <div class="form-group">
                                 <label>Confirmar Senha</label>
                                 <input type="password" class="form-control" asp-for="ConfirmacaoSenha" placeholder="Confirmar Senha" />
-                                <span asp-validation-for="ConfirmacaoSenha" class="text-primary"></span>
+                                <span asp-validation-for="ConfirmacaoSenha" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="update ml-auto mr-auto">
                             <button type="submit" class="btn btn-default btn-round" asp-action="Index">Voltar</button>
-                            <button type="submit" class="btn btn-success btn-round" value="Cadastrar">Cadastrar</button>
+                            <button type="submit" class="btn btn-success btn-round" value="Cadastro">Cadastrar</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-</div>
-
-
-<div class="img-money1">
-    <img src="~/images/notes.png" />
 </div>

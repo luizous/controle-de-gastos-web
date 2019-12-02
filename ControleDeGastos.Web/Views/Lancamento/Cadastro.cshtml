@@ -11,17 +11,24 @@
             </div>
             <div class="card-body" style="width: 130%;">
                 <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger alert-dismissible fade show" style="width: 75%;">
+                        <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="nc-icon nc-simple-remove"></i>
+                        </button>
+                    </div>
                     <div class="row">
                         <div class="col-md-4 pr-1">
                             <div class="form-group">
                                 <label>Descricao</label>
                                 <input type="text" class="form-control" asp-for="Descricao" placeholder="Descricao" />
+                                <span asp-validation-for="Descricao" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-md-5 pr-1">
                             <div class="form-group">
                                 <label>Valor</label>
                                 <input type="number" class="form-control" asp-for="Valor" placeholder="Valor" />
+                                <span asp-validation-for="Valor" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
@@ -30,6 +37,7 @@
                             <div class="form-group">
                                 <label>Data do Lançamento</label>
                                 <input class="form-control" asp-for="DataLancamento" />
+                                <span asp-validation-for="DataLancamento" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-md-4 pr-1">
@@ -39,6 +47,7 @@
                                         class="form-control" name="drpCategorias">
                                     <option> -- SELECIONE -- </option>
                                 </select>
+                                <span asp-validation-for="Categoria" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
@@ -50,19 +59,21 @@
                                         class="form-control" name="drpCartoes">
                                     <option> -- SELECIONE -- </option>
                                 </select>
+                                <span asp-validation-for="Cartao" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-md-4 pr-1">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Parcelas</label>
                                 <input type="number" class="form-control" asp-for="Parcelas" placeholder="Parcelas" />
+                                <span asp-validation-for="Parcelas" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="update ml-auto mr-auto">
                             <button type="submit" class="btn btn-default btn-round" asp-action="Index">Voltar</button>
-                            <button type="submit" class="btn btn-success btn-round" value="Cadastrar">Cadastrar</button>
+                            <button type="submit" class="btn btn-success btn-round" value="Cadastro">Cadastrar</button>
                         </div>
                     </div>
                 </form>

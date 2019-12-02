@@ -11,17 +11,24 @@
             </div>
             <div class="card-body">
                 <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger alert-dismissible fade show" style="width: 75%;">
+                        <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="nc-icon nc-simple-remove"></i>
+                        </button>
+                    </div>
                     <div class="row">
                         <div class="col-md-5 pr-1">
                             <div class="form-group">
                                 <label>Fornecedor</label>
                                 <input type="text" class="form-control" asp-for="Fornecedor" placeholder="Fornecedor" />
+                                <span asp-validation-for="Fornecedor" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-md-5 pr-1">
                             <div class="form-group">
                                 <label>Descrição</label>
                                 <input type="text" class="form-control" asp-for="Descricao" placeholder="Descrição" />
+                                <span asp-validation-for="Descricao" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
@@ -30,12 +37,14 @@
                             <div class="form-group">
                                 <label>Valor</label>
                                 <input class="form-control" asp-for="Valor" placeholder="R$" />
+                                <span asp-validation-for="Valor" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-md-5 pr-1">
                             <div class="form-group">
                                 <label>Data do recebimento</label>
                                 <input class="form-control" asp-for="DataRecebimento" />
+                                <span asp-validation-for="DataRecebimento" class="text-danger"></span>
                             </div>
                         </div>
                     </div>

@@ -1,13 +1,13 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Service;
 using ControleDeGastos.Web.Helpers;
-using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System;
 
 namespace ControleDeGastos.Web.Controllers
 {
+    [Authorize]
     public class LancamentoController : Controller
     {
         #region Atributos
@@ -51,6 +51,7 @@ namespace ControleDeGastos.Web.Controllers
         #endregion
 
         #region Cadastrar
+        [HttpPost]
         public IActionResult Cadastrar(Lancamento l, int drpCategorias, int drpCartoes)
         {
             if (ModelState.IsValid)
@@ -58,8 +59,10 @@ namespace ControleDeGastos.Web.Controllers
                 l.Categoria = _categoriaService.Obter(drpCategorias);
                 l.Cartao = _cartaoService.Obter(drpCartoes);
                 _lancamentoService.Cadastrar(l, _usuarioAutenticado.Usuario(User));
+                return RedirectToAction("Index");
             }
-            return View();
+            ModelState.AddModelError("", "Erro ao cadastrar lançamento! Identifique os erros nos campos abaixo e tente novamente.");
+            return View("Cadastro", l);
         }
         #endregion
 
@@ -72,9 +75,9 @@ namespace ControleDeGastos.Web.Controllers
         }
         #endregion
 
-        #region Editar
+        #region Edicao
         [HttpPost]
-        public IActionResult Editar(Lancamento l)
+        public IActionResult Edicao(Lancamento l)
         {
             _lancamentoService.Editar(l);
             return RedirectToAction("Index");

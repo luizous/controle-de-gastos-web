@@ -9,8 +9,13 @@ namespace ControleDeGastos.Domain
     {
         [Key]
         public int IdPoupanca { get; set; }
+        
         public Cartao Cartao { get; set; }
+        
+        [Required(ErrorMessage = "Digite o valor do lançamento.")]
         public double Valor { get; set; }
+
+        [Required(ErrorMessage = "Data do depósito é essecial.")]
         public DateTime DataDeposito { get; set; }
         public DateTime DataCadastro { get; set; }
         public Usuario Usuario { get; set; }

@@ -12,29 +12,24 @@ namespace ControleDeGastos.Domain
 
         public Guid Token { get; set; }
 
-        [Display(Name = "Nome:")]
-        [Required(ErrorMessage = "Campo nome obrigatório!")]
+        [Required(ErrorMessage = "Digite seu nome.")]
         public string Nome { get; set; }
 
-        [Display(Name = "Sobrenome:")]
-        [Required(ErrorMessage = "Campo sobrenome obrigatório!")]
+        [Required(ErrorMessage = "Digite seu sobrenome.")]
         public string Sobrenome { get; set; }
 
         public string Cpf { get; set; }
 
-        [Display(Name = "E-mail:")]
         [EmailAddress]
-        [Required(ErrorMessage = "Digite o e-mail para continuar com o acesso!")]
+        [Required(ErrorMessage = "Digite o e-mail para continuar com o acesso.")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Campo username é obrigatório!")]
         public string Login { get; set; }
 
-        [Display(Name = "Senha:")]
-        [Required(ErrorMessage = "Digite a senha para continuar com o acesso!")]
+        [Required(ErrorMessage = "Digite a senha para continuar com o acesso.")]
         public string Senha { get; set; }
 
-        [Display(Name = "Confirmação da senha:")]
         [NotMapped]
         [Compare("Senha", ErrorMessage = "Os campos não coincidem!")]
         public string ConfirmacaoSenha { get; set; }

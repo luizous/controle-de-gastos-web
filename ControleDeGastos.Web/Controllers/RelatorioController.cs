@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ControleDeGastos.Service;
+﻿using ControleDeGastos.Service;
 using ControleDeGastos.Web.Helpers;
-using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ControleDeGastos.Web.Controllers
 {
+    [Authorize]
     public class RelatorioController : Controller
     {
         #region Atributos

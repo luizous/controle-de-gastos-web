@@ -1,11 +1,13 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Service;
 using ControleDeGastos.Web.Helpers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace ControleDeGastos.Web.Controllers
 {
+    [Authorize]
     public class PoupancaController : Controller
     {
         #region Atributos

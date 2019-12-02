@@ -1,10 +1,12 @@
 ﻿using ControleDeGastos.Domain;
 using ControleDeGastos.Service;
 using ControleDeGastos.Web.Helpers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ControleDeGastos.Web.Controllers
 {
+    [Authorize]
     public class RecebimentoController : Controller
     {
         #region Atributos
@@ -42,8 +44,12 @@ namespace ControleDeGastos.Web.Controllers
         public IActionResult Cadastrar(Recebimento r)
         {
             if (ModelState.IsValid)
+            {
                 _recebimentoService.Cadastrar(r, _usuarioAutenticado.Usuario(User));
-            return View();
+                return RedirectToAction("Index");
+            }
+            ModelState.AddModelError("", "Erro ao cadastrar recebimento! Identifique os erros nos campos abaixo e tente novamente.");
+            return View("Cadastro", r);
         }
         #endregion
 
