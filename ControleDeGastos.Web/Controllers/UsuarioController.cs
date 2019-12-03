@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace ControleDeGastos.Web.Controllers
@@ -86,14 +85,6 @@ namespace ControleDeGastos.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (u.IdUsuario > 0)
-                {
-                    if (_usuarioService.CadastrarOuEditar(u))
-                    {
-                        return RedirectToAction("Perfil");
-                    }
-                    ModelState.AddModelError("", "Este e-mail já está sendo utilizado!");
-                }
                 UsuarioLogado usuarioLogado = new UsuarioLogado
                 {
                     Email = u.Email,
@@ -161,6 +152,8 @@ namespace ControleDeGastos.Web.Controllers
                 ViewBag.Cartao = _cartaoService.Obter(item.Cartao.IdCartao).Banco;
             }
             #endregion
+
+            ViewBag.Artigos = NewsAPIHelper.GetNews();
 
             return View();
         }

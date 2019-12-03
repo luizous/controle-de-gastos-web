@@ -118,99 +118,129 @@
     </div>
 </div>
 
-<div class="content">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-header">
-                        <h5 class="card-title" style="text-transform: uppercase;"><small>Últimos lançamentos <b>cadastrados</b></small></h5>
-                    </div>
-                    @if (ViewBag.Lancamentos.Count == 0)
-                    {
-                        <p class="text-danger" style="text-align:center;"><b>NÃO HÁ LANÇAMENTOS CADASTRADOS</b></p>
-                        <p class="text-info" style="text-align:center;">No menu ao lado, clique em LANÇAMENTOS para cadastrar!</p>
-                    }
-                    else
-                    {
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead class="text-primary">
-                                <th>Valor</th>
-                                <th>Lançamento</th>
-                                <th>Descrição</th>
-                                <th>Categoria</th>
-                                <th>Qtd. parcela</th>
-                                <th>Cartão</th>
-                                <th>Cadastro</th>
-                                <th>Editar</th>
-                                </thead>
-                                <tbody>
-                                    @foreach (Lancamento item in ViewBag.Lancamentos)
-                                    {
-                                        <tr>
-                                            <td>@item.Valor</td>
-                                            <td>@item.DataLancamento.ToString("dd/MM/yyyy")</td>
-                                            <td>@item.Descricao</td>
-                                            <td>@ViewBag.Categoria</td>
-                                            <td>@item.Parcelas</td>
-                                            <td>@ViewBag.Cartao</td>
-                                            <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
-                                            <td><a class="btn btn-sm btn-outline-warning btn-round btn-icon" asp-action="Edicao" asp-route-idLancamento="@item.IdLancamento"><i class="fa fa-edit"></i></a></td>
-                                        </tr>
-                                    }
-                                </tbody>
-                            </table>
-                        </div>
-                    }
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-header">
+                    <h5 class="card-title" style="text-transform: uppercase;"><small>Últimos lançamentos <b>cadastrados</b></small></h5>
                 </div>
+                @if (ViewBag.Lancamentos.Count == 0)
+                {
+                    <p class="text-danger" style="text-align:center;"><b>NÃO HÁ LANÇAMENTOS CADASTRADOS</b></p>
+                    <p class="text-info" style="text-align:center;">No menu ao lado, clique em LANÇAMENTOS para cadastrar!</p>
+                }
+                else
+                {
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="text-primary">
+                            <th>Valor</th>
+                            <th>Lançamento</th>
+                            <th>Descrição</th>
+                            <th>Categoria</th>
+                            <th>Qtd. parcela</th>
+                            <th>Cartão</th>
+                            <th>Cadastro</th>
+                            <th>Editar</th>
+                            </thead>
+                            <tbody>
+                                @foreach (Lancamento item in ViewBag.Lancamentos)
+                                {
+                                    <tr>
+                                        <td>@item.Valor</td>
+                                        <td>@item.DataLancamento.ToString("dd/MM/yyyy")</td>
+                                        <td>@item.Descricao</td>
+                                        <td>@ViewBag.Categoria</td>
+                                        <td>@item.Parcelas</td>
+                                        <td>@ViewBag.Cartao</td>
+                                        <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
+                                        <td><a class="btn btn-sm btn-outline-warning btn-round btn-icon" asp-action="Edicao" asp-route-idLancamento="@item.IdLancamento"><i class="fa fa-edit"></i></a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="card-header">
+                    <h5 class="card-title" style="text-transform: uppercase;"><small>Últimos recebimentos <b>cadastrados</b></small></h5>
+                </div>
+                @if (ViewBag.Recebimentos.Count == 0)
+                {
+                    <p class="text-danger" style="text-align:center;"><b>NÃO HÁ RECEBIMENTOS CADASTRADOS</b></p>
+                    <p class="text-info" style="text-align:center;">No menu ao lado, clique em RECEBIMENTOS para cadastrar!</p>
+                }
+                else
+                {
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="text-primary">
+                            <th>Fornecedor</th>
+                            <th>Descricao</th>
+                            <th>Valor</th>
+                            <th>Data de Recebimento</th>
+                            <th>Data de cadastro</th>
+                            <th>Editar</th>
+                            </thead>
+                            <tbody>
+                                @foreach (Recebimento item in ViewBag.Recebimentos)
+                                {
+                                    <tr>
+                                        <td>@item.Fornecedor</td>
+                                        <td>@item.Descricao</td>
+                                        <td>@item.Valor</td>
+                                        <td>@item.DataRecebimento.ToString("dd/MM/yyyy")</td>
+                                        <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
+                                        <td><a class="btn btn-sm btn-outline-warning btn-round btn-icon" asp-action="Edicao" asp-route-idRecebimento="@item.IdRecebimento"><i class="fa fa-edit"></i></a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
             </div>
         </div>
     </div>
-</div>
 
-<div class="content">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-header">
-                        <h5 class="card-title" style="text-transform: uppercase;"><small>Últimos recebimentos <b>cadastrados</b></small></h5>
-                    </div>
-                    @if (ViewBag.Recebimentos.Count == 0)
+    @*CARD ARTIGOS NOTICIAS*@
+    <div class="col-md-6">
+        <div class="card" style="height: 42%;">
+            <div class="card-body" style="overflow: scroll; width: 98%; margin-left: 1%;">
+                <div class="card-header">
+                    <h5 class="card-title" style="text-transform: uppercase;"><small>Últimas notícias sobre <b>negócios</b> e <b>finanças</b></small></h5>
+                    <p class="text-danger">Fique por dentro de todas as notícias...</p>
+                </div>
+                @if (ViewBag.Artigos.Count == 0)
+                {
+                    <p class="text-danger" style="text-align:center;"><b>NÃO HÁ NENHUMA NOTÍCIO PARA SER EXIBIDA</b></p>
+                }
+                else
+                {
+
+                    @foreach (var item in ViewBag.Artigos)
                     {
-                        <p class="text-danger" style="text-align:center;"><b>NÃO HÁ RECEBIMENTOS CADASTRADOS</b></p>
-                        <p class="text-info" style="text-align:center;">No menu ao lado, clique em RECEBIMENTOS para cadastrar!</p>
-                    }
-                    else
-                    {
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead class="text-primary">
-                                <th>Fornecedor</th>
-                                <th>Descricao</th>
-                                <th>Valor</th>
-                                <th>Data de Recebimento</th>
-                                <th>Data de cadastro</th>
-                                <th>Editar</th>
-                                </thead>
-                                <tbody>
-                                    @foreach (Recebimento item in ViewBag.Recebimentos)
-                                    {
-                                        <tr>
-                                            <td>@item.Fornecedor</td>
-                                            <td>@item.Descricao</td>
-                                            <td>@item.Valor</td>
-                                            <td>@item.DataRecebimento.ToString("dd/MM/yyyy")</td>
-                                            <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
-                                            <td><a class="btn btn-sm btn-outline-warning btn-round btn-icon" asp-action="Edicao" asp-route-idRecebimento="@item.IdRecebimento"><i class="fa fa-edit"></i></a></td>
-                                        </tr>
-                                    }
-                                </tbody>
-                            </table>
+                        <hr>
+                        <h6 class="card-title" style="text-transform: uppercase;">
+                            <i class="fa fa-bookmark"></i> @item.Title
+                            <br />
+                        </h6>
+                        <p class="text-primary"><i class="fa fa-pencil-square"></i><b> @item.Author - <i class="fa fa-calendar"></i> @item.PublishedAt</b></p>
+                        
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img style="overflow: hidden; width:150px; height: 150px; position: relative;" src="@item.UrlToImage" />
+                            </div>
+                            <div class="col-md-9">
+                                <div class="text-black">@item.Description ... <a class="text-warning" href="@item.Url" target="_blank"><b>CONTINUAR LENDO</b></a> </div>
+                            </div>
                         </div>
                     }
-                </div>
+                }
             </div>
         </div>
     </div>
