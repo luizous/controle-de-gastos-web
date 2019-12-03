@@ -171,5 +171,13 @@ namespace ControleDeGastos.Web.Controllers
             return View(_usuarioService.Obter(_usuarioAutenticado.IdUsuario(User)));
         }
         #endregion
+
+        #region AcessoNegado
+        [AllowAnonymous]
+        public IActionResult AcessoNegado()
+        {
+            return View();
+        }
+        #endregion
     }
 }

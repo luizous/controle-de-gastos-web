@@ -1,7 +1,16 @@
 ﻿
 @{
-    ViewData["Title"] = "AcessoNegado";
+    ViewData["Title"] = "Ops! Algo errado aí...";
+    Layout = "~/Views/Shared/_LayoutCadastro.cshtml";
 }
 
-<h2>AcessoNegado</h2>
+<div class="row" style="margin-left: 25%; margin-top: 10%;">
+    <div class="col-md-8">
+        <h1 class="text-white" style="font-size: 40px; font-family: Candara;"><b>ACESSO NEGADO</b></h1>
+        <h2>Você precisa fazer o login para acessar esta página...</h2>
+        <form>
+            <button type="submit" class="btn btn-round" style="background: #fff; color: #000;" asp-action="Index">VOLTAR PARA A TELA INICIAL</button>
+        </form>
+    </div>
+</div>
 

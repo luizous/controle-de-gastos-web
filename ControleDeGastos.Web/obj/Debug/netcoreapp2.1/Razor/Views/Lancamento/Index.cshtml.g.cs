@@ -81,7 +81,7 @@ using ControleDeGastos.Service;
                         ");
             EndContext();
             BeginContext(625, 130, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bc9dc91565d0458f9fa5e56fbd27c0e4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9b9cf034e4e44b76ba2578279bf9c0ef", async() => {
                 BeginContext(712, 39, true);
                 WriteLiteral("<small><b>+ Novo lancamento</b></small>");
                 EndContext();
@@ -215,7 +215,7 @@ using ControleDeGastos.Service;
             WriteLiteral("</td>\r\n                                            <td>");
             EndContext();
             BeginContext(2524, 155, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2bf076e1ec4c4d88a1f871847387af47", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f33fd2617174a1b8f47dc407082ac63", async() => {
                 BeginContext(2649, 26, true);
                 WriteLiteral("<i class=\"fa fa-edit\"></i>");
                 EndContext();

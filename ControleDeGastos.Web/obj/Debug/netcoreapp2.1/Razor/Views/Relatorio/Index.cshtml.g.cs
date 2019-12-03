@@ -78,7 +78,7 @@ using ControleDeGastos.Service;
                     ");
             EndContext();
             BeginContext(482, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2aca4ddf01c04e4b9dfb721920f7d4d4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "93528bb72dad457387d075cb487a3fc4", async() => {
                 BeginContext(542, 4, true);
                 WriteLiteral("Hoje");
                 EndContext();
@@ -101,7 +101,7 @@ using ControleDeGastos.Service;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(572, 77, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "63b8d0c834ab48d3994c5f3837ba0eaf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cfcab284acbf4ec29ff8c9845bfa30f1", async() => {
                 BeginContext(636, 9, true);
                 WriteLiteral("Mês atual");
                 EndContext();
@@ -124,7 +124,7 @@ using ControleDeGastos.Service;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(671, 88, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2660fdf634c541d185f5434ddcc7b99d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "425156bd4e184efb83b65e635ceaa431", async() => {
                 BeginContext(736, 19, true);
                 WriteLiteral("Últimos quinze dias");
                 EndContext();
@@ -147,7 +147,7 @@ using ControleDeGastos.Service;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(781, 81, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "39f05e9f6fd34909965c9113889f65ef", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e4f2be4569554080a3d0f398ab8914b8", async() => {
                 BeginContext(847, 11, true);
                 WriteLiteral("Mês passado");
                 EndContext();

@@ -65,7 +65,7 @@ namespace ControleDeGastos.Web
                 .AddDefaultTokenProviders();
             services.ConfigureApplicationCookie(options =>
             {
-                options.LoginPath = "/Usuario/Index";
+                options.LoginPath = "/Usuario/AcessoNegado";
                 options.AccessDeniedPath = "/Usuario/AcessoNegado";
             });
             services.AddSession();

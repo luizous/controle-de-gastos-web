@@ -78,7 +78,7 @@ using ControleDeGastos.Service;
                         ");
             EndContext();
             BeginContext(651, 128, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5e56c758b0d946559c12868502860b95", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c79dd583f674680bf75a7a52b85a0e4", async() => {
                 BeginContext(738, 37, true);
                 WriteLiteral("<small><b>+ Novo depósito</b></small>");
                 EndContext();
@@ -179,7 +179,7 @@ using ControleDeGastos.Service;
             WriteLiteral("</td>\r\n                                        <td>");
             EndContext();
             BeginContext(2156, 151, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f25f508eee174b22ada9cc92b58d57fc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9732a10dfe0a41068c160743d9613b8d", async() => {
                 BeginContext(2277, 26, true);
                 WriteLiteral("<i class=\"fa fa-edit\"></i>");
                 EndContext();
