@@ -43,8 +43,9 @@ namespace ControleDeGastos.Web.Controllers
             if (ModelState.IsValid)
             {
                 _metaService.Cadastrar(m, _usuarioAutenticado.IdUsuario(User));
+                return RedirectToAction("Index", m);
             }
-            return View(m);
+            return View("Index", m);
         }
         #endregion
 
@@ -54,10 +55,6 @@ namespace ControleDeGastos.Web.Controllers
             if (idMeta != null)
             {
                 _metaService.Remover(idMeta);
-            }
-            else
-            {
-                //Redirecionar para uma página de erro
             }
             return RedirectToAction("Perfil", "Usuario");
         }
