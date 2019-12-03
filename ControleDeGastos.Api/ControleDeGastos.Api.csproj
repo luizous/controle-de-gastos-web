@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -9,6 +10,10 @@
     <Content Remove="wwwroot\**" />
     <EmbeddedResource Remove="wwwroot\**" />
     <None Remove="wwwroot\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="JsonTeste.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +25,10 @@
   <ItemGroup>
     <ProjectReference Include="..\ControleDeGastos.Repository\ControleDeGastos.Repository.csproj" />
     <ProjectReference Include="..\ControleDeGastos.Service\ControleDeGastos.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="JsonTeste.ts" />
   </ItemGroup>
 
 </Project>

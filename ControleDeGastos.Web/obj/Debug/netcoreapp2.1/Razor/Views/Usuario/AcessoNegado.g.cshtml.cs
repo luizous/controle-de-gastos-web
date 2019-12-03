@@ -79,12 +79,12 @@ using ControleDeGastos.Service;
         ");
             EndContext();
             BeginContext(393, 174, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "df5ccdce009c43f9b727ea578a8545f0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "73db768526bb443ea73196696cbd736e", async() => {
                 BeginContext(399, 14, true);
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(413, 137, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9eb2cf20dc4145fa8a97e3b472e42924", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "397f35905f904dd2983e54036b407555", async() => {
                     BeginContext(515, 26, true);
                     WriteLiteral("VOLTAR PARA A TELA INICIAL");
                     EndContext();

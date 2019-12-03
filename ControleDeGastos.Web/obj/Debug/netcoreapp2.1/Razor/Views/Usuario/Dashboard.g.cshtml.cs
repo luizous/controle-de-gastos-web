@@ -78,7 +78,7 @@ using ControleDeGastos.Service;
                                 ");
             EndContext();
             BeginContext(523, 170, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "54c1e4c0838e4d37953a49bc84d55cab", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a7317a2a4ef84832bd40951ccfca1a8c", async() => {
                 BeginContext(572, 117, true);
                 WriteLiteral("\r\n                                    <i class=\"nc-icon nc-paper text-warning\"></i>\r\n                                ");
                 EndContext();
@@ -359,7 +359,7 @@ using ControleDeGastos.Service;
             WriteLiteral("</td>\r\n                                        <td>");
             EndContext();
             BeginContext(7053, 155, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "02b3cd98617e475fbdedeef9f235c0c5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f14122696b864965958066ba61778503", async() => {
                 BeginContext(7178, 26, true);
                 WriteLiteral("<i class=\"fa fa-edit\"></i>");
                 EndContext();
@@ -508,7 +508,7 @@ using ControleDeGastos.Service;
             WriteLiteral("</td>\r\n                                        <td>");
             EndContext();
             BeginContext(9217, 157, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4f4960752286495496571cc16ac6db75", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0db6f92ef7e04887890fc034e286c6c3", async() => {
                 BeginContext(9344, 26, true);
                 WriteLiteral("<i class=\"fa fa-edit\"></i>");
                 EndContext();
