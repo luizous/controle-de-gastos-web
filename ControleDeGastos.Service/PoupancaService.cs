@@ -33,6 +33,14 @@ namespace ControleDeGastos.Service
         }
         #endregion
 
+        #region Remover
+        public bool Remover(int? idPoupanca)
+        {
+            var poupanca = Obter(idPoupanca);
+            return _poupancaRepository.Remover(poupanca);
+        }
+        #endregion
+
         #region Listar
         public List<Poupanca> Listar(int idUsuario)
         {

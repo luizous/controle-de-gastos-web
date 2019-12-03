@@ -57,15 +57,21 @@ namespace ControleDeGastos.Web.Controllers
             {
                 p.Cartao = _cartaoService.Obter(drpCartoes);
                 _poupancaService.Cadastrar(p, _usuarioAutenticado.Usuario(User));
+                return RedirectToAction("Index");
             }
-            return View();
+            return View("Cadastro", p);
         }
         #endregion
 
-        #region Edicao
-        public IActionResult Edicao(int? idPoupanca)
+        #region Remover
+        public IActionResult Remover(int? idPoupanca)
         {
-            return View(_poupancaService.Obter(idPoupanca));
+            if (idPoupanca != null)
+            {
+                _poupancaService.Remover(idPoupanca);
+                return RedirectToAction("Index");
+            }
+            return RedirectToAction("Index");
         }
         #endregion
 

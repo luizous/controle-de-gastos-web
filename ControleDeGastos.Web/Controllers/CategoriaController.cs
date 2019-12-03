@@ -39,8 +39,9 @@ namespace ControleDeGastos.Web.Controllers
             if (ModelState.IsValid)
             {
                 _categoriaService.Cadastrar(c, _usuarioAutenticado.Usuario(User));
+                RedirectToAction("Index", c);
             }
-            return View(c);
+            return RedirectToAction("Index", c);
         }
         #endregion
 
@@ -50,10 +51,7 @@ namespace ControleDeGastos.Web.Controllers
             if (idCategoria != null)
             {
                 _categoriaService.Remover(idCategoria);
-            }
-            else
-            {
-                //Redirecionar para uma página de erro
+                RedirectToAction("Index");
             }
             return RedirectToAction("Perfil", "Usuario");
         }

@@ -38,7 +38,7 @@
                                         <td>@item.Valor</td>
                                         <td>@item.DataDeposito.ToString("dd/MM/yyyy")</td>
                                         <td>@item.DataCadastro.ToString("dd/MM/yyyy")</td>
-                                        <td><a class="btn btn-sm btn-outline-warning btn-round btn-icon" asp-action="Edicao" asp-route-idPoupanca="@item.IdPoupanca"><i class="fa fa-edit"></i></a></td>
+                                        <td><a class="btn btn-sm btn-outline-danger btn-round btn-icon" asp-action="Remover" asp-route-idPoupanca="@item.IdPoupanca"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     }
                                 </tbody>

@@ -75,9 +75,9 @@ namespace ControleDeGastos.Web.Controllers
         }
         #endregion
 
-        #region Edicao
+        #region Editar
         [HttpPost]
-        public IActionResult Edicao(Lancamento l)
+        public IActionResult Editar(Lancamento l)
         {
             _lancamentoService.Editar(l);
             return RedirectToAction("Index");

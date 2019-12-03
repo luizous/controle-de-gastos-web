@@ -53,6 +53,22 @@ namespace ControleDeGastos.Repository
         }
         #endregion
 
+        #region Remover
+        public bool Remover(Poupanca p)
+        {
+            try
+            {
+                _context.Poupancas.Remove(p);
+                _context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        #endregion
+
         #region Listar
         public List<Poupanca> Listar(int idUsuario) => _context.Poupancas
             .Include("Cartao")

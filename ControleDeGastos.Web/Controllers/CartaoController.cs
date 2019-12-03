@@ -48,8 +48,9 @@ namespace ControleDeGastos.Web.Controllers
             {
                 var usuario = _usuarioService.Obter(_usuarioAutenticado.IdUsuario(User));
                 _cartaoService.Cadastrar(c, usuario);
+                return RedirectToAction("Index");
             }
-            return View();
+            return View("Cadastro", c);
         }
         #endregion
 
@@ -59,24 +60,10 @@ namespace ControleDeGastos.Web.Controllers
             if (idCartao != null)
             {
                 _cartaoService.Remover(idCartao);
-            }
-            else
-            {
-                //Redirecionar para uma página de erro
+                return RedirectToAction("Index");
             }
             return RedirectToAction("Index");
         }
         #endregion
-
-        //[HttpPost]
-        //public IActionResult ValidarCartao(Cartao c)
-        //{
-        //    //string url = "https://viacep.com.br/ws/" +
-        //    //    u..Cep + "/json/";
-        //    //WebClient client = new WebClient();
-        //    //TempData["Endereco"] = client.DownloadString(url);
-
-        //    return RedirectToAction(nameof(Cadastrar));
-        //}
     }
 }
