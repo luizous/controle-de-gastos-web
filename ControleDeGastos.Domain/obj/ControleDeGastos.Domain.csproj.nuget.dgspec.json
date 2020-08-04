@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {}
+    "D:\\Projetos\\spending-control-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
+    "D:\\Projetos\\spending-control-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj",
+        "projectUniqueName": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj",
         "projectName": "ControleDeGastos.Domain",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj",
+        "projectPath": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Domain\\obj\\",
+        "outputPath": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -59,7 +62,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

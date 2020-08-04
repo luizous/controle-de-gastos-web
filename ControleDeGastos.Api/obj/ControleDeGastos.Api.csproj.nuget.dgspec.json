@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Api\\ControleDeGastos.Api.csproj": {}
+    "D:\\Projetos\\spending-control-web\\ControleDeGastos.Api\\ControleDeGastos.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Api\\ControleDeGastos.Api.csproj": {
+    "D:\\Projetos\\spending-control-web\\ControleDeGastos.Api\\ControleDeGastos.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Api\\ControleDeGastos.Api.csproj",
+        "projectUniqueName": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Api\\ControleDeGastos.Api.csproj",
         "projectName": "ControleDeGastos.Api",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Api\\ControleDeGastos.Api.csproj",
+        "projectPath": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Api\\ControleDeGastos.Api.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Api\\obj\\",
+        "outputPath": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -27,11 +30,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
-                "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj"
+              "D:\\Projetos\\spending-control-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
+                "projectPath": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj"
               },
-              "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj": {
-                "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj"
+              "D:\\Projetos\\spending-control-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj": {
+                "projectPath": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj"
               }
             }
           }
@@ -77,19 +80,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
+    "D:\\Projetos\\spending-control-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj",
+        "projectUniqueName": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj",
         "projectName": "ControleDeGastos.Domain",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj",
+        "projectPath": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Domain\\obj\\",
+        "outputPath": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -136,19 +142,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
+    "D:\\Projetos\\spending-control-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj",
+        "projectUniqueName": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj",
         "projectName": "ControleDeGastos.Repository",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj",
+        "projectPath": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\obj\\",
+        "outputPath": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -163,8 +172,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
-                "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj"
+              "D:\\Projetos\\spending-control-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj": {
+                "projectPath": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Domain\\ControleDeGastos.Domain.csproj"
               }
             }
           }
@@ -203,19 +212,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj": {
+    "D:\\Projetos\\spending-control-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj",
+        "projectUniqueName": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj",
         "projectName": "ControleDeGastos.Service",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj",
+        "projectPath": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Service\\ControleDeGastos.Service.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Service\\obj\\",
+        "outputPath": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -230,8 +242,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
-                "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\controle-de-gastos-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj"
+              "D:\\Projetos\\spending-control-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj": {
+                "projectPath": "D:\\Projetos\\spending-control-web\\ControleDeGastos.Repository\\ControleDeGastos.Repository.csproj"
               }
             }
           }
@@ -262,7 +274,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -39,3 +39,17 @@ C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGasto
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csproj.CopyComplete
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.dll
 C:\Users\gabri\OneDrive\Área de Trabalho\controle-de-gastos-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.pdb
+D:\Projetos\spending-control-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.deps.json
+D:\Projetos\spending-control-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.dll
+D:\Projetos\spending-control-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Service.pdb
+D:\Projetos\spending-control-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.dll
+D:\Projetos\spending-control-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.dll
+D:\Projetos\spending-control-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Repository.pdb
+D:\Projetos\spending-control-web\ControleDeGastos.Service\bin\Debug\netcoreapp2.1\ControleDeGastos.Domain.pdb
+D:\Projetos\spending-control-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csprojAssemblyReference.cache
+D:\Projetos\spending-control-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.AssemblyInfoInputs.cache
+D:\Projetos\spending-control-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.AssemblyInfo.cs
+D:\Projetos\spending-control-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csproj.CoreCompileInputs.cache
+D:\Projetos\spending-control-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.csproj.CopyComplete
+D:\Projetos\spending-control-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.dll
+D:\Projetos\spending-control-web\ControleDeGastos.Service\obj\Debug\netcoreapp2.1\ControleDeGastos.Service.pdb
